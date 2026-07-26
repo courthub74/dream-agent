@@ -210,7 +210,7 @@
         url('./img/largest_about_background.png') center/100% 100% no-repeat; */
       min-height: 55vh;
       min-height: auto;
-      padding-top: 1rem;
+      padding-top: 2rem;
     
       display: flex;
       flex-direction: column;
@@ -231,7 +231,13 @@
     }
 
     /* ABOUT SECTION */
-    .mobile_about_container { max-width: var(--content-max); margin-inline: auto; padding-inline: var(--content-pad); }
+    .mobile_about_container { 
+      max-width: var(--content-max); 
+      margin-inline: auto; 
+      padding-inline: var(--content-pad); 
+      padding-top: 1rem;
+      /* background: rgba(255,255,255,.05); */
+    }
     .mobile_about_header { text-align: left; font-size: 1.5rem; font-weight: 700; padding-left: .25rem; margin-top: 1rem; }
     /* .mobile_about_paragraph { max-width: 760px; font-family: 'Playfair Display', serif; line-height: 1.55; margin: 1rem 0 2rem; font-weight: 400;  background: rgba(255,255,255,.05); padding: 1.25rem; border-radius: 12px; border: 1px solid rgba(255,255,255,.10); font-size: clamp(1rem, 3.5vw, 1.3rem); } */
 
@@ -252,15 +258,7 @@
       line-height: 1.5;
       margin-bottom: 3rem;
     }
-    /* .mobile_about_paragraph {
-      margin-top: 1.5rem;
-      margin-bottom: 3rem;
-    }  */
-
-    /* .mobile_about_paragraph {
-      font-size: clamp(1rem, 3.5vw, 1.3rem);
-      line-height: 1.55;
-    } */
+  
 
     @media (max-width: 480px) {
       .mobile_about_paragraph {
@@ -1443,7 +1441,7 @@ font-weight: 500;
 
     <!-- ABOUT -->
     <section id="mobile_about" class="mobile_about">
-      <div class="mobile_about_container pt-8 pb-4">
+      <div class="mobile_about_container pt-14 pb-4">
 
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- --------------------------------------------------------------------------------------- -->
