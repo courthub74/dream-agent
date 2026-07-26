@@ -1033,7 +1033,7 @@
   max-width: 90ch;
   /* max-width: 4rem; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 1.03rem;
   line-height: 1.7;
   color: rgba(255,255,255,.90);
 }
@@ -1043,9 +1043,9 @@
 }
 
 .artist-statement-paragraph {
-  max-width: 72ch;
+  /* max-width: 72ch; */
   max-width: 48rem;
-  font-size: .95rem;
+  font-size: 1.03rem;
   line-height: 1.75;
   color: rgba(255,255,255,.82);
 }
@@ -1084,6 +1084,18 @@
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(178, 182, 199, 0.486);
+}
+
+.current-work-image p {
+  margin: 0.75rem 0 0;
+  color: rgba(255,255,255,0.95);
+  font-size: 0.95rem;
+}
+
+.current-work-image .work-year {
+  opacity: 0.7;
+  font-size: 0.85em;
+  color: rgba(255,255,255,0.85);
 }
 
 .artist-statement-button {
@@ -1556,27 +1568,27 @@
         <!-- ----------------------------------------------------------------------------------------------------- -->
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <!-- FEATURED WORKS -->
+        <!-- CURRENT WORKS -->
         <section id="current-works" class="mt-12">
           <h2 class="current-works-header system-header">Current Works</h2>
           <p class="current-works-paragraph mt-4">
             These works are in progress, and may be revised or removed at any time. They are not yet part of a collection.
           </p>
           <div class="current-works-grid mt-6">
-            <!-- Featured works will be dynamically inserted here -->
+            <!-- Current works will be dynamically inserted here -->
              <div class="current-work-item">
 
                 <div class="current-work-image">
-                  <img src="./img/collection_works/industrial_myths/humans.webp" alt="Featured Work">
-                  <p>Humans 2026</p>
+                  <img src="./img/collection_works/industrial_myths/humans.webp" alt="Current Work">
+                  <p>Humans <span class="work-year">2026</span></p>
                 </div>
                 <div class="current-work-image">
-                  <img src="./img/collection_works/war_and_feast/coeur_of_the_grapes.webp" alt="Featured Work">
-                  <p>Coeur of the Grapes 2025</p>
+                  <img src="./img/collection_works/war_and_feast/coeur_of_the_grapes.webp" alt="Current Work">
+                  <p>Coeur of the Grapes <span class="work-year">2025</span></p>
                 </div>
                 <div class="current-work-image">
-                  <img src="./img/collection_works/signals_and_ascensions/sephardic_tango.webp" alt="Featured Work">
-                  <p>Sephardic Tango 2025</p>
+                  <img src="./img/collection_works/signals_and_ascensions/sephardic_tango.webp" alt="Current Work">
+                  <p>Sephardic Tango <span class="work-year">2025</span></p>
                 </div>
                
              </div>
