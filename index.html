@@ -1057,8 +1057,12 @@
 
 .current-work-item {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.current-work-image {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 /* Section Eyebrow */
@@ -1086,16 +1090,27 @@
   border: 1px solid rgba(178, 182, 199, 0.486);
 }
 
+.work-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.work-title {
+  color: rgba(255,255,255,.95);
+}
+
+.work-year {
+  color: rgba(255,255,255,.70);
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+
 .current-work-image p {
   margin: 0.75rem 0 0;
   color: rgba(255,255,255,0.95);
   font-size: 0.95rem;
-}
-
-.current-work-image .work-year {
-  opacity: 0.7;
-  font-size: 0.85em;
-  color: rgba(255,255,255,0.85);
 }
 
 .artist-statement-button {
@@ -1580,15 +1595,24 @@
 
                 <div class="current-work-image">
                   <img src="./img/collection_works/industrial_myths/humans.webp" alt="Current Work">
-                  <p>Humans <span class="work-year">2026</span></p>
+                  <p class="work-meta">
+                    <span class="work-title">Humans</span>
+                    <span class="work-year">2026</span>
+                  </p>
                 </div>
                 <div class="current-work-image">
                   <img src="./img/collection_works/war_and_feast/coeur_of_the_grapes.webp" alt="Current Work">
-                  <p>Coeur of the Grapes <span class="work-year">2025</span></p>
+                  <p class="work-meta">
+                    <span class="work-title">Coeur of the Grapes</span>
+                    <span class="work-year">2025</span>
+                  </p>
                 </div>
                 <div class="current-work-image">
                   <img src="./img/collection_works/signals_and_ascensions/sephardic_tango.webp" alt="Current Work">
-                  <p>Sephardic Tango <span class="work-year">2025</span></p>
+                  <p class="work-meta">
+                    <span class="work-title">Sephardic Tango</span>
+                    <span class="work-year">2025</span>
+                  </p>
                 </div>
                
              </div>
