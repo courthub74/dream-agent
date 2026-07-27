@@ -1734,6 +1734,9 @@ font-weight: 500;
   
 
   <script>
+    // Import 'Artsorks.js'
+    import {currentWorks} from "./js/artworks.js";
+    
     // Fade-ins on hero
     // gsap.to(".hero_phrase", { opacity: 1, y: 0, duration: 1, delay: 1.2 });
     // gsap.to("#cta", { opacity: 1, y: 0, duration: 1, delay: 1.5 });
@@ -2151,8 +2154,26 @@ font-weight: 500;
 
 // GET CURRENT WORKS
 function getCurrentWorks() {
+  // retrieve the whole grid
   const currentWorksGrid = document.querySelector('.current-works-grid');
+  // retrieve each image
+  const images = document.querySelectorAll('.current-work-image');
+  // locate the 'Artworks.js' object
+  const artwork = works.find(work => work.title === title)
+  console.log(artwork);
+  // Return the key of the 'date-created' from the works objects in 'Artworks.js'
+  // Test print the current works grid appearing on screen
+
+  // first iterate through 
+    // then print
+   images.forEach((image, index) => {
+    console.log(index);
+    console.log(image);
+  });
+
 }
+
+console.log(getCurrentWorks());
 
     // Dynamic Date in Footer
    const copyrightYear = document.getElementById("copyright-year");
