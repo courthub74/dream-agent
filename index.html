@@ -24,6 +24,8 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+  <!-- Import Artworks.js -->
+   <script src="./js/artworks.js"></script>
   <style>
     :root {
       --ink-100: rgba(255,255,255,1);
@@ -1733,10 +1735,8 @@ font-weight: 500;
 
   
 
-  <script>
-    // Import 'Artsorks.js'
-    import {currentWorks} from "./js/artworks.js";
-    
+
+  <script> 
     // Fade-ins on hero
     // gsap.to(".hero_phrase", { opacity: 1, y: 0, duration: 1, delay: 1.2 });
     // gsap.to("#cta", { opacity: 1, y: 0, duration: 1, delay: 1.5 });
@@ -2156,13 +2156,29 @@ font-weight: 500;
 function getCurrentWorks() {
   // retrieve the whole grid
   const currentWorksGrid = document.querySelector('.current-works-grid');
-  // retrieve each image
+  // retrieve each image in the div to place the artwork there
   const images = document.querySelectorAll('.current-work-image');
-  // locate the 'Artworks.js' object
-  const artwork = works.find(work => work.title === title)
-  console.log(artwork);
-  // Return the key of the 'date-created' from the works objects in 'Artworks.js'
+  // locate the 'Artworks.js' object (in this case test print)
+  // console.log(window.allWorks);
+  // Iterate through allWorks
+  window.allWorks.forEach(work => {
+    // printing all works
+    console.log(work);
+    // Return the key of the 'date-created' from the works objects in 'Artworks.js'
+    // printing just the dates created
+    console.log(work.dateCreated);
+    // NEXT we want to find the 3 latest dates
+  
+    // First lets store the work.dateCreated in a variable
+    let artworkDates = work.dateCreated;
+    // Now lets SORT for latest dates
+    const latestDates = artworkDates
+      .slice() 
+      .sort((a, b) => b - a) 
+      .slice(0, 3);
   // Test print the current works grid appearing on screen
+  });
+
 
   // first iterate through 
     // then print
