@@ -5,3 +5,30 @@ Steps for 'Related_Works' update
 3. Add the Related works div 
 4. paste the renderRelatedWorks function @ line 1024 or so 
 5. redirect the works function to the artworks.js by collection
+
+
+
+function getCurrentWorks() {
+  // 1. Retrieve the DOM elements
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  const images = document.querySelectorAll('.current-work-image');
+
+  // 2. SORT the entire array first (Newest first) and SLICE the top 3
+  const lastThreeWorks = window.allWorks
+    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
+    .slice(0, 3);
+
+  // Test print the 3 latest artwork objects to the console
+  console.log("Latest 3 Artworks:", lastThreeWorks);
+
+  // 3. Loop through your 3 latest works to display them on the screen
+  lastThreeWorks.forEach((work, index) => {
+    console.log("Current work being processed:", work);
+    console.log("Its date:", work.dateCreated);
+
+    // If you want to put the image URL into your HTML elements:
+    if (images[index]) {
+      images[index].src = work.imageSrc; // Change 'imageSrc' to your actual key name (e.g., work.url or work.img)
+    }
+  });
+}
