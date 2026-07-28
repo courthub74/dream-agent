@@ -32,3 +32,72 @@ function getCurrentWorks() {
     }
   });
 }
+
+
+function getCurrentWorks() {
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  const images = document.querySelectorAll('.current-work-image');
+
+  // 1. Gather all dates from the window.allWorks array into one flat array
+  let allDates = window.allWorks.map(work => work.dateCreated);
+
+  // 2. Sort the combined array and extract the latest 3 dates
+  let latestThreeDates = [...allDates]
+    .sort((a, b) => b.localeCompare(a))
+    .slice(0, 3);
+
+  console.log('The 3 most recent dates across all works:', latestThreeDates);
+
+  // 3. Filter your original works array to only include the items matching those 3 dates
+  let latestThreeWorks = window.allWorks.filter(work => 
+    latestThreeDates.includes(work.dateCreated)
+  );
+
+  console.log('The 3 most recent work objects:', latestThreeWorks);
+  
+  // Now you can loop through latestThreeWorks to update your DOM images
+}
+
+
+// GITHUB ISSUE
+### Bug Description
+The code was expected to find the 3 most recent dates across all artworks. Instead, it was treating the single date string of each artwork as an array, splitting it into character blocks, and returning individual sorted digits (e.g., numbers/dashes) instead of complete dates.
+
+### Root Cause
+Inside the `window.allWorks.forEach` loop, `work.dateCreated` returns a single string (like `"2025-10-13"`). Running the spread operator `[...worksDates]` on a string splits it into an array of individual characters: `['2', '0', '2', '5', '-', ... ]`.
+
+### Solution
+We need to collect all dates into a unified array using `.map()` *before* sorting and slicing the top three. 
+
+Here is the corrected `getCurrentWorks` function:
+
+```javascript
+function getCurrentWorks() {
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  const images = document.querySelectorAll('.current-work-image');
+
+  // 1. Gather all dates from the window.allWorks array into one flat array
+  let allDates = window.allWorks.map(work => work.dateCreated);
+
+  // 2. Sort the combined array and extract the latest 3 dates
+  let latestThreeDates = [...allDates]
+    .sort((a, b) => b.localeCompare(a))
+    .slice(0, 3);
+
+  console.log('The 3 most recent dates across all works:', latestThreeDates);
+
+  // 3. Filter your original works array to only include the items matching those 3 dates
+  let latestThreeWorks = window.allWorks.filter(work => 
+    latestThreeDates.includes(work.dateCreated)
+  );
+
+  console.log('The 3 most recent work objects:', latestThreeWorks);
+}
+```
+
+### Action Items
+- [ ] Update `getCurrentWorks` to map and sort all dates globally.
+- [ ] Map the filtered `latestThreeWorks` array items to the `.current-work-image` DOM nodes.
+- [ ] Test the UI to confirm only the 3 newest artwork images are rendered.
+- [ ] Verify handling when `window.allWorks` contains fewer than 3 items.
+
