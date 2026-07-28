@@ -2174,20 +2174,10 @@ function getCurrentWorks() {
     .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
     .slice(0, 3);
 
+  // Test Print
   console.log('The 3 most recent dates across all works:', latestThreeDates);
-  // Sort the combined array and extract the latest 3 dates
-  // let latestThreeDates = [...allDates]
-  //   .sort((a, b) => b.localeCompare(a))
-  //   .slice(0, 3);
-
-  // // Test Print
-  // console.log('The 3 most recent dates across all works:', latestThreeDates);
-  
-  // NOW we need to retrieve the images associated with those dates
-  // Then verify handling when there is <3 images in the div
-
 }
-
+// Test Print the Function Call
 console.log(getCurrentWorks());
 
     // Dynamic Date in Footer

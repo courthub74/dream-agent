@@ -1145,7 +1145,7 @@ window.allWorks = [
             year: "2026", 
             style: "Oil-style",
             featured: true,
-            dateCreated: "2026-02-11",
+            dateCreated: "2026-01-11",
             related: ["the_wine_wars", "the_dirt_wars"],
             motifs: ["bubbles", "zamboni"],
             themes: ["sanitation", "conflict"],
