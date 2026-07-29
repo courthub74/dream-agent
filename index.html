@@ -1592,9 +1592,9 @@ font-weight: 500;
           </p>
           <div class="current-works-grid mt-6">
             <!-- Current works will be dynamically inserted here -->
-             <div class="current-work-item">
+             <div class="current-work-item" id="current-work-item">
 
-                <div class="current-work-image">
+                <!-- <div class="current-work-image">
                   <img src="./img/collection_works/industrial_myths/humans.webp" alt="Current Work">
                   <p class="work-meta">
                     <span class="work-title">Humans</span>
@@ -1614,7 +1614,7 @@ font-weight: 500;
                     <span class="work-title">Sephardic Tango</span>
                     <span class="work-year">2025</span>
                   </p>
-                </div>
+                </div> -->
                
              </div>
              <!-- <img src="./img/collection_works/digital_unconscious/humans.webp" alt=""> -->
@@ -2170,12 +2170,41 @@ function getCurrentWorks() {
   console.log(allWorks);
 
   // Sort by date
-  let latestThreeDates = [...allWorks]
+  let latestThreeWorks = [...allWorks]
     .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
     .slice(0, 3);
 
   // Test Print
-  console.log('The 3 most recent dates across all works:', latestThreeDates);
+  console.log('The 3 most recent dates across all works:', latestThreeWorks);
+
+  // NOW create the Elements with the sorted artWorks in the DOM
+  // I'm gonna use a markup template string
+  const currentWorkImages = `
+    <div class="current-work-image">
+      <img src="${latestThreeWorks.img[0]}" alt="${latestThreeWorks.title[0]}">
+      <p class="work-meta">
+        <span class="work-title">"${latestThreeWorks.title[0]}"</span>
+        <span class="work-year">"${latestThreeWorks.year[0]}"</span>
+      </p>
+    </div>
+    <div class="current-work-image">
+      <img src="${latestThreeWorks.img[1]}" alt="${latestThreeWorks.title[1]}">
+      <p class="work-meta">
+        <span class="work-title">"${latestThreeWorks.title[1]}"</span>
+        <span class="work-year">"${latestThreeWorks.year[1]}"</span>
+      </p>
+    </div>
+    <div class="current-work-image">
+      <img src="${latestThreeWorks.img[2]}" alt="${latestThreeWorks.title[2]}">
+      <p class="work-meta">
+        <span class="work-title">"${latestThreeWorks.title[2]}"</span>
+        <span class="work-year">"${latestThreeWorks.year[2]}"</span>
+      </p>
+    </div>
+  `;
+
+  // NOW set the template inside the proper parent
+  document.getElementById('current-work-item').innerHTML = currentWorkImages;
 }
 // Test Print the Function Call
 console.log(getCurrentWorks());
