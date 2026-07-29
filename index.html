@@ -2181,24 +2181,24 @@ function getCurrentWorks() {
   // I'm gonna use a markup template string
   const currentWorkImages = `
     <div class="current-work-image">
-      <img src="${latestThreeWorks[0].img}" alt="${latestThreeWorks[0].title}">
+      <img src="${latestThreeWorks[0].img}" alt=${latestThreeWorks[0].title}>
       <p class="work-meta">
-        <span class="work-title">"${latestThreeWorks[0].title}"</span>
-        <span class="work-year">"${latestThreeWorks[0].year}"</span>
+        <span class="work-title">${latestThreeWorks[0].title}</span>
+        <span class="work-year">${latestThreeWorks[0].year}</span>
       </p>
     </div>
     <div class="current-work-image">
-      <img src="${latestThreeWorks[1].img}" alt="${latestThreeWorks[1].title}">
+      <img src="${latestThreeWorks[1].img}" alt=${latestThreeWorks[1].title}>
       <p class="work-meta">
-        <span class="work-title">"${latestThreeWorks[1].title}"</span>
-        <span class="work-year">"${latestThreeWorks[1].year}"</span>
+        <span class="work-title">${latestThreeWorks[1].title}</span>
+        <span class="work-year">${latestThreeWorks[1].year}</span>
       </p>
     </div>
     <div class="current-work-image">
-      <img src="${latestThreeWorks[2].img}" alt="${latestThreeWorks[2].title}">
+      <img src="${latestThreeWorks[2].img}" alt=${latestThreeWorks[2].title}>
       <p class="work-meta">
-        <span class="work-title">"${latestThreeWorks[2].title}"</span>
-        <span class="work-year">"${latestThreeWorks[2].year}"</span>
+        <span class="work-title">${latestThreeWorks[2].title}</span>
+        <span class="work-year">${latestThreeWorks[2].year}</span>
       </p>
     </div>
   `;
