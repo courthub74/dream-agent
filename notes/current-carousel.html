@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Parts</title>
+</head>
+<body>
+
+    <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+        <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+        <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+        <!-- CURRENT WORKS -->
+        <section id="current-works" class="mt-12">
+          <h2 class="current-works-header system-header">Current Works</h2>
+          <p class="current-works-paragraph mt-4">
+            These are the archive's newest transmissions.
+          </p>
+          <div class="current-works-grid mt-6">
+            <div class="current-work-carousel" aria-roledescription="carousel" aria-label="Current works">
+              <figure class="current-work-viewer">
+                <img id="currentWorkImg" src="" alt="">
+
+                <button id="currentWorkPrev"
+                        class="current-work-arrow current-work-prev"
+                        type="button"
+                        aria-label="Previous current work">
+                  ‹
+                </button>
+
+                <button id="currentWorkNext"
+                        class="current-work-arrow current-work-next"
+                        type="button"
+                        aria-label="Next current work">
+                  ›
+                </button>
+              </figure>
+
+              <p class="work-meta" aria-live="polite">
+                <span id="currentWorkTitle" class="work-title"></span>
+                <span id="currentWorkYear" class="work-year"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+        <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+        <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ---------------------->
+
+        <script>
+    // Desktop carousel (finite, rightmost dot active)
+    /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+    (function(){
+      const mq = window.matchMedia('(min-width: 1025px)');
+      const collections = document.querySelector('#collections');
+      if (!collections) return;
+
+      // const cardSelector = ':scope > a.group';
+      // changing card 
+      const cardSelector = '.cc-track > a.group';
+      let shell = null, viewport = null, track = null, prevBtn = null, nextBtn = null, dotsWrap = null, dots = [];
+      let cardsCache = []; let index = 0; let stepPx = 0; let slotsPerView = 1; let pages = 1; let ro = null;
+      let rafId = 0, scrollIdleTimer = 0; const SCROLL_IDLE_MS = 140;
+
+      function getGap(){ const cs = getComputedStyle(track); const g = parseFloat(cs.columnGap || cs.gap || 0); return isNaN(g) ? 0 : g; }
+      function getCardWidth(){ const card = track?.querySelector('a.group'); return card ? card.getBoundingClientRect().width : 0; }
+      function clamp(i){ return Math.max(0, Math.min(i, pages - 1)); }
+
+      function measure(){
+        const cardW = getCardWidth(); const gap = getGap(); stepPx = cardW + gap;
+        const EPS = .01; const vw = viewport.clientWidth; slotsPerView = Math.max(1, Math.floor((vw + gap - EPS) / Math.max(stepPx, 1)));
+        pages = Math.max(1, cardsCache.length - slotsPerView + 1);
+      }
+
+      function updateArrows(){ if (!prevBtn || !nextBtn) return; const hide = pages <= 1; prevBtn.style.display = hide ? 'none' : ''; nextBtn.style.display = hide ? 'none' : ''; prevBtn.disabled = index <= 0; nextBtn.disabled = index >= (pages - 1); }
+      function activeDotIndex(){ const rightMost = Math.min(index + slotsPerView - 1, cardsCache.length - 1); return rightMost; }
+
+      function buildDots(){
+  if (!dotsWrap) return;
+  dotsWrap.innerHTML = '';
+  dots = [];
+
+  // Use up to 4 evenly-spaced dots across the whole range of pages.
+  const count = Math.min(Math.max(pages, 1), 4);
+  if (count <= 1) { dotsWrap.style.display = 'none'; return; }
+  dotsWrap.style.display = 'flex';
+
+  for (let i = 0; i < count; i++) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'cc-dot';
+    b.setAttribute('aria-label', `Go to position ${i+1} of ${count}`);
+
+    // Target page: proportional position from 0 → pages-1.
+    // When count === 1 (not possible here), denom would be 0; safe because count>1.
+    const denom = (count - 1);
+    const t = denom > 0 ? i / denom : 0;              // 0, ~.33, ~.66, 1 for 4 dots
+    const targetPage = Math.round(t * (pages - 1));   // map to 0..pages-1
+
+    b.addEventListener('click', () => {
+      goToIndex(targetPage, true);
+    });
+
+    dotsWrap.appendChild(b);
+    dots.push(b);
+  }
+  updateDots();
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  function updateDots(){
+    if (!dotsWrap || !dots.length) return;
+
+    // Determine which proportional bucket the current index falls into.
+    const count = dots.length;
+    if (pages <= 1) { dots.forEach(d => d.classList.remove('is-active')); return; }
+
+    // Current position ratio across all pages 0..1
+    const ratio = pages > 1 ? (index / (pages - 1)) : 0;
+    const activeIdx = Math.min(
+      count - 1,
+      Math.max(0, Math.round(ratio * (count - 1)))
+    );
+
+    dots.forEach((d, i) => {
+      const on = i === activeIdx;
+      d.classList.toggle('is-active', on);
+      d.setAttribute('aria-current', on ? 'true' : 'false');
+    });
+  }
+
+
+      function goToIndex(i, smooth=true){ index = clamp(i); const left = index * stepPx; if (smooth && 'scrollTo' in viewport) viewport.scrollTo({left, behavior:'smooth'}); else viewport.scrollLeft = left; updateArrows(); updateDots(); }
+
+      function onScroll(){ if (rafId) cancelAnimationFrame(rafId); rafId = requestAnimationFrame(()=>{ if (stepPx <= 0) return; const pending = clamp(Math.round(viewport.scrollLeft / stepPx)); updateArrows(); clearTimeout(scrollIdleTimer); scrollIdleTimer = setTimeout(()=>{ if (index !== pending) index = pending; updateDots(); }, SCROLL_IDLE_MS); }); }
+
+      function enable() {
+  if (shell) return;
+
+  // Get the cards from the ORIGINAL track
+  const allCards = Array.from(origTrack.querySelectorAll(cardSelector));
+  if (!allCards.length) return;
+
+  cardsCache = allCards; // no de-dupe — move exactly what's there
+
+  shell    = document.createElement('div'); shell.className = 'collections-carousel';
+  viewport = document.createElement('div'); viewport.className = 'cc-viewport'; viewport.tabIndex = 0;
+  track    = document.createElement('div'); track.className = 'cc-track';
+
+  const controls = document.createElement('div'); controls.className = 'cc-controls';
+  const mk = (cls, label, path) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = `cc-arrow ${cls}`;
+    b.setAttribute('aria-label', label);
+    b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
+    return b;
+  };
+  prevBtn = mk('cc-prev','Previous','M15 5 L8 12 L15 19');
+  nextBtn = mk('cc-next','Next','M9 5 L16 12 L9 19');
+  controls.append(prevBtn, nextBtn);
+
+  dotsWrap = document.createElement('div'); dotsWrap.className = 'cc-dots';
+
+  viewport.appendChild(track);
+  const heading = collections.querySelector('h2');
+  (heading ? collections.insertBefore(shell, heading.nextSibling) : collections.appendChild(shell));
+  shell.append(viewport, controls, dotsWrap);
+
+  // Move ALL cards into the new track
+  cardsCache.forEach(card => track.appendChild(card));
+
+  prevBtn.addEventListener('click', () => goToIndex(index - 1, true));
+  nextBtn.addEventListener('click', () => goToIndex(index + 1, true));
+  viewport.addEventListener('scroll', onScroll, { passive: true });
+  viewport.addEventListener('keydown', (e)=>{ if (e.key === 'ArrowRight') nextBtn.click(); if (e.key === 'ArrowLeft') prevBtn.click(); });
+
+  ro = new ResizeObserver(() => {
+    const oldPages = pages, oldSlots = slotsPerView, oldIndex = index;
+    measure();
+    if (pages !== oldPages || slotsPerView !== oldSlots) {
+      buildDots();
+      goToIndex(Math.min(oldIndex, pages - 1), false);
+    } else {
+      updateDots();
+    }
+    updateArrows();
+  });
+  ro.observe(viewport);
+
+  // initial and safety re-measures
+  requestAnimationFrame(() => {
+    measure(); buildDots(); goToIndex(index, false); updateArrows(); updateDots();
+  });
+  setTimeout(() => { measure(); buildDots(); updateArrows(); updateDots(); }, 300);
+}
+
+    function disable() {
+      if (!shell) return;
+      // Restore cards to the ORIGINAL track
+      cardsCache.forEach(card => origTrack.appendChild(card));
+      ro?.disconnect();
+      shell.remove();
+      shell = viewport = track = prevBtn = nextBtn = dotsWrap = null;
+      dots = [];
+      cardsCache = [];
+      index = 0; stepPx = 0; slotsPerView = 1; pages = 1;
+    }
+
+      // function disable(){ if (!shell) return; const anchor = shell; cardsCache.forEach(card=> collections.insertBefore(card, anchor)); ro?.disconnect(); shell.remove(); shell = viewport = track = prevBtn = nextBtn = dotsWrap = null; dots = []; cardsCache = []; index = 0; stepPx = 0; slotsPerView = 1; pages = 1; }
+
+      function handle(){ mq.matches ? enable() : disable(); }
+      handle(); mq.addEventListener('change', handle);
+    })();
+
+    // Footer year
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const p = document.getElementById('copyright');
+      const y = new Date().getFullYear();
+      if (p) p.innerHTML = `&copy; ${y} Dream Agent. All rights reserved.`;
+    });
+
+    // Slide-in menu
+(function () {
+  const html = document.documentElement;
+  const menuBtn = document.getElementById('menuBtn');
+  const drawer = document.getElementById('siteDrawer');
+  const overlay = document.getElementById('drawerOverlay');
+  const closeBtn = document.getElementById('closeDrawer');
+
+  if (!menuBtn || !drawer || !overlay) return;
+
+  let lastFocus = null;
+
+  const focusableSel = [
+    'a[href]',
+    'button:not([disabled])',
+    'input:not([disabled])',
+    'select:not([disabled])',
+    'textarea:not([disabled])',
+    '[tabindex]:not([tabindex="-1"])'
+  ].join(',');
+
+  function trapFocus(event) {
+    if (event.key !== 'Tab') return;
+
+    const focusables = drawer.querySelectorAll(focusableSel);
+    if (!focusables.length) return;
+
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  function openDrawer() {
+    lastFocus = document.activeElement;
+
+    html.classList.add('has-drawer');
+    document.body.classList.add('drawer-open');
+
+    drawer.setAttribute('aria-hidden', 'false');
+    menuBtn.setAttribute('aria-expanded', 'true');
+
+    window.setTimeout(() => {
+      const firstFocusable = drawer.querySelector(focusableSel);
+      (firstFocusable || drawer).focus();
+    }, 10);
+
+    document.addEventListener('keydown', onKeydown);
+    drawer.addEventListener('keydown', trapFocus);
+  }
+
+  function closeDrawer() {
+    html.classList.remove('has-drawer');
+    document.body.classList.remove('drawer-open');
+
+    drawer.setAttribute('aria-hidden', 'true');
+    menuBtn.setAttribute('aria-expanded', 'false');
+
+    document.removeEventListener('keydown', onKeydown);
+    drawer.removeEventListener('keydown', trapFocus);
+
+    lastFocus?.focus();
+  }
+
+  function onKeydown(event) {
+    if (event.key === 'Escape') {
+      closeDrawer();
+    }
+  }
+
+  menuBtn.addEventListener('click', openDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  closeBtn?.addEventListener('click', closeDrawer);
+
+  drawer.querySelectorAll('a[href]').forEach((link) => {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  // overlay.addEventListener('click', () => {
+  // console.log('Overlay clicked');
+  // closeDrawer();
+// });
+})();
+
+// GET CURRENT WORKS
+function getCurrentWorks() {
+  const image = document.getElementById('currentWorkImg');
+  const title = document.getElementById('currentWorkTitle');
+  const year = document.getElementById('currentWorkYear');
+  const prev = document.getElementById('currentWorkPrev');
+  const next = document.getElementById('currentWorkNext');
+
+  if (!image || !title || !year || !prev || !next || !Array.isArray(window.allWorks)) {
+    return;
+  }
+
+  const latestThreeWorks = [...window.allWorks]
+    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
+    .slice(0, 3);
+
+  if (!latestThreeWorks.length) return;
+
+  let current = 0;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function renderCurrentWork(index, direction = 0) {
+    const work = latestThreeWorks[index];
+    if (!work) return;
+
+    const update = () => {
+      image.src = work.img;
+      image.alt = work.title || 'Current Dream Agent artwork';
+      title.textContent = work.title || 'Untitled';
+      year.textContent = work.year || '';
+    };
+
+    if (prefersReducedMotion || !direction) {
+      update();
+      return;
+    }
+
+    image.style.opacity = '0';
+    image.style.transform = `translateX(${direction * -16}px)`;
+
+    window.setTimeout(() => {
+      update();
+      image.style.transform = `translateX(${direction * 16}px)`;
+
+      requestAnimationFrame(() => {
+        image.style.opacity = '1';
+        image.style.transform = 'translateX(0)';
+      });
+    }, 180);
+  }
+
+  function showPrevious() {
+    current = (current - 1 + latestThreeWorks.length) % latestThreeWorks.length;
+    renderCurrentWork(current, -1);
+  }
+
+  function showNext() {
+    current = (current + 1) % latestThreeWorks.length;
+    renderCurrentWork(current, 1);
+  }
+
+  prev.addEventListener('click', showPrevious);
+  next.addEventListener('click', showNext);
+
+  document.getElementById('current-works')?.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') showPrevious();
+    if (event.key === 'ArrowRight') showNext();
+  });
+
+  renderCurrentWork(current);
+}
+
+getCurrentWorks();
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+</script>
+    
+</body>
+</html>
