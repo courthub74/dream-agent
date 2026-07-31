@@ -260,7 +260,7 @@ window.allWorks = [
     { 
       id: "prince_carl_laying",
       collection: "digital",
-      title:"Prince Carl laying in front of the Telly, denying himself to watch it", 
+      title:"Prince Carl lying in front of the Telly, denying himself to watch it", 
       year:"2025", 
       style:"Oil-style",
       featured: true,
