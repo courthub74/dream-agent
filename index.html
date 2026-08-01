@@ -203,7 +203,8 @@
     .hero_phrase { font-size: 1.5rem; text-align: center; }
     .about-link { 
       /* background:#0057B8;  */
-      background-color: rgba(255,255,255,.08);
+      background:#0056b870; 
+      /* background-color: rgba(255,255,255,.08); */
       border:rgba(255,255,255,.18);
       color: white; 
       padding: 10px 20px; 
@@ -1142,6 +1143,9 @@ font-weight: 500;
 }
 
 /* Footer */
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
 .footer {
  background:
   linear-gradient(
@@ -1151,6 +1155,9 @@ font-weight: 500;
       rgba(3, 8, 18, 0.08) 100%
   );
 }
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
 
 /* No Background on Mobile */
 @media (max-width: 640px) {
@@ -1622,35 +1629,24 @@ font-weight: 500;
           <p class="current-works-paragraph mt-4">
             These are the archive's newest transmissions.
           </p>
-          <div class="current-works-grid mt-6">
-            <!-- Current works will be dynamically inserted here -->
-             <div class="current-work-item" id="current-work-item">
 
-                <!-- <div class="current-work-image">
-                  <img src="./img/collection_works/industrial_myths/humans.webp" alt="Current Work">
-                  <p class="work-meta">
-                    <span class="work-title">Humans</span>
-                    <span class="work-year">2026</span>
-                  </p>
-                </div>
-                <div class="current-work-image">
-                  <img src="./img/collection_works/war_and_feast/coeur_of_the_grapes.webp" alt="Current Work">
-                  <p class="work-meta">
-                    <span class="work-title">Coeur of the Grapes</span>
-                    <span class="work-year">2025</span>
-                  </p>
-                </div>
-                <div class="current-work-image">
-                  <img src="./img/collection_works/signals_and_ascensions/sephardic_tango.webp" alt="Current Work">
-                  <p class="work-meta">
-                    <span class="work-title">Sephardic Tango</span>
-                    <span class="work-year">2025</span>
-                  </p>
-                </div> -->
-               
-             </div>
+          <!-- Grid for the previous 3 display -->
+          <!-- <div class="current-works-grid mt-6"> -->
+
+            <!-- Current works for the previous 3 dynamically inserted here -->
+             <!-- <div class="current-work-item" id="current-work-item"> -->
+                <!-- Dynamic Previous 3 -->
+             <!-- </div> -->
              <!-- <img src="./img/collection_works/digital_unconscious/humans.webp" alt=""> -->
-          </div>
+          <!-- </div> -->
+
+          <!-- New Carousel actually -->
+           <div class="current-work-carousel" aria-roledescription="carousel" aria-label="Current Works">
+            <!-- The Current work viewer -->
+             <figure class="current-work-viewer">
+                <img src="current-work-item"  alt="">
+             </figure>
+           </div>
         </section>
         <!-- ----------------------------------------------------------------------------------------------------- -->
         <!-- ----------------------------------------------------------------------------------------------------- -->
