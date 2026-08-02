@@ -1975,36 +1975,36 @@ font-weight: 500;
       function activeDotIndex(){ const rightMost = Math.min(index + slotsPerView - 1, cardsCache.length - 1); return rightMost; }
 
       function buildDots(){
-  if (!dotsWrap) return;
-  dotsWrap.innerHTML = '';
-  dots = [];
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      dots = [];
 
-  // Use up to 4 evenly-spaced dots across the whole range of pages.
-  const count = Math.min(Math.max(pages, 1), 4);
-  if (count <= 1) { dotsWrap.style.display = 'none'; return; }
-  dotsWrap.style.display = 'flex';
+      // Use up to 4 evenly-spaced dots across the whole range of pages.
+      const count = Math.min(Math.max(pages, 1), 4);
+      if (count <= 1) { dotsWrap.style.display = 'none'; return; }
+      dotsWrap.style.display = 'flex';
 
-  for (let i = 0; i < count; i++) {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'cc-dot';
-    b.setAttribute('aria-label', `Go to position ${i+1} of ${count}`);
+      for (let i = 0; i < count; i++) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'cc-dot';
+        b.setAttribute('aria-label', `Go to position ${i+1} of ${count}`);
 
-    // Target page: proportional position from 0 → pages-1.
-    // When count === 1 (not possible here), denom would be 0; safe because count>1.
-    const denom = (count - 1);
-    const t = denom > 0 ? i / denom : 0;              // 0, ~.33, ~.66, 1 for 4 dots
-    const targetPage = Math.round(t * (pages - 1));   // map to 0..pages-1
+        // Target page: proportional position from 0 → pages-1.
+        // When count === 1 (not possible here), denom would be 0; safe because count>1.
+        const denom = (count - 1);
+        const t = denom > 0 ? i / denom : 0;              // 0, ~.33, ~.66, 1 for 4 dots
+        const targetPage = Math.round(t * (pages - 1));   // map to 0..pages-1
 
-    b.addEventListener('click', () => {
-      goToIndex(targetPage, true);
-    });
+        b.addEventListener('click', () => {
+          goToIndex(targetPage, true);
+        });
 
-    dotsWrap.appendChild(b);
-    dots.push(b);
-  }
-  updateDots();
-}
+        dotsWrap.appendChild(b);
+        dots.push(b);
+      }
+      updateDots();
+    }
 
   function updateDots(){
     if (!dotsWrap || !dots.length) return;
@@ -2208,7 +2208,7 @@ font-weight: 500;
 // });
 })();
 
-// GET CURRENT WORKS
+// GET CURRENT WORKS MY VERSION
 function getCurrentWorks() {
   // retrieve the whole grid
   const currentWorksGrid = document.querySelector('.current-works-grid');
