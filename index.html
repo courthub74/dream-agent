@@ -239,11 +239,14 @@
   }
   .about-link:hover {
     transform: translateY(-1px);
+    /* More Electric Box Hover */
     box-shadow:
       0 8px 20px rgba(0,0,0,.24),
       0 0 0 1px rgba(255,255,255,.18),
       0 0 18px rgba(0,87,184,.62),
       0 0 32px rgba(0,87,184,.35);
+
+      /* Whiter Box Hover */
       /* box-shadow:
         0 0 12px rgba(255,255,255,.30),
         0 0 28px rgba(125,190,255,.28),
@@ -1650,8 +1653,26 @@ font-weight: 500;
            <div class="current-work-carousel" aria-roledescription="carousel" aria-label="Current Works">
             <!-- The Current work viewer -->
              <figure class="current-work-viewer">
-                <img src="current-work-item"  alt="">
+                <img id="current-work-item" src="" alt="">
+
+                <!-- Each Current Work Button -->
+                 <button id="currentWorkPrev"
+                         class="current-work-button current-work-prev"
+                         aria-label="Previous current work"
+                         type="button">
+                </button> 
+
+                <button id="currentWorkNext"
+                         class="current-work-button current-work-next"
+                         aria-label="Next current work"
+                         type="button">
+                </button>
              </figure>
+
+             <p class="work-meta" aria-live="polite">
+                <span id="currentWorkTitle" class="work-title"></span>
+                <span id="currentWorkYear" class="work-year"></span>
+             </p>
            </div>
         </section>
         <!-- ----------------------------------------------------------------------------------------------------- -->
