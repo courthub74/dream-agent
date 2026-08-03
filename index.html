@@ -2210,57 +2210,89 @@ font-weight: 500;
 
 // GET CURRENT WORKS MY VERSION
 function getCurrentWorks() {
-  // retrieve the whole grid
-  const currentWorksGrid = document.querySelector('.current-works-grid');
-  // retrieve each image in the div to place the artwork there
-  const images = document.querySelectorAll('.current-work-image');
-  
-  // Gather all dates from the window.allWorks array into one flat array
-  // let allDates = window.allWorks.map(work => work.dateCreated);
-  // Map through all the works
-  let allWorks = window.allWorks.map(work => work);
-  // append the full property of the 'allWorks' object.
-  // just the image, title and the date year
+  // First retrieve the Image - Title - Year - Prev - Next for the carousel
+  const  image = document.getElementById("current-work-item");
+  const  title = document.getElementById("currentWorkTitle");
+  const  year = document.getElementById("currentWorkYear");
+  const  prevBtn = document.getElementById("currentWorkPrev");
+  const  nextBtn = document.getElementById("currentWorkNext");
 
-  // Test Print
-  console.log(allWorks);
+  // If any of these elements are missing, return early
+  if (!image || !title || !year || !prevBtn || !nextBtn) {
+    console.error("One or more required elements for current works carousel are missing.");
+    return null;
+  }
 
-  // Sort by date
-  let latestThreeWorks = [...allWorks]
-    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
-    .slice(0, 3);
+  // Sort the latest 3 works 
+  const latestThreeWorks = [...window.allWorks] 
+    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated)) // Sort by date descending
+    .slice(0, 3); // Get the latest 3 works
 
-  // Test Print
-  console.log('The 3 most recent dates across all works:', latestThreeWorks);
+  // If there are no works, return early
+  if(!latestThreeWorks.length) return;
 
-  // NOW create the Elements with the sorted artWorks in the DOM
-  // I'm gonna use a markup template string
-  const currentWorkImages = `
-    <div class="current-work-image">
-      <img src="${latestThreeWorks[0].img}" alt=${latestThreeWorks[0].title}>
-      <p class="work-meta">
-        <span class="work-title">${latestThreeWorks[0].title}</span>
-        <span class="work-year">${latestThreeWorks[0].year}</span>
-      </p>
-    </div>
-    <div class="current-work-image">
-      <img src="${latestThreeWorks[1].img}" alt=${latestThreeWorks[1].title}>
-      <p class="work-meta">
-        <span class="work-title">${latestThreeWorks[1].title}</span>
-        <span class="work-year">${latestThreeWorks[1].year}</span>
-      </p>
-    </div>
-    <div class="current-work-image">
-      <img src="${latestThreeWorks[2].img}" alt=${latestThreeWorks[2].title}>
-      <p class="work-meta">
-        <span class="work-title">${latestThreeWorks[2].title}</span>
-        <span class="work-year">${latestThreeWorks[2].year}</span>
-      </p>
-    </div>
-  `;
+  // set current iteration to zero
+  let current = 0;
+  // for accessibility
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // NOW set the template inside the proper parent
-  document.getElementById('current-work-item').innerHTML = currentWorkImages;
+  // Render Current work function
+  function renderCurrentWork(index, direction = 0) {
+    const work = latestThreeWorks[index];
+    if (!work) return;
+
+    // Update the image, title, and year
+    const update = () => {
+      image.src = work.img;
+      image.alt = work.title || 'Current Dream Agent artwork';
+      title.textContent = work.title || 'Untitled';
+      year.textContent = work.year || '';
+    };
+
+    // If reduced motion is preferred or no direction is provided, update immediately
+    if (prefersReducedMotion || !direction) {
+      update();
+      return;
+    }
+
+    // about-links fade out the current image before updating
+    image.style.opacity = 0;
+    image.style.transform = `translateX(${direction * -16}px)`;
+
+    // Use a timeout to allow the fade-out to complete before updating the content
+    window.setTimeout(() => {
+      update();
+      image.style.transform = `translateX(${direction * 16}px)`;
+
+      requestAnimationFrame(() => {
+        image.style.opacity = '1';
+        image.style.transform = 'translateX(0)';
+      });
+    }, 180);
+  }
+
+  // Show Previous Work
+  function showPrevious() {
+    current = (current - 1 + latestThreeWorks.length) % latestThreeWorks.length;
+    renderCurrentWork(current, -1);
+  }
+
+  // Show Next Work
+  function showNext() {
+    current = (current + 1) % latestThreeWorks.length;
+    renderCurrentWork(current, 1);
+  }
+
+  // Attach event listeners to the buttons
+  prevBtn.addEventListener('click', showPrevious);
+  nextBtn.addEventListener('click', showNext);
+
+  document.getElementById("current-works")?.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') showPrevious();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+  renderCurrentWork(current); // Initial render
 }
 // Test Print the Function Call
 console.log(getCurrentWorks());
