@@ -1151,6 +1151,116 @@ font-weight: 500;
   opacity: 1;
 }
 
+/* Current Works Carousel Styling */
+.current-work-carousel {
+  margin-top: 1.5rem;
+}
+
+.current-work-viewer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+#current-work-item {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 46vw, 520px);
+  object-fit: contain;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.current-work-button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(0, 0, 0, 0.42);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  color: rgba(255,255,255,.95);
+  font-size: 1.8rem;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.current-work-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.current-work-button:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+.current-work-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 3px;
+}
+
+.current-work-prev {
+  left: 0.75rem;
+}
+
+.current-work-next {
+  right: 0.75rem;
+}
+
+.current-work-carousel .work-meta {
+  margin-top: 0.9rem;
+}
+
+/* Desktop (Its Centered) */
+@media (min-width: 1025px) {
+  .current-work-carousel {
+    max-width: 64rem;
+    margin-inline: auto;
+  }
+
+  .current-work-viewer {
+    max-width: 70rem;
+    margin-inline: auto;
+  }
+
+  #current-work-item {
+    max-height: 520px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .current-work-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .current-work-prev {
+    left: 0.5rem;
+  }
+
+  .current-work-next {
+    right: 0.5rem;
+  }
+}
+
 /* Footer */
 /* $$$$$###################################################################################### */
 /* $$$$$###################################################################################### */
@@ -1650,23 +1760,25 @@ font-weight: 500;
           <!-- </div> -->
 
           <!-- New Carousel actually -->
-           <div class="current-work-carousel" aria-roledescription="carousel" aria-label="Current Works">
+           <div class="current-work-carousel" tabindex="0" aria-roledescription="carousel" aria-label="Current Works">
             <!-- The Current work viewer -->
              <figure class="current-work-viewer">
                 <img id="current-work-item" src="" alt="">
 
                 <!-- Each Current Work Button -->
                  <button id="currentWorkPrev"
-                         class="current-work-button current-work-prev"
-                         aria-label="Previous current work"
-                         type="button">
-                </button> 
+                    class="current-work-button current-work-prev"
+                    aria-label="Previous current work"
+                    type="button">
+                      ‹
+                  </button>
 
-                <button id="currentWorkNext"
-                         class="current-work-button current-work-next"
-                         aria-label="Next current work"
-                         type="button">
-                </button>
+                    <button id="currentWorkNext"
+                            class="current-work-button current-work-next"
+                            aria-label="Next current work"
+                            type="button">
+                      ›
+                    </button>
              </figure>
 
              <p class="work-meta" aria-live="polite">
