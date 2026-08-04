@@ -316,21 +316,41 @@
       font-family: 'Playfair Display', serif;
       font-size: clamp(0.92rem, 1.44vw, 1.08rem);
       line-height: 1.5;
+      margin-bottom: 5rem;
       margin-bottom: 3rem;
     }
   
-
+    /* Mobile tweaks */
     @media (max-width: 480px) {
       .mobile_about_paragraph {
         font-size: clamp(0.92rem, 3.68vw, 1.24rem);
         line-height: 1.5;
       }
+
+      .mobile_about_tagline {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(0.92rem, 1.44vw, 1.08rem);
+        line-height: 1.5;
+        margin-bottom: 5rem;
+        /* margin-bottom: 1.25rem; */
+      }
     }
+
+    /* Desktop tweaks for Collections header */
+    @media (min-width: 1025px) {
+    .system-header {
+      transform: translateY(-6px);
+    }
+    #collections .cc-controls {
+      top: var(--cc-offset);
+      --cc-offset: -1.25rem;
+    }
+}
 
 
     /* COLLECTIONS */
     #collections { max-width: var(--content-max); margin-inline: auto; padding-inline: var(--content-pad); }
-    .collections-title { margin: .25rem 0 0.5rem; font-size: 1.3rem; }
+    .collections-title { margin: 0 0 1rem; font-size: 1.3rem; }
 
     /* Card base */
     #collections a.group { position: relative; display: block; border-radius: 16px; overflow: hidden; background: rgba(255,255,255,.05); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,.10); transition: transform .15s ease, box-shadow .2s ease; height: 360px; }
@@ -1910,7 +1930,7 @@ font-weight: 500;
         <div id="mobile-about-divider" class="w-40 sm:w-56 h-[2px] bg-white/30 mx-auto my-6 sm:my-10 lg:my-12 rounded-full shadow-[0_0_8px_rgba(255,255,255,0.4)] opacity-0 scale-x-0 transition-transform duration-700 ease-out"></div>
 
         <!-- COLLECTIONS -->
-        <section id="collections" class="mx-auto pt-10 pb-0 space-y-8">
+        <section id="collections" class="mx-auto pt-10 pb-0">
           <h2 class="collections-title system-header">Collections</h2>
           <div class="cc-track">
 
