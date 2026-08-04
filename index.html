@@ -1293,6 +1293,8 @@ font-weight: 500;
   margin-top: 0.9rem;
 }
 
+
+
 /* Desktop (Its Centered) */
 @media (min-width: 1025px) {
   .current-work-carousel {
@@ -1307,6 +1309,23 @@ font-weight: 500;
 
   #current-work-item {
     max-height: 520px;
+  }
+
+  /* Work Meta Styles */
+  .current-work-display {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+  .work-meta {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 1.5rem;
+  }
+
+  .work-year {
+    opacity: .65;
   }
 }
 
@@ -1342,20 +1361,22 @@ font-weight: 500;
 .footer {
   width: 100%;
   padding: 2.25rem 0 2.75rem;
-  /* box-shadow: inset 0 1px 0 rgba(255,255,255,.05); */
+ 
     box-shadow: none;
   border-top: none;
-
-  /* background:
+  
+   background:
     linear-gradient(
       to bottom,
-      rgba(0, 87, 184, 0.28) 0%,
-      rgba(0, 87, 184, 0.40) 35%,
-      rgba(0, 87, 184, 0.52) 100%
+      rgba(0, 92, 194, .30),
+      rgba(0, 82, 170, .48)
     ),
     url('/img/background_imgs/even_larger_about_background.png')
-      center/cover no-repeat; */
-   background:
+      center top / cover no-repeat;
+}
+
+.footer {
+  background:
     linear-gradient(
       to bottom,
       rgba(0, 92, 194, .30),
@@ -1866,7 +1887,6 @@ font-weight: 500;
            <div class="current-work-carousel" tabindex="0" aria-roledescription="carousel" aria-label="Current Works">
             <!-- The Current work viewer -->
              <figure class="current-work-viewer">
-                <img id="current-work-item" src="" alt="">
 
                 <!-- Each Current Work Button -->
                  <button
@@ -1891,10 +1911,16 @@ font-weight: 500;
                     </svg>
                   </button>
 
-                   <p class="work-meta" aria-live="polite">
-                      <span id="currentWorkTitle" class="work-title"></span>
-                      <span id="currentWorkYear" class="work-year"></span>
-                  </p>
+                    <div class="current-work-display">
+                        <!-- Current Work Image -->
+                        <img id="current-work-item" src="" alt="">
+
+                        <figcaption class="work-meta" aria-live="polite">
+                            <span id="currentWorkTitle" class="work-title"></span>
+                            <span id="currentWorkYear" class="work-year"></span>
+                        </figcaption>
+                    </div>
+                    
              </figure>
 
              <!-- <p class="work-meta" aria-live="polite">
