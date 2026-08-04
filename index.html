@@ -1501,6 +1501,76 @@ font-weight: 500;
   object-fit: contain;
 }
 
+/* 3 Desktop Works */
+.current-works-desktop {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .current-works-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .current-work-carousel {
+    display: none;
+  }
+}
+
+/* Styling the Desktop Card */
+.current-work-card {
+  min-width: 0;
+  padding: 1rem;
+
+  background: rgba(0, 28, 65, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.current-work-card-image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.current-work-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.current-work-card .work-meta {
+  width: 100%;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.current-work-card .work-title {
+  min-width: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.current-work-card .work-year {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
   </style>
 </head>
@@ -1974,7 +2044,14 @@ font-weight: 500;
              <!-- <img src="./img/collection_works/digital_unconscious/humans.webp" alt=""> -->
           <!-- </div> -->
 
-          <!-- New Carousel actually -->
+          <!-- DESKTOP: latest three works -->
+          <div
+            id="currentWorksDesktop"
+            class="current-works-desktop"
+            aria-label="Three newest current works">
+          </div>
+
+          <!-- MOBILE latest 3 Carousel  -->
            <div class="current-work-carousel" tabindex="0" aria-roledescription="carousel" aria-label="Current Works">
             <!-- The Current work viewer -->
              <figure class="current-work-viewer">
@@ -2567,6 +2644,27 @@ function getCurrentWorks() {
   const latestThreeWorks = [...window.allWorks] 
     .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated)) // Sort by date descending
     .slice(0, 3); // Get the latest 3 works
+
+  // For Desktop 3 works display
+  const desktopContainer = document.getElementById('currentWorksDesktop');
+
+  if (desktopContainer) {
+    desktopContainer.innerHTML = latestThreeWorks.map((work) => `
+      <figure class="current-work-card">
+        <div class="current-work-card-image-wrap">
+          <img
+            src="${work.img}"
+            alt="${work.title || 'Current Dream Agent artwork'}"
+            loading="lazy">
+        </div>
+
+        <figcaption class="work-meta">
+          <span class="work-title">${work.title || 'Untitled'}</span>
+          <span class="work-year">${work.year || ''}</span>
+        </figcaption>
+      </figure>
+    `).join('');
+}
 
   // If there are no works, return early
   if(!latestThreeWorks.length) return;
