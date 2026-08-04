@@ -158,7 +158,11 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(rgba(0, 86, 184, 0.375), rgba(0, 86, 184, 0.512)), url('./img/largest_about_background.png');
+      background-image: linear-gradient(
+        rgba(0, 86, 184, 0.375), 
+        rgba(0, 86, 184, 0.512)
+        ), 
+        url('./img/largest_about_background.png');
       /* background-color: #0057B8; */
       background-position: center; 
       background-repeat: repeat; 
@@ -191,7 +195,7 @@
     }
 
    
-
+    /* Main Background */
     main { flex: 1 0 auto;  background:
       linear-gradient(rgba(0, 87, 184, 0.5), rgba(0, 87, 184, 0.4)),
       url('/img/background_imgs/even_larger_about_background.png') center/cover no-repeat;
@@ -1030,7 +1034,7 @@
 }
 
 #current-works {
-  padding: 1rem 0 5rem;
+  padding: 1rem 0 3rem;
 }
 
 @media (max-width: 640px) {
@@ -1156,14 +1160,47 @@ font-weight: 500;
   margin-top: 1.5rem;
 }
 
-.current-work-viewer {
+/* .current-work-viewer {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.22);
+} */
+
+.current-work-viewer {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.5rem 3rem 1.25rem;
+
+  background: rgba(0, 28, 65, .28);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 12px 30px rgba(0,0,0,.10);
 }
 
-#current-work-item {
+.current-work-image {
+    width: 100%;
+    max-width: 660px;   /* your current size */
+    height: auto;
+
+    display: block;
+}
+
+/* .current-work-viewer {
+    width: 100%;
+    padding: 3rem 5rem;
+} */
+
+/* #current-work-item {
   display: block;
   width: 100%;
   height: clamp(280px, 46vw, 520px);
@@ -1171,43 +1208,70 @@ font-weight: 500;
   transition:
     opacity 180ms ease,
     transform 180ms ease;
+} */
+
+#current-work-item {
+  display: block;
+  width: auto;
+  max-width: 660px;
+  max-height: 520px;
+  object-fit: contain;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.current-work-button svg {
+  width: 22px;
+  height: 22px;
+  stroke: #EAF2FF;
+  stroke-width: 2.25;
+  fill: none;
 }
 
 .current-work-button {
   position: absolute;
   top: 50%;
   z-index: 2;
-  width: 44px;
-  height: 44px;
+
+  width: 48px;
+  height: 48px;
+
   display: grid;
   place-items: center;
+
   transform: translateY(-50%);
+
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(0, 0, 0, 0.42);
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.75rem;
-  line-height: 1;
   cursor: pointer;
+
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.28);
   backdrop-filter: blur(8px);
-  color: rgba(255,255,255,.95);
-  font-size: 1.8rem;
-  font-family: Arial, sans-serif;
-  line-height: 1;
-  font-weight: 400;
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,.28),
+    inset 0 0 0 1px rgba(255,255,255,.08);
+
   transition:
-    background-color 180ms ease,
-    border-color 180ms ease,
-    transform 180ms ease;
+    transform .15s ease,
+    background-color .15s ease,
+    box-shadow .2s ease,
+    opacity .2s ease;
 }
 
 .current-work-button:hover {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255,255,255,.20);
+
+  transform: translateY(-50%) translateY(-1px);
+
+  box-shadow:
+    0 14px 32px rgba(0,0,0,.32),
+    inset 0 0 0 1px rgba(255,255,255,.12);
 }
 
 .current-work-button:active {
-  transform: translateY(-50%) scale(0.96);
+  transform: translateY(-50%) scale(.98);
 }
 
 .current-work-button:focus-visible {
@@ -1266,14 +1330,37 @@ font-weight: 500;
 /* $$$$$###################################################################################### */
 /* $$$$$###################################################################################### */
 .footer {
- background:
-  linear-gradient(
+  width: 100%;
+  padding: 2.25rem 0 2.75rem;
+  /* box-shadow: inset 0 1px 0 rgba(255,255,255,.05); */
+    box-shadow: none;
+  border-top: none;
+
+  /* background:
+    linear-gradient(
       to bottom,
-      rgba(3, 8, 18, 0.35) 0%,
-      rgba(3, 8, 18, 0.18) 40%,
-      rgba(3, 8, 18, 0.08) 100%
-  );
+      rgba(0, 87, 184, 0.28) 0%,
+      rgba(0, 87, 184, 0.40) 35%,
+      rgba(0, 87, 184, 0.52) 100%
+    ),
+    url('/img/background_imgs/even_larger_about_background.png')
+      center/cover no-repeat; */
+   background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 92, 194, .30),
+      rgba(0, 82, 170, .48)
+    ),
+    url('/img/background_imgs/even_larger_about_background.png')
+      center top / cover no-repeat;
 }
+
+.footer-inner {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--content-pad);
+}
+
 /* $$$$$###################################################################################### */
 /* $$$$$###################################################################################### */
 /* $$$$$###################################################################################### */
@@ -1284,7 +1371,13 @@ font-weight: 500;
     background: none;
   }
 }
-
+/* Top margin for mobile */
+@media (max-width: 640px) {
+  .footer {
+    margin-top: 2rem;
+    padding: 2rem 0;
+  }
+}
 
 
   </style>
@@ -1766,80 +1859,45 @@ font-weight: 500;
                 <img id="current-work-item" src="" alt="">
 
                 <!-- Each Current Work Button -->
-                 <button id="currentWorkPrev"
+                 <button
+                    id="currentWorkPrev"
                     class="current-work-button current-work-prev"
                     aria-label="Previous current work"
-                    type="button">
-                      ‹
+                    type="button"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15 5 L8 12 L15 19"></path>
+                    </svg>
                   </button>
 
-                    <button id="currentWorkNext"
-                            class="current-work-button current-work-next"
-                            aria-label="Next current work"
-                            type="button">
-                      ›
-                    </button>
+                  <button
+                    id="currentWorkNext"
+                    class="current-work-button current-work-next"
+                    aria-label="Next current work"
+                    type="button"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M9 5 L16 12 L9 19"></path>
+                    </svg>
+                  </button>
+
+                   <p class="work-meta" aria-live="polite">
+                      <span id="currentWorkTitle" class="work-title"></span>
+                      <span id="currentWorkYear" class="work-year"></span>
+                  </p>
              </figure>
 
-             <p class="work-meta" aria-live="polite">
+             <!-- <p class="work-meta" aria-live="polite">
                 <span id="currentWorkTitle" class="work-title"></span>
                 <span id="currentWorkYear" class="work-year"></span>
-             </p>
+             </p> -->
            </div>
         </section>
         <!-- ----------------------------------------------------------------------------------------------------- -->
         <!-- ----------------------------------------------------------------------------------------------------- -->
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
-  <!-- New Footer -->
-  <div class="about-network-layer footer">
-  <!-- <div class="about-network-divider"></div> -->
-
-    <div class="about-network-content">
-    <div class="slogan_logo">
-      <img src="img/icons/artist/dream_agent_logo_blue.png" alt="Dream Agent" class="footer-icon" width="50" height="50">
-      <div class="slogan-meta">
-        <p class="text-white/80 text-sm font-bold footer_slogan">No face. No fame. Just the vision.</p>
-        <!-- <div class="powered-by">
-          <img src="img/icons/developer/courdevelops.svg"
-               alt="CourDevelops — AI-integrated web development studio"
-               class="w-5 h-5 opacity-60"
-               width="20" height="20">
-          <p class="m-0">Powered by 
-            <a href="https://courdevelops.com" target="_blank" rel="noopener">CourDevelops</a>
-          </p>
-        </div> -->
-      </div>
-    </div>
-
-    <div class="footer-icons flex items-center gap-3">
-      <a target="_blank" href="https://x.com/dream_agent7" aria-label="Twitter" class="icon-wrap" data-pulse title="Twitter">
-        <img src="img/icons/socials/new_socials/twitter.png" alt="twitter" class="footer-icon">
-      </a>
-      <a target="_blank" href="https://www.instagram.com/dream.agent7/" aria-label="Instagram" class="icon-wrap" data-pulse title="Instagram">
-        <img src="img/icons/socials/new_socials/instagram.png" alt="instagram" class="footer-icon">
-      </a>
-      <a target="_blank" href="https://bsky.app/profile/dreamagent7.bsky.social" aria-label="Bluesky" class="icon-wrap" data-pulse title="Bluesky">
-        <img src="img/icons/socials/new_socials/bluesky.png" alt="bluesky" class="footer-icon">
-      </a>
-      <a target="_blank" href="https://www.tiktok.com/@dream_agent7" aria-label="TikTok" class="icon-wrap" data-pulse title="TikTok">
-        <img src="img/icons/socials/new_socials/tiktok.png" alt="tik_tok" class="footer-icon">
-      </a>
-    </div>
-
-    <div class="about-network-meta">
-      <p>© <span id="about-copyright-year"></span> Dream Agent. All rights reserved.</p>
-      <div class="flex items-center gap-2 justify-center">
-        <img src="img/icons/developer/courdevelops.svg"
-                  alt="CourDevelops — AI-integrated web development studio"
-                  class="w-5 h-5 opacity-60"
-                  width="20" height="20">
-        <p>Powered by 
-          <a href="https://courdevelops.com" target="_blank" rel="noopener">CourDevelops</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+     
       </div>
     </section>
 
@@ -1900,6 +1958,48 @@ font-weight: 500;
     </div>
   </footer>
   </main>
+
+   <!-- New Footer -->
+      <div class="footer">
+        <!--Footer Inner -->
+          <div class="footer-inner">
+              <div class="about-network-content">
+          <div class="slogan_logo">
+            <img src="img/icons/artist/dream_agent_logo_blue.png" alt="Dream Agent" class="footer-icon" width="50" height="50">
+            <div class="slogan-meta">
+              <p class="text-white/80 text-sm font-bold footer_slogan">No face. No fame. Just the vision.</p>
+            </div>
+          </div>
+
+          <div class="footer-icons flex items-center gap-3">
+            <a target="_blank" href="https://x.com/dream_agent7" aria-label="Twitter" class="icon-wrap" data-pulse title="Twitter">
+              <img src="img/icons/socials/new_socials/twitter.png" alt="twitter" class="footer-icon">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/dream.agent7/" aria-label="Instagram" class="icon-wrap" data-pulse title="Instagram">
+              <img src="img/icons/socials/new_socials/instagram.png" alt="instagram" class="footer-icon">
+            </a>
+            <a target="_blank" href="https://bsky.app/profile/dreamagent7.bsky.social" aria-label="Bluesky" class="icon-wrap" data-pulse title="Bluesky">
+              <img src="img/icons/socials/new_socials/bluesky.png" alt="bluesky" class="footer-icon">
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/@dream_agent7" aria-label="TikTok" class="icon-wrap" data-pulse title="TikTok">
+              <img src="img/icons/socials/new_socials/tiktok.png" alt="tik_tok" class="footer-icon">
+            </a>
+          </div>
+
+          <div class="about-network-meta">
+            <p>© <span id="about-copyright-year"></span> Dream Agent. All rights reserved.</p>
+            <div class="flex items-center gap-2 justify-center">
+              <img src="img/icons/developer/courdevelops.svg"
+                        alt="CourDevelops — AI-integrated web development studio"
+                        class="w-5 h-5 opacity-60"
+                        width="20" height="20">
+              <p>Powered by 
+                <a href="https://courdevelops.com" target="_blank" rel="noopener">CourDevelops</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   
 
@@ -2157,6 +2257,7 @@ font-weight: 500;
   viewport = document.createElement('div'); viewport.className = 'cc-viewport'; viewport.tabIndex = 0;
   track    = document.createElement('div'); track.className = 'cc-track';
 
+  // Create controls (prev/next buttons)
   const controls = document.createElement('div'); controls.className = 'cc-controls';
   const mk = (cls, label, path) => {
     const b = document.createElement('button');
