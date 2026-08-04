@@ -1465,8 +1465,18 @@ font-weight: 500;
 /* Top margin for mobile */
 @media (max-width: 640px) {
   .footer {
-    /* margin-top: 2rem; */
-    padding: 2rem 0;
+    background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 92, 194, .30),
+      rgba(0, 82, 170, .48)
+    ),
+    url('/img/background_imgs/even_larger_about_background.png')
+      center top / cover no-repeat;
+  }
+
+  .footer-icons {
+    margin-top: 1.25rem;
   }
 }
 
@@ -2019,7 +2029,7 @@ font-weight: 500;
     </section>
 
     
-    <!-- FOOTER -->
+    <!-- FOOTER FOR MOBILE-->
     <footer class="mt-0 footer">
      <div class="max-w-6xl mx-auto px-4 py-4 sm:pt-12 rounded-xl">
       <!-- tailwind spacing -->
@@ -2076,7 +2086,7 @@ font-weight: 500;
   </footer>
   </main>
 
-   <!-- New Footer -->
+   <!-- New Footer DESKTOP -->
       <div class="footer new-footer">
         <!--Footer Inner -->
           <div class="footer-inner">
