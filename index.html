@@ -24,6 +24,8 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+  <!-- Import Artworks.js -->
+   <script src="./js/artworks.js"></script>
   <style>
     :root {
       --ink-100: rgba(255,255,255,1);
@@ -156,7 +158,11 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(rgba(0, 86, 184, 0.375), rgba(0, 86, 184, 0.512)), url('./img/largest_about_background.png');
+      background-image: linear-gradient(
+        rgba(0, 86, 184, 0.375), 
+        rgba(0, 86, 184, 0.512)
+        ), 
+        url('./img/largest_about_background.png');
       /* background-color: #0057B8; */
       background-position: center; 
       background-repeat: repeat; 
@@ -189,7 +195,7 @@
     }
 
    
-
+    /* Main Background */
     main { flex: 1 0 auto;  background:
       linear-gradient(rgba(0, 87, 184, 0.5), rgba(0, 87, 184, 0.4)),
       url('/img/background_imgs/even_larger_about_background.png') center/cover no-repeat;
@@ -199,7 +205,61 @@
     .mobile_hero { height: 100vh; background: center/cover no-repeat url('img/background_imgs/plain_background_bigger.png'); }
     .mobile_hero_container { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6rem; height: 100%; }
     .hero_phrase { font-size: 1.5rem; text-align: center; }
-    .about-link { background:#0057B8; color: white; padding: 10px 20px; border-radius: 6px; font-size: 1rem; text-decoration: none; transition: background-color .3s ease, transform .3s ease; }
+
+    /* Enter the Realm Button */
+    .about-link { 
+      /* background:#0057B8;  */
+      background:#0056b88a; 
+      border:rgba(255,255,255,.18);
+      color: white; 
+      padding: 10px 20px; 
+      /* border-radius: 6px; */
+      font-weight: 500;
+      letter-spacing: .01em;
+      border-radius: 999px;
+      font-size: .90rem; 
+      text-decoration: none; 
+      /* text-transform: uppercase; */
+      transition: background-color .3s ease, transform .3s ease; 
+    }
+     /* Glowing Enter the Realm Button */
+    .about-link {
+      position: relative;
+      isolation: isolate;                 /* keeps glow behind the button */
+      box-shadow: 0 2px 10px rgba(0,0,0,.18);
+    }
+  .about-link::after {
+    content: "";
+    position: absolute;
+    inset: -6px;                        /* glow spread */
+    border-radius: inherit;
+    background: radial-gradient(120% 120% at 50% 50%,
+                rgba(0, 87, 184, .55), rgba(0, 87, 184, 0) 60%);
+    /* background: #0057B8; */
+    filter: blur(14px);
+    opacity: 0;
+    transition: opacity .2s ease;
+    z-index: -1;                        /* glow behind */
+  }
+  .about-link:hover {
+    transform: translateY(-1px);
+    /* More Electric Box Hover */
+    box-shadow:
+      0 8px 20px rgba(0,0,0,.24),
+      0 0 0 1px rgba(255,255,255,.18),
+      0 0 18px rgba(0,87,184,.62),
+      0 0 32px rgba(0,87,184,.35);
+
+      /* Whiter Box Hover */
+      /* box-shadow:
+        0 0 12px rgba(255,255,255,.30),
+        0 0 28px rgba(125,190,255,.28),
+        0 0 48px rgba(0,87,184,.22); */
+  }
+  .about-link:hover::after { opacity: 1; }
+  .about-link:active { transform: translateY(0); }
+  .about-link:focus-visible { outline: 2px solid rgba(255,255,255,.65); outline-offset: 3px; }
+
 
     /* ABOUT SECTION*/
     section.mobile_about {
@@ -210,7 +270,7 @@
         url('./img/largest_about_background.png') center/100% 100% no-repeat; */
       min-height: 55vh;
       min-height: auto;
-      padding-top: 1rem;
+      padding-top: 2rem;
     
       display: flex;
       flex-direction: column;
@@ -230,32 +290,67 @@
       section.mobile_about { min-height: 60vh !important; }
     }
 
-    .mobile_about_container { max-width: var(--content-max); margin-inline: auto; padding-inline: var(--content-pad); }
+    /* ABOUT SECTION */
+    .mobile_about_container { 
+      max-width: var(--content-max); 
+      margin-inline: auto; 
+      padding-inline: var(--content-pad); 
+      padding-top: 1rem;
+      /* background: rgba(255,255,255,.05); */
+    }
     .mobile_about_header { text-align: left; font-size: 1.5rem; font-weight: 700; padding-left: .25rem; margin-top: 1rem; }
     /* .mobile_about_paragraph { max-width: 760px; font-family: 'Playfair Display', serif; line-height: 1.55; margin: 1rem 0 2rem; font-weight: 400;  background: rgba(255,255,255,.05); padding: 1.25rem; border-radius: 12px; border: 1px solid rgba(255,255,255,.10); font-size: clamp(1rem, 3.5vw, 1.3rem); } */
-    .mobile_about_paragraph { max-width: 760px; font-family: 'Playfair Display', serif; line-height: 1.55; margin: 1rem 0 2rem; font-weight: 400; font-size: clamp(1rem, 2.5vw, 1.2rem); }
-    .mobile_about_paragraph, .mobile_about_paragraph b { font-family: 'Playfair Display', serif; }
+
+    /* .mobile_about_paragraph { max-width: 650px; font-family: 'Playfair Display', serif; line-height: 1.85; margin: 1rem 0 2rem; font-weight: 400; font-size: clamp(1rem, 2.5vw, 1.2rem); } */
     .mobile_about_paragraph {
-      margin-top: 1.5rem;
+      max-width: 44rem;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(0.92rem, 1.44vw, 1.08rem);
+      line-height: 1.65;
+      margin: 1.5rem 0 2.25rem;
+    }
+    .mobile_about_paragraph, .mobile_about_paragraph b { font-family: 'Playfair Display', serif; }
+
+    /* About tagline */
+    .mobile_about_tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(0.92rem, 1.44vw, 1.08rem);
+      line-height: 1.5;
+      margin-bottom: 5rem;
       margin-bottom: 3rem;
-    } 
-
-    /* .mobile_about_paragraph {
-      font-size: clamp(1rem, 3.5vw, 1.3rem);
-      line-height: 1.55;
-    } */
-
+    }
+  
+    /* Mobile tweaks */
     @media (max-width: 480px) {
       .mobile_about_paragraph {
-        font-size: clamp(1.15rem, 4.6vw, 1.55rem);
+        font-size: clamp(0.92rem, 3.68vw, 1.24rem);
         line-height: 1.5;
       }
+
+      .mobile_about_tagline {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(0.92rem, 1.44vw, 1.08rem);
+        line-height: 1.5;
+        margin-bottom: 5rem;
+        /* margin-bottom: 1.25rem; */
+      }
     }
+
+    /* Desktop tweaks for Collections header */
+    @media (min-width: 1025px) {
+    .system-header {
+      transform: translateY(-6px);
+    }
+    #collections .cc-controls {
+      top: var(--cc-offset);
+      --cc-offset: -1.25rem;
+    }
+}
 
 
     /* COLLECTIONS */
     #collections { max-width: var(--content-max); margin-inline: auto; padding-inline: var(--content-pad); }
-    .collections-title { margin: .25rem 0 0.5rem; font-size: 1.3rem; }
+    .collections-title { margin: 0 0 1rem; font-size: 1.3rem; }
 
     /* Card base */
     #collections a.group { position: relative; display: block; border-radius: 16px; overflow: hidden; background: rgba(255,255,255,.05); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,.10); transition: transform .15s ease, box-shadow .2s ease; height: 360px; }
@@ -482,37 +577,7 @@
     .fade-in { opacity: 0; transform: translateY(10px); transition: opacity .8s ease, transform .8s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
 
-    /* Glowing Enter the Realm Button */
-    .about-link {
-    position: relative;
-    isolation: isolate;                 /* keeps glow behind the button */
-    box-shadow: 0 2px 10px rgba(0,0,0,.18);
-  }
-  .about-link::after {
-    content: "";
-    position: absolute;
-    inset: -6px;                        /* glow spread */
-    border-radius: inherit;
-    background: radial-gradient(120% 120% at 50% 50%,
-                rgba(0, 87, 184, .55), rgba(0, 87, 184, 0) 60%);
-    /* background: #0057B8; */
-    filter: blur(14px);
-    opacity: 0;
-    transition: opacity .2s ease;
-    z-index: -1;                        /* glow behind */
-  }
-  .about-link:hover {
-    transform: translateY(-1px);
-    box-shadow:
-      0 10px 26px rgba(0,0,0,.28),
-      0 0 0 1px rgba(255,255,255,.20),
-      0 0 24px rgba(0,87,184,.75),
-      0 0 48px rgba(0,87,184,.45);
-  }
-  .about-link:hover::after { opacity: 1; }
-  .about-link:active { transform: translateY(0); }
-  .about-link:focus-visible { outline: 2px solid rgba(255,255,255,.65); outline-offset: 3px; }
-
+   
   /* Dots Opacity */
   /* Carousel dots: 60% opacity + white glow */
   :root {
@@ -735,17 +800,20 @@
   }
 
 
+  /* System Header */
   .system-header{
     display:inline-flex;
     align-items:center;
 
-    padding: .65rem 1.2rem;
+    /* padding: .65rem 1.2rem; */
+    padding: .6rem 3rem;
 
     border-radius: 999px;
 
     background: rgba(255,255,255,.10);
 
-    border: 1px solid rgba(255,255,255,.22);
+    /* border: 1px solid rgba(255,255,255,.22); */
+    border: 1px solid rgba(255,255,255,.28);
 
     backdrop-filter: blur(10px);
 
@@ -758,7 +826,16 @@
     letter-spacing: .2px;
 
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
+  }
+
+  .system-header {
+    position: relative;
+    min-height: 3rem;
+    padding: .6rem 1.5rem;
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1;
   }
 
   .system-header::after{
@@ -777,6 +854,8 @@
     filter: blur(10px);
     opacity:.5;
     z-index:-1;
+
+    font-weight:400;
   }
 
     /* footer logo and slogan */
@@ -931,6 +1010,7 @@
   }
 }
 
+/* Updates for New sections */
 #mobile_about #collections {
   margin-top: -70px; 
 }
@@ -965,6 +1045,555 @@
     transform: translateY(-40px);
   }
 }
+
+
+/* Updates for New sections */
+
+#artist-statement {
+  padding: 3rem 0 3rem;
+}
+
+#current-works {
+  margin: 2.5rem 0 0 0;
+  padding: 1rem 0 3rem;
+}
+
+@media (max-width: 640px) {
+  #artist-statement {
+    /* background: rgba(0, 28, 65, .28); */
+    margin: 2.5rem 0 0 0;
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  #current-works {
+    padding: 2.5rem 0 4rem;
+  }
+}
+
+.artist-statement-paragraph:first-of-type {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.96);
+  /* max-width: 62ch; */
+  max-width: 48rem;
+}
+
+.artist-statement-paragraph,
+.current-works-paragraph {
+  max-width: 90ch;
+  /* max-width: 4rem; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.03rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,.90);
+}
+
+.artist-statement-paragraph + .artist-statement-paragraph {
+  margin-top: 1rem;
+}
+
+.artist-statement-paragraph {
+  /* max-width: 72ch; */
+  max-width: 48rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,.82);
+}
+
+.artist-statement-paragraph + .artist-statement-paragraph {
+  margin-top: 1rem;
+}
+
+
+.current-work-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.current-work-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Section Eyebrow */
+.section-eyebrow {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: .78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.58);
+  margin-bottom: 1.5rem;
+}
+
+/* .mobile_about_title {
+  font-size: .78rem;
+letter-spacing: .12em;
+opacity: .70;
+font-weight: 500;
+} */
+
+.current-work-item img {
+  /* width: 120px;
+  height: 120px; */
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(178, 182, 199, 0.486);
+}
+
+.work-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.work-title {
+  color: rgba(255,255,255,.95);
+}
+
+.work-year {
+  color: rgba(255,255,255,.50);
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+
+.current-work-image p {
+  margin: 0.75rem 0 0;
+  color: rgba(255,255,255,0.95);
+  font-size: 0.95rem;
+}
+
+.artist-statement-button {
+  font-size: 16px;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+  transition: opacity 0.25s ease, color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.artist-statement-button:hover,
+.artist-statement-button:focus-visible {
+  text-decoration: underline solid rgba(255,255,255,0.85);
+  opacity: 1;
+}
+
+/* Current Works Carousel Styling */
+.current-work-carousel {
+  margin-top: 1.5rem;
+}
+
+/* .current-work-viewer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.22);
+} */
+
+.current-work-viewer {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: none;
+  margin-inline: 0;
+
+  padding: 2.5rem 3rem 1.25rem;
+
+  background: rgba(0, 28, 65, .28);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 12px 30px rgba(0,0,0,.10);
+}
+
+.current-work-image {
+    width: 100%;
+    max-width: 660px;   /* your current size */
+    height: auto;
+
+    display: block;
+}
+
+/* .current-work-viewer {
+    width: 100%;
+    padding: 3rem 5rem;
+} */
+
+/* #current-work-item {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 46vw, 520px);
+  object-fit: contain;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+} */
+
+#current-work-item {
+  display: block;
+  width: auto;
+  max-width: 660px;
+  max-height: 520px;
+  object-fit: contain;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.current-work-button svg {
+  width: 22px;
+  height: 22px;
+  stroke: #EAF2FF;
+  stroke-width: 2.25;
+  fill: none;
+}
+
+.current-work-button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  transform: translateY(-50%);
+
+  border-radius: 999px;
+  cursor: pointer;
+
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.28);
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,.28),
+    inset 0 0 0 1px rgba(255,255,255,.08);
+
+  transition:
+    transform .15s ease,
+    background-color .15s ease,
+    box-shadow .2s ease,
+    opacity .2s ease;
+}
+
+.current-work-button:hover {
+  background: rgba(255,255,255,.20);
+
+  transform: translateY(-50%) translateY(-1px);
+
+  box-shadow:
+    0 14px 32px rgba(0,0,0,.32),
+    inset 0 0 0 1px rgba(255,255,255,.12);
+}
+
+.current-work-button:active {
+  transform: translateY(-50%) scale(.98);
+}
+
+.current-work-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 3px;
+}
+
+.current-work-prev {
+  left: 0.75rem;
+}
+
+.current-work-next {
+  right: 0.75rem;
+}
+
+.current-work-carousel .work-meta {
+  margin-top: 0.9rem;
+}
+
+
+
+/* Desktop (Its Centered) */
+@media (min-width: 1025px) {
+  .current-work-carousel {
+    max-width: 64rem;
+    margin-inline: auto;
+  }
+
+  .current-work-viewer {
+    max-width: 70rem;
+    margin-inline: auto;
+     border: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.10),
+        inset 0 1px 0 rgba(255,255,255,.04);
+  }
+
+  #current-work-item {
+    max-height: 520px;
+  }
+
+  /* Work Meta Styles */
+  .current-work-display {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+  .work-meta {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 1.5rem;
+  }
+
+  .work-title {
+    /* font-size: 1.15rem; */
+    font-weight: 400;
+    /* color: rgba(255,255,255,.95); */
+  }
+
+  .work-year {
+    opacity: .65;
+  }
+}
+
+@media (min-width: 1025px) {
+  .current-work-carousel,
+  .current-work-viewer {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .current-work-carousel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .current-work-viewer {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0.75rem;
+    overflow: hidden;
+  }
+
+  .current-work-display {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #current-work-item {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .current-work-display .work-meta {
+    width: 100%;
+    margin-top: 0.85rem;
+    gap: 0.75rem;
+  }
+
+  .work-title {
+    min-width: 0;
+    font-size: 0.95rem;
+  }
+
+  .work-year {
+    flex-shrink: 0;
+    font-size: 0.8rem;
+  }
+
+  .current-work-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .current-work-button svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .current-work-prev {
+    left: 0.4rem;
+  }
+
+  .current-work-next {
+    right: 0.4rem;
+  }
+}
+
+/* Footer */
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
+.footer {
+  width: 100%;
+  padding: 2.25rem 0 2.75rem;
+ 
+    box-shadow: none;
+  border-top: none;
+  
+   background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 92, 194, .30),
+      rgba(0, 82, 170, .48)
+    ),
+    url('/img/background_imgs/even_larger_about_background.png')
+      center top / cover no-repeat;
+}
+
+.footer {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 92, 194, .30),
+      rgba(0, 82, 170, .48)
+    ),
+    url('/img/background_imgs/even_larger_about_background.png')
+      center top / cover no-repeat;
+}
+
+.footer-inner {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--content-pad);
+}
+
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
+/* $$$$$###################################################################################### */
+
+/* No Background on Mobile */
+@media (max-width: 640px) {
+  .footer {
+    background: none;
+  }
+  .new-footer {
+    display: none;
+  }
+}
+/* Top margin for mobile */
+@media (max-width: 640px) {
+  .footer {
+    background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 92, 194, .30),
+      rgba(0, 82, 170, .48)
+    ),
+    url('/img/background_imgs/even_larger_about_background.png')
+      center top / cover no-repeat;
+  }
+
+  .footer-icons {
+    margin-top: 1.25rem;
+  }
+}
+
+.current-work-carousel,
+.current-work-viewer,
+.current-work-display {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.current-work-display {
+  width: min(100%, 660px);
+  margin-inline: auto;
+}
+
+#current-work-item {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 660px;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+/* 3 Desktop Works */
+.current-works-desktop {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .current-works-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .current-work-carousel {
+    display: none;
+  }
+}
+
+/* Styling the Desktop Card */
+.current-work-card {
+  min-width: 0;
+  padding: 1rem;
+
+  background: rgba(0, 28, 65, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.current-work-card-image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.current-work-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.current-work-card .work-meta {
+  width: 100%;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.current-work-card .work-title {
+  min-width: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.current-work-card .work-year {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
   </style>
 </head>
@@ -1280,16 +1909,21 @@
 
     <!-- ABOUT -->
     <section id="mobile_about" class="mobile_about">
-      <div class="mobile_about_container pt-8 pb-4">
+      <div class="mobile_about_container pt-14 pb-4">
 
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- <h1 class="mobile_about_header">Who is Dream Agent?</h1> -->
 
+        <!-- <p class="mobile_about_title">THE RECORDING MECHANISM</p> -->
+        <p class="section-eyebrow">WHO IS DREAM AGENT?</p>
+
         <p class="mobile_about_paragraph">
-          <b>Dream Agent</b> is a recording mechanism that traverses dreamlike systems, capturing the moments where structure becomes visible.
+          <b>Dream Agent</b> is an observer who traverses dreamlike systems, capturing the moments within them where structure becomes visible.
         </p>
+
+        <p class="mobile_about_tagline">No face. No fame. Just the vision.</p>
 
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- --------------------------------------------------------------------------------------- -->
@@ -1299,8 +1933,8 @@
         <div id="mobile-about-divider" class="w-40 sm:w-56 h-[2px] bg-white/30 mx-auto my-6 sm:my-10 lg:my-12 rounded-full shadow-[0_0_8px_rgba(255,255,255,0.4)] opacity-0 scale-x-0 transition-transform duration-700 ease-out"></div>
 
         <!-- COLLECTIONS -->
-        <section id="collections" class="mx-auto pt-10 pb-0 space-y-8">
-          <h2 class="collections-title font-semibold mb-2 system-header">Collections</h2>
+        <section id="collections" class="mx-auto pt-10 pb-0">
+          <h2 class="collections-title system-header">Collections</h2>
           <div class="cc-track">
 
              <!-- SYMBOLS IN MOTION -->
@@ -1389,62 +2023,116 @@
           </div>
         </section>
 
-  <!-- New Footer -->
-  <div class="about-network-layer">
-  <!-- <div class="about-network-divider"></div> -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
 
-    <div class="about-network-content">
-    <div class="slogan_logo">
-      <img src="img/icons/artist/dream_agent_logo_blue.png" alt="Dream Agent" class="footer-icon" width="50" height="50">
-      <div class="slogan-meta">
-        <p class="text-white/80 text-sm font-bold footer_slogan">No face. No fame. Just the vision.</p>
-        <!-- <div class="powered-by">
-          <img src="img/icons/developer/courdevelops.svg"
-               alt="CourDevelops — AI-integrated web development studio"
-               class="w-5 h-5 opacity-60"
-               width="20" height="20">
-          <p class="m-0">Powered by 
-            <a href="https://courdevelops.com" target="_blank" rel="noopener">CourDevelops</a>
+        <!-- ARTIST STATEMENT -->
+        <section id="artist-statement" class="mt-12">
+          <h2 class="artist-statement-header system-header">Artist Statement</h2>
+          <p class="artist-statement-paragraph mt-4">
+              These paintings begin with dreams, but they are not attempts to illustrate them. They are investigations into systems, memory, mythology, technology, and the strange architectures that dreams sometimes reveal beneath ordinary life.          
+            </p>
+
+          <p class="artist-statement-paragraph mt-4">
+            The archive grows through recurring symbols, forgotten histories, technological myths, and impossible civilizations. Dreams provide the initial transmission, but each painting expands beyond its origin into a larger symbolic system that feels remembered rather than invented.
           </p>
-        </div> -->
-      </div>
-    </div>
 
-    <div class="footer-icons flex items-center gap-3">
-      <a target="_blank" href="https://x.com/dream_agent7" aria-label="Twitter" class="icon-wrap" data-pulse title="Twitter">
-        <img src="img/icons/socials/new_socials/twitter.png" alt="twitter" class="footer-icon">
-      </a>
-      <a target="_blank" href="https://www.instagram.com/dream.agent7/" aria-label="Instagram" class="icon-wrap" data-pulse title="Instagram">
-        <img src="img/icons/socials/new_socials/instagram.png" alt="instagram" class="footer-icon">
-      </a>
-      <a target="_blank" href="https://bsky.app/profile/dreamagent7.bsky.social" aria-label="Bluesky" class="icon-wrap" data-pulse title="Bluesky">
-        <img src="img/icons/socials/new_socials/bluesky.png" alt="bluesky" class="footer-icon">
-      </a>
-      <a target="_blank" href="https://www.tiktok.com/@dream_agent7" aria-label="TikTok" class="icon-wrap" data-pulse title="TikTok">
-        <img src="img/icons/socials/new_socials/tiktok.png" alt="tik_tok" class="footer-icon">
-      </a>
-    </div>
+          <p class="artist-statement-paragraph mt-4">
+            Every painting enters the archive as a record rather than a conclusion. Together, the works form an expanding symbolic ecosystem where dreams, history, technology, and mythology continuously reshape one another. The archive grows one transmission at a time.            
+            <!-- <button class="artist-statement-button mt-6" onclick="scrollToStatement()">○ Read the Statement →</button> -->
+          </section>
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
 
-    <div class="about-network-meta">
-      <p>© <span id="about-copyright-year"></span> Dream Agent. All rights reserved.</p>
-      <div class="flex items-center gap-2 justify-center">
-        <img src="img/icons/developer/courdevelops.svg"
-                  alt="CourDevelops — AI-integrated web development studio"
-                  class="w-5 h-5 opacity-60"
-                  width="20" height="20">
-        <p>Powered by 
-          <a href="https://courdevelops.com" target="_blank" rel="noopener">CourDevelops</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <!-- CURRENT WORKS -->
+        <section id="current-works" class="mt-12">
+          <h2 class="current-works-header system-header">Current Works</h2>
+          <p class="current-works-paragraph mt-4">
+            These are the archive's newest transmissions.
+          </p>
+
+          <!-- Grid for the previous 3 display -->
+          <!-- <div class="current-works-grid mt-6"> -->
+
+            <!-- Current works for the previous 3 dynamically inserted here -->
+             <!-- <div class="current-work-item" id="current-work-item"> -->
+                <!-- Dynamic Previous 3 -->
+             <!-- </div> -->
+             <!-- <img src="./img/collection_works/digital_unconscious/humans.webp" alt=""> -->
+          <!-- </div> -->
+
+          <!-- DESKTOP: latest three works -->
+          <div
+            id="currentWorksDesktop"
+            class="current-works-desktop"
+            aria-label="Three newest current works">
+          </div>
+
+          <!-- MOBILE latest 3 Carousel  -->
+           <div class="current-work-carousel" tabindex="0" aria-roledescription="carousel" aria-label="Current Works">
+            <!-- The Current work viewer -->
+             <figure class="current-work-viewer">
+
+                <!-- Each Current Work Button -->
+                 <button
+                    id="currentWorkPrev"
+                    class="current-work-button current-work-prev"
+                    aria-label="Previous current work"
+                    type="button"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15 5 L8 12 L15 19"></path>
+                    </svg>
+                  </button>
+
+                  <button
+                    id="currentWorkNext"
+                    class="current-work-button current-work-next"
+                    aria-label="Next current work"
+                    type="button"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M9 5 L16 12 L9 19"></path>
+                    </svg>
+                  </button>
+
+                    <div class="current-work-display">
+                        <!-- Current Work Image -->
+                        <img id="current-work-item" src="" alt="">
+
+                        <figcaption class="work-meta" aria-live="polite">
+                            <span id="currentWorkTitle" class="work-title"></span>
+                            <span id="currentWorkYear" class="work-year"></span>
+                        </figcaption>
+                    </div>
+                    
+             </figure>
+
+             <!-- <p class="work-meta" aria-live="polite">
+                <span id="currentWorkTitle" class="work-title"></span>
+                <span id="currentWorkYear" class="work-year"></span>
+             </p> -->
+           </div>
+        </section>
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+     
       </div>
     </section>
 
     
-    <!-- FOOTER -->
-    <footer class="mt-0">
+    <!-- FOOTER FOR MOBILE-->
+    <footer class="mt-0 footer">
      <div class="max-w-6xl mx-auto px-4 py-4 sm:pt-12 rounded-xl">
+      <!-- tailwind spacing -->
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
         <!-- <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6"> -->
           <div class="text-center sm:text-left slogan_logo">
@@ -1498,9 +2186,52 @@
   </footer>
   </main>
 
+   <!-- New Footer DESKTOP -->
+      <div class="footer new-footer">
+        <!--Footer Inner -->
+          <div class="footer-inner">
+              <div class="about-network-content">
+          <div class="slogan_logo">
+            <img src="img/icons/artist/dream_agent_logo_blue.png" alt="Dream Agent" class="footer-icon" width="50" height="50">
+            <div class="slogan-meta">
+              <p class="text-white/80 text-sm font-bold footer_slogan">No face. No fame. Just the vision.</p>
+            </div>
+          </div>
+
+          <div class="footer-icons flex items-center gap-3">
+            <a target="_blank" href="https://x.com/dream_agent7" aria-label="Twitter" class="icon-wrap" data-pulse title="Twitter">
+              <img src="img/icons/socials/new_socials/twitter.png" alt="twitter" class="footer-icon">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/dream.agent7/" aria-label="Instagram" class="icon-wrap" data-pulse title="Instagram">
+              <img src="img/icons/socials/new_socials/instagram.png" alt="instagram" class="footer-icon">
+            </a>
+            <a target="_blank" href="https://bsky.app/profile/dreamagent7.bsky.social" aria-label="Bluesky" class="icon-wrap" data-pulse title="Bluesky">
+              <img src="img/icons/socials/new_socials/bluesky.png" alt="bluesky" class="footer-icon">
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/@dream_agent7" aria-label="TikTok" class="icon-wrap" data-pulse title="TikTok">
+              <img src="img/icons/socials/new_socials/tiktok.png" alt="tik_tok" class="footer-icon">
+            </a>
+          </div>
+
+          <div class="about-network-meta">
+            <p>© <span id="about-copyright-year"></span> Dream Agent. All rights reserved.</p>
+            <div class="flex items-center gap-2 justify-center">
+              <img src="img/icons/developer/courdevelops.svg"
+                        alt="CourDevelops — AI-integrated web development studio"
+                        class="w-5 h-5 opacity-60"
+                        width="20" height="20">
+              <p>Powered by 
+                <a href="https://courdevelops.com" target="_blank" rel="noopener">CourDevelops</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   
 
-  <script>
+
+  <script> 
     // Fade-ins on hero
     // gsap.to(".hero_phrase", { opacity: 1, y: 0, duration: 1, delay: 1.2 });
     // gsap.to("#cta", { opacity: 1, y: 0, duration: 1, delay: 1.5 });
@@ -1549,6 +2280,8 @@
     })();
 
     // Read More / Less (progressive)
+    // Show the full artist statement when the "Read More" button is clicked
+    // I MAY NOT NEED THIS WITH THE NEW DESIGN, BUT I'LL LEAVE IT IN CASE I WANT TO RE-ENABLE IT LATER    
     (function(){
       const shortP = document.querySelector('.mobile_about_portion');
       const fullP  = document.querySelector('.mobile_about_paragraph');
@@ -1681,36 +2414,36 @@
       function activeDotIndex(){ const rightMost = Math.min(index + slotsPerView - 1, cardsCache.length - 1); return rightMost; }
 
       function buildDots(){
-  if (!dotsWrap) return;
-  dotsWrap.innerHTML = '';
-  dots = [];
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      dots = [];
 
-  // Use up to 4 evenly-spaced dots across the whole range of pages.
-  const count = Math.min(Math.max(pages, 1), 4);
-  if (count <= 1) { dotsWrap.style.display = 'none'; return; }
-  dotsWrap.style.display = 'flex';
+      // Use up to 4 evenly-spaced dots across the whole range of pages.
+      const count = Math.min(Math.max(pages, 1), 4);
+      if (count <= 1) { dotsWrap.style.display = 'none'; return; }
+      dotsWrap.style.display = 'flex';
 
-  for (let i = 0; i < count; i++) {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'cc-dot';
-    b.setAttribute('aria-label', `Go to position ${i+1} of ${count}`);
+      for (let i = 0; i < count; i++) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'cc-dot';
+        b.setAttribute('aria-label', `Go to position ${i+1} of ${count}`);
 
-    // Target page: proportional position from 0 → pages-1.
-    // When count === 1 (not possible here), denom would be 0; safe because count>1.
-    const denom = (count - 1);
-    const t = denom > 0 ? i / denom : 0;              // 0, ~.33, ~.66, 1 for 4 dots
-    const targetPage = Math.round(t * (pages - 1));   // map to 0..pages-1
+        // Target page: proportional position from 0 → pages-1.
+        // When count === 1 (not possible here), denom would be 0; safe because count>1.
+        const denom = (count - 1);
+        const t = denom > 0 ? i / denom : 0;              // 0, ~.33, ~.66, 1 for 4 dots
+        const targetPage = Math.round(t * (pages - 1));   // map to 0..pages-1
 
-    b.addEventListener('click', () => {
-      goToIndex(targetPage, true);
-    });
+        b.addEventListener('click', () => {
+          goToIndex(targetPage, true);
+        });
 
-    dotsWrap.appendChild(b);
-    dots.push(b);
-  }
-  updateDots();
-}
+        dotsWrap.appendChild(b);
+        dots.push(b);
+      }
+      updateDots();
+    }
 
   function updateDots(){
     if (!dotsWrap || !dots.length) return;
@@ -1751,6 +2484,7 @@
   viewport = document.createElement('div'); viewport.className = 'cc-viewport'; viewport.tabIndex = 0;
   track    = document.createElement('div'); track.className = 'cc-track';
 
+  // Create controls (prev/next buttons)
   const controls = document.createElement('div'); controls.className = 'cc-controls';
   const mk = (cls, label, path) => {
     const b = document.createElement('button');
@@ -1913,6 +2647,116 @@
   // closeDrawer();
 // });
 })();
+
+// GET CURRENT WORKS MY VERSION
+function getCurrentWorks() {
+  // First retrieve the Image - Title - Year - Prev - Next for the carousel
+  const  image = document.getElementById("current-work-item");
+  const  title = document.getElementById("currentWorkTitle");
+  const  year = document.getElementById("currentWorkYear");
+  const  prevBtn = document.getElementById("currentWorkPrev");
+  const  nextBtn = document.getElementById("currentWorkNext");
+
+  // If any of these elements are missing, return early
+  if (!image || !title || !year || !prevBtn || !nextBtn) {
+    console.error("One or more required elements for current works carousel are missing.");
+    return null;
+  }
+
+  // Sort the latest 3 works 
+  const latestThreeWorks = [...window.allWorks] 
+    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated)) // Sort by date descending
+    .slice(0, 3); // Get the latest 3 works
+
+  // For Desktop 3 works display
+  const desktopContainer = document.getElementById('currentWorksDesktop');
+
+  if (desktopContainer) {
+    desktopContainer.innerHTML = latestThreeWorks.map((work) => `
+      <figure class="current-work-card">
+        <div class="current-work-card-image-wrap">
+          <img
+            src="${work.img}"
+            alt="${work.title || 'Current Dream Agent artwork'}"
+            loading="lazy">
+        </div>
+
+        <figcaption class="work-meta">
+          <span class="work-title">${work.title || 'Untitled'}</span>
+          <span class="work-year">${work.year || ''}</span>
+        </figcaption>
+      </figure>
+    `).join('');
+}
+
+  // If there are no works, return early
+  if(!latestThreeWorks.length) return;
+
+  // set current iteration to zero
+  let current = 0;
+  // for accessibility
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Render Current work function
+  function renderCurrentWork(index, direction = 0) {
+    const work = latestThreeWorks[index];
+    if (!work) return;
+
+    // Update the image, title, and year
+    const update = () => {
+      image.src = work.img;
+      image.alt = work.title || 'Current Dream Agent artwork';
+      title.textContent = work.title || 'Untitled';
+      year.textContent = work.year || '';
+    };
+
+    // If reduced motion is preferred or no direction is provided, update immediately
+    if (prefersReducedMotion || !direction) {
+      update();
+      return;
+    }
+
+    // about-links fade out the current image before updating
+    image.style.opacity = 0;
+    image.style.transform = `translateX(${direction * -16}px)`;
+
+    // Use a timeout to allow the fade-out to complete before updating the content
+    window.setTimeout(() => {
+      update();
+      image.style.transform = `translateX(${direction * 16}px)`;
+
+      requestAnimationFrame(() => {
+        image.style.opacity = '1';
+        image.style.transform = 'translateX(0)';
+      });
+    }, 180);
+  }
+
+  // Show Previous Work
+  function showPrevious() {
+    current = (current - 1 + latestThreeWorks.length) % latestThreeWorks.length;
+    renderCurrentWork(current, -1);
+  }
+
+  // Show Next Work
+  function showNext() {
+    current = (current + 1) % latestThreeWorks.length;
+    renderCurrentWork(current, 1);
+  }
+
+  // Attach event listeners to the buttons
+  prevBtn.addEventListener('click', showPrevious);
+  nextBtn.addEventListener('click', showNext);
+
+  document.getElementById("current-works")?.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') showPrevious();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+  renderCurrentWork(current); // Initial render
+}
+// Test Print the Function Call
+console.log(getCurrentWorks());
 
     // Dynamic Date in Footer
    const copyrightYear = document.getElementById("copyright-year");

@@ -5,3 +5,156 @@ Steps for 'Related_Works' update
 3. Add the Related works div 
 4. paste the renderRelatedWorks function @ line 1024 or so 
 5. redirect the works function to the artworks.js by collection
+
+
+
+function getCurrentWorks() {
+  // 1. Retrieve the DOM elements
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  const images = document.querySelectorAll('.current-work-image');
+
+  // 2. SORT the entire array first (Newest first) and SLICE the top 3
+  const lastThreeWorks = window.allWorks
+    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
+    .slice(0, 3);
+
+  // Test print the 3 latest artwork objects to the console
+  console.log("Latest 3 Artworks:", lastThreeWorks);
+
+  // 3. Loop through your 3 latest works to display them on the screen
+  lastThreeWorks.forEach((work, index) => {
+    console.log("Current work being processed:", work);
+    console.log("Its date:", work.dateCreated);
+
+    // If you want to put the image URL into your HTML elements:
+    if (images[index]) {
+      images[index].src = work.imageSrc; // Change 'imageSrc' to your actual key name (e.g., work.url or work.img)
+    }
+  });
+}
+
+
+function getCurrentWorks() {
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  const images = document.querySelectorAll('.current-work-image');
+
+  // 1. Gather all dates from the window.allWorks array into one flat array
+  let allDates = window.allWorks.map(work => work.dateCreated);
+
+  // 2. Sort the combined array and extract the latest 3 dates
+  let latestThreeDates = [...allDates]
+    .sort((a, b) => b.localeCompare(a))
+    .slice(0, 3);
+
+  console.log('The 3 most recent dates across all works:', latestThreeDates);
+
+  // 3. Filter your original works array to only include the items matching those 3 dates
+  let latestThreeWorks = window.allWorks.filter(work => 
+    latestThreeDates.includes(work.dateCreated)
+  );
+
+  console.log('The 3 most recent work objects:', latestThreeWorks);
+  
+  // Now you can loop through latestThreeWorks to update your DOM images
+}
+
+
+// GITHUB ISSUE
+### Bug Description
+The code was expected to find the 3 most recent dates across all artworks. Instead, it was treating the single date string of each artwork as an array, splitting it into character blocks, and returning individual sorted digits (e.g., numbers/dashes) instead of complete dates.
+
+### Root Cause
+Inside the `window.allWorks.forEach` loop, `work.dateCreated` returns a single string (like `"2025-10-13"`). Running the spread operator `[...worksDates]` on a string splits it into an array of individual characters: `['2', '0', '2', '5', '-', ... ]`.
+
+### Solution
+We need to collect all dates into a unified array using `.map()` *before* sorting and slicing the top three. 
+
+Here is the corrected `getCurrentWorks` function:
+
+```javascript
+function getCurrentWorks() {
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  const images = document.querySelectorAll('.current-work-image');
+
+  // 1. Gather all dates from the window.allWorks array into one flat array
+  let allDates = window.allWorks.map(work => work.dateCreated);
+
+  // 2. Sort the combined array and extract the latest 3 dates
+  let latestThreeDates = [...allDates]
+    .sort((a, b) => b.localeCompare(a))
+    .slice(0, 3);
+
+  console.log('The 3 most recent dates across all works:', latestThreeDates);
+
+  // 3. Filter your original works array to only include the items matching those 3 dates
+  let latestThreeWorks = window.allWorks.filter(work => 
+    latestThreeDates.includes(work.dateCreated)
+  );
+
+  console.log('The 3 most recent work objects:', latestThreeWorks);
+}
+```
+
+### Action Items
+- [ ] Update `getCurrentWorks` to map and sort all dates globally.
+- [ ] Map the filtered `latestThreeWorks` array items to the `.current-work-image` DOM nodes.
+- [ ] Test the UI to confirm only the 3 newest artwork images are rendered.
+- [ ] Verify handling when `window.allWorks` contains fewer than 3 items.
+
+
+// STATIC CURRENT WORKS VERSION
+function getCurrentWorks() {
+  // retrieve the whole grid
+  const currentWorksGrid = document.querySelector('.current-works-grid');
+  // retrieve each image in the div to place the artwork there
+  const images = document.querySelectorAll('.current-work-image');
+  
+  // Gather all dates from the window.allWorks array into one flat array
+  // let allDates = window.allWorks.map(work => work.dateCreated);
+  // Map through all the works
+  let allWorks = window.allWorks.map(work => work);
+  // append the full property of the 'allWorks' object.
+  // just the image, title and the date year
+
+  // Test Print
+  console.log(allWorks);
+
+  // Sort by date
+  let latestThreeWorks = [...allWorks]
+    .sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
+    .slice(0, 3);
+
+  // Test Print
+  console.log('The 3 most recent dates across all works:', latestThreeWorks);
+
+  // NOW create the Elements with the sorted artWorks in the DOM
+  // I'm gonna use a markup template string
+  const currentWorkImages = `
+    <div class="current-work-image">
+      <img src="${latestThreeWorks[0].img}" alt=${latestThreeWorks[0].title}>
+      <p class="work-meta">
+        <span class="work-title">${latestThreeWorks[0].title}</span>
+        <span class="work-year">${latestThreeWorks[0].year}</span>
+      </p>
+    </div>
+    <div class="current-work-image">
+      <img src="${latestThreeWorks[1].img}" alt=${latestThreeWorks[1].title}>
+      <p class="work-meta">
+        <span class="work-title">${latestThreeWorks[1].title}</span>
+        <span class="work-year">${latestThreeWorks[1].year}</span>
+      </p>
+    </div>
+    <div class="current-work-image">
+      <img src="${latestThreeWorks[2].img}" alt=${latestThreeWorks[2].title}>
+      <p class="work-meta">
+        <span class="work-title">${latestThreeWorks[2].title}</span>
+        <span class="work-year">${latestThreeWorks[2].year}</span>
+      </p>
+    </div>
+  `;
+
+  // NOW set the template inside the proper parent
+  document.getElementById('current-work-item').innerHTML = currentWorkImages;
+}
+// Test Print the Function Call
+console.log(getCurrentWorks());

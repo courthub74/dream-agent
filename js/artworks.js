@@ -57,7 +57,7 @@ window.allWorks = [
       year:"2026", 
       style:"Oil-style",
       featured: true,
-      dateCreated: "2026-10-15",
+      dateCreated: "2026-01-15",
       related:["temple_of_openings", "polar_bear", "the_great_divide"],
       motifs: ["tree", "choices", "consequences", "paths"],
       themes: ["ambiguity", "authority", "decision-making", "indecision"],
@@ -167,7 +167,7 @@ window.allWorks = [
       year:"2026",
       style:"Oil-style",
       featured: true,
-      dateCreated: "2026-03-15",
+      dateCreated: "2026-06-15",
       related:["dream_agent_making_birds", "wizard_of_agent_dreams"],
       motifs: ["plate", "ceremony", "ritual"],
       themes: ["ceremony", "ritual", "transformation"],
@@ -370,29 +370,29 @@ window.allWorks = [
       os:"#",
       sr:"#"}
     },
-    // HUMANS
-    {
-      id: "humans",
-      collection: "digital",
-      title:"Humans",
-      year:"2026",
-      style:"Oil-style",
-      featured: true,
-      dateCreated: "2026-06-15",
-      related:[],
-      motifs: ["prison", "freedom", "similarity"],
-      themes: ["confinement", "liberty", "existentialism"],
-      img:"../img/collection_works/digital_unconscious/humans.webp",
-      desc:[
-        "A surreal meditation on visible and invisible confinement.",
-        "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
-        "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
-        "Sometimes the strongest prisons cannot be seen.",
-      ],
-      links:{ xrp:"#",
-      os:"#",
-      sr:"#"}
-    },
+    // // HUMANS
+    // {
+    //   id: "humans",
+    //   collection: "digital",
+    //   title:"Humans",
+    //   year:"2026",
+    //   style:"Oil-style",
+    //   featured: true,
+    //   dateCreated: "2026-06-15",
+    //   related:[],
+    //   motifs: ["prison", "freedom", "similarity"],
+    //   themes: ["confinement", "liberty", "existentialism"],
+    //   img:"../img/collection_works/digital_unconscious/humans.webp",
+    //   desc:[
+    //     "A surreal meditation on visible and invisible confinement.",
+    //     "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
+    //     "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
+    //     "Sometimes the strongest prisons cannot be seen.",
+    //   ],
+    //   links:{ xrp:"#",
+    //   os:"#",
+    //   sr:"#"}
+    // },
     // INTERNET OF THE NEW WORLD
     { 
       id: "internet_of_the_new_world",
@@ -470,7 +470,7 @@ window.allWorks = [
       year:"2026",
       style:"Oil-style",
       featured: true,
-      dateCreated: "2026-06-15",
+      dateCreated: "2026-04-15",
       related:["prince_carl_laying"],
       motifs:["salt","language","conquest"],
       img:"../img/collection_works/dominion_archives/prince_carl_after_the_salt_conquering.webp",
@@ -790,6 +790,29 @@ window.allWorks = [
         ],
       links:{ xrp:"https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916B66E9CE605CBFA49", 
       os:"#", 
+      sr:"#"}
+    },
+    // HUMANS
+    {
+      id: "humans",
+      collection: "industrial",
+      title:"Humans",
+      year:"2026",
+      style:"Oil-style",
+      featured: true,
+      dateCreated: "2026-03-15",
+      related:[],
+      motifs: ["prison", "freedom", "similarity"],
+      themes: ["confinement", "liberty", "existentialism"],
+      img:"../img/collection_works/industrial_myths/humans.webp",
+      desc:[
+        "A surreal meditation on visible and invisible confinement.",
+        "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
+        "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
+        "Sometimes the strongest prisons cannot be seen.",
+      ],
+      links:{ xrp:"#",
+      os:"#",
       sr:"#"}
     },
     // DANIEL'S VISION FROM ANOTHER ANGLE
@@ -1122,7 +1145,7 @@ window.allWorks = [
             year: "2026", 
             style: "Oil-style",
             featured: true,
-            dateCreated: "2026-06-15",
+            dateCreated: "2026-01-11",
             related: ["the_wine_wars", "the_dirt_wars"],
             motifs: ["bubbles", "zamboni"],
             themes: ["sanitation", "conflict"],
