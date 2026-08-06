@@ -2765,6 +2765,84 @@ console.log(getCurrentWorks());
     if (copyrightYear) copyrightYear.textContent = new Date().getFullYear();
     if (aboutCopyrightYear) aboutCopyrightYear.textContent = new Date().getFullYear();
 
+    // For CURRENT WORKS animations
+    const currentWorkCards = document.querySelectorAll('.current-work-card');
+
+    if (
+      currentWorkCards.length &&
+      window.gsap &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      gsap.fromTo(
+        currentWorkCards,
+        {
+          opacity: 0,
+          y: 18
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.12,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '#currentWorksDesktop',
+            start: 'top 82%',
+            once: true
+          }
+        }
+      );
+    }
+
+    // Animate the Current works cards on scroll into view
+    function animateCurrentWorkCards() {
+  const cards = Array.from(
+    document.querySelectorAll('.current-work-card')
+  );
+
+  if (!cards.length) return;
+
+  const prefersReducedMotion =
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion || !window.gsap) {
+    cards.forEach(card => {
+      card.style.opacity = '1';
+      card.style.transform = 'none';
+    });
+
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) return;
+
+      gsap.fromTo(
+        cards,
+        {
+          opacity: 0,
+          y: 18
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.12,
+          ease: 'power2.out'
+        }
+      );
+
+      observer.disconnect();
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  observer.observe(document.getElementById('currentWorksDesktop'));
+}
+
   </script>
 </body>
 </html>
