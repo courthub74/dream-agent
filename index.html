@@ -295,7 +295,8 @@
       max-width: var(--content-max); 
       margin-inline: auto; 
       padding-inline: var(--content-pad); 
-      padding-top: 1rem;
+      /* padding-top: 1rem; */
+      padding-top: 3rem;
       /* background: rgba(255,255,255,.05); */
     }
     .mobile_about_header { text-align: left; font-size: 1.5rem; font-weight: 700; padding-left: .25rem; margin-top: 1rem; }
@@ -322,6 +323,14 @@
   
     /* Mobile tweaks */
     @media (max-width: 480px) {
+      .mobile_about_container { 
+        max-width: var(--content-max); 
+        margin-inline: auto; 
+        padding-inline: var(--content-pad); 
+        padding-top: 1rem;
+        /* padding-top: 3rem; */
+        /* background: rgba(255,255,255,.05); */
+      }
       .mobile_about_paragraph {
         font-size: clamp(0.92rem, 3.68vw, 1.24rem);
         line-height: 1.5;
@@ -1916,7 +1925,7 @@ font-weight: 500;
 
     <!-- ABOUT -->
     <section id="mobile_about" class="mobile_about">
-      <div class="mobile_about_container pt-14 pb-4">
+      <div class="mobile_about_container">
 
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- --------------------------------------------------------------------------------------- -->
@@ -2201,7 +2210,7 @@ font-weight: 500;
           <div class="slogan_logo">
             <img src="img/icons/artist/dream_agent_logo_blue.png" alt="Dream Agent" class="footer-icon" width="50" height="50">
             <div class="slogan-meta">
-              <p class="text-sm text-white/60 footer_slogan">No face. No fame. Just the vision.</p>
+              <p class="text-sm text-white/70 footer_slogan">No face. No fame. Just the vision.</p>
             </div>
           </div>
 
