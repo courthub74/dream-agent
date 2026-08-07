@@ -171,7 +171,7 @@
     }
 
     /* PLAYFAIR LOGO AND COLLECTION TITLES */
-    h1, h2, h3, h4, #title, .about-link, .overlay-text, .mobile_about_header, .mobile_about_collections_header, .hero_phrase, .footer_slogan, #cta {
+    h1, h2, h3, h4, #title, .overlay-text, .mobile_about_header, .mobile_about_collections_header, .hero_phrase {
       font-family: 'Playfair Display', serif;
     }
 
@@ -212,12 +212,12 @@
       background:#0056b88a; 
       border:rgba(255,255,255,.18);
       color: white; 
-      padding: 10px 20px; 
+      padding: 15px 20px; 
       /* border-radius: 6px; */
-      font-weight: 500;
+      /* font-weight: 500; */
       letter-spacing: .01em;
       border-radius: 999px;
-      font-size: .90rem; 
+      font-size: 1rem; 
       text-decoration: none; 
       /* text-transform: uppercase; */
       transition: background-color .3s ease, transform .3s ease; 
@@ -295,7 +295,8 @@
       max-width: var(--content-max); 
       margin-inline: auto; 
       padding-inline: var(--content-pad); 
-      padding-top: 1rem;
+      /* padding-top: 1rem; */
+      padding-top: 3rem;
       /* background: rgba(255,255,255,.05); */
     }
     .mobile_about_header { text-align: left; font-size: 1.5rem; font-weight: 700; padding-left: .25rem; margin-top: 1rem; }
@@ -304,16 +305,16 @@
     /* .mobile_about_paragraph { max-width: 650px; font-family: 'Playfair Display', serif; line-height: 1.85; margin: 1rem 0 2rem; font-weight: 400; font-size: clamp(1rem, 2.5vw, 1.2rem); } */
     .mobile_about_paragraph {
       max-width: 44rem;
-      font-family: 'Playfair Display', serif;
+      /* font-family: 'Playfair Display', serif; */
       font-size: clamp(0.92rem, 1.44vw, 1.08rem);
       line-height: 1.65;
       margin: 1.5rem 0 2.25rem;
     }
-    .mobile_about_paragraph, .mobile_about_paragraph b { font-family: 'Playfair Display', serif; }
+    /* .mobile_about_paragraph, .mobile_about_paragraph b { font-family: 'Playfair Display', serif; } */
 
     /* About tagline */
     .mobile_about_tagline {
-      font-family: 'Playfair Display', serif;
+      /* font-family: 'Playfair Display', serif; */
       font-size: clamp(0.92rem, 1.44vw, 1.08rem);
       line-height: 1.5;
       margin-bottom: 5rem;
@@ -322,13 +323,21 @@
   
     /* Mobile tweaks */
     @media (max-width: 480px) {
+      .mobile_about_container { 
+        max-width: var(--content-max); 
+        margin-inline: auto; 
+        padding-inline: var(--content-pad); 
+        padding-top: 1rem;
+        /* padding-top: 3rem; */
+        /* background: rgba(255,255,255,.05); */
+      }
       .mobile_about_paragraph {
         font-size: clamp(0.92rem, 3.68vw, 1.24rem);
         line-height: 1.5;
       }
 
       .mobile_about_tagline {
-        font-family: 'Playfair Display', serif;
+        /* font-family: 'Playfair Display', serif; */
         font-size: clamp(0.92rem, 1.44vw, 1.08rem);
         line-height: 1.5;
         margin-bottom: 5rem;
@@ -1071,19 +1080,20 @@
 }
 
 .artist-statement-paragraph:first-of-type {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
   font-size: 1.05rem;
   line-height: 1.65;
   color: rgba(255,255,255,.96);
   /* max-width: 62ch; */
   max-width: 48rem;
+  font-weight: 600;
 }
 
 .artist-statement-paragraph,
 .current-works-paragraph {
   max-width: 90ch;
   /* max-width: 4rem; */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-size: 1.03rem;
   line-height: 1.7;
   color: rgba(255,255,255,.90);
@@ -1151,6 +1161,7 @@ font-weight: 500;
 
 .work-title {
   color: rgba(255,255,255,.95);
+  font-family: 'Playfair Display', serif;
 }
 
 .work-year {
@@ -1471,6 +1482,11 @@ font-weight: 500;
   margin-inline: auto;
   padding-inline: var(--content-pad);
 }
+
+/* Make the footer slogan text match the powered by text */
+/* .footer_slogan {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
 
 /* $$$$$###################################################################################### */
 /* $$$$$###################################################################################### */
@@ -1909,7 +1925,7 @@ font-weight: 500;
 
     <!-- ABOUT -->
     <section id="mobile_about" class="mobile_about">
-      <div class="mobile_about_container pt-14 pb-4">
+      <div class="mobile_about_container">
 
         <!-- --------------------------------------------------------------------------------------- -->
         <!-- --------------------------------------------------------------------------------------- -->
@@ -2137,7 +2153,7 @@ font-weight: 500;
         <!-- <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6"> -->
           <div class="text-center sm:text-left slogan_logo">
             <img src="img/icons/artist/dream_agent_logo_blue.png" alt="dream_agent" class="footer-icon" width="50" height="50">
-            <p class="text-white/80 text-sm font-bold footer_slogan">No face. No fame. Just the vision.</p>
+            <p class="text-xs text-white/60 footer_slogan">No face. No fame. Just the vision.</p>
           </div>
           <!-- logos moved next to the text and tightened gap -->
           <div class="footer-icons flex items-center gap-3">
@@ -2194,7 +2210,7 @@ font-weight: 500;
           <div class="slogan_logo">
             <img src="img/icons/artist/dream_agent_logo_blue.png" alt="Dream Agent" class="footer-icon" width="50" height="50">
             <div class="slogan-meta">
-              <p class="text-white/80 text-sm font-bold footer_slogan">No face. No fame. Just the vision.</p>
+              <p class="text-sm text-white/70 footer_slogan">No face. No fame. Just the vision.</p>
             </div>
           </div>
 
@@ -2764,6 +2780,84 @@ console.log(getCurrentWorks());
 
     if (copyrightYear) copyrightYear.textContent = new Date().getFullYear();
     if (aboutCopyrightYear) aboutCopyrightYear.textContent = new Date().getFullYear();
+
+    // For CURRENT WORKS animations
+    const currentWorkCards = document.querySelectorAll('.current-work-card');
+
+    if (
+      currentWorkCards.length &&
+      window.gsap &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      gsap.fromTo(
+        currentWorkCards,
+        {
+          opacity: 0,
+          y: 18
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.12,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '#currentWorksDesktop',
+            start: 'top 82%',
+            once: true
+          }
+        }
+      );
+    }
+
+    // Animate the Current works cards on scroll into view
+    function animateCurrentWorkCards() {
+  const cards = Array.from(
+    document.querySelectorAll('.current-work-card')
+  );
+
+  if (!cards.length) return;
+
+  const prefersReducedMotion =
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion || !window.gsap) {
+    cards.forEach(card => {
+      card.style.opacity = '1';
+      card.style.transform = 'none';
+    });
+
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) return;
+
+      gsap.fromTo(
+        cards,
+        {
+          opacity: 0,
+          y: 18
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.12,
+          ease: 'power2.out'
+        }
+      );
+
+      observer.disconnect();
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  observer.observe(document.getElementById('currentWorksDesktop'));
+}
 
   </script>
 </body>
