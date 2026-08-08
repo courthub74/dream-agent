@@ -838,6 +838,31 @@ window.allWorks = [
       os:"#", 
       sr:"#"}
     },
+    // THE ARTIFICIAL DELI-GATE
+    {
+      id: "the_artificial_deli-gate",
+      collection: "industrial",
+      title:"The Artificial Deli-gate",
+      year:"2026",
+      style:"Oil-style",
+      featured: true,
+      dateCreated: "2026-08-03",
+      related:["the_future_of_industry", "the_artificial_monty", "cursor_of_fate"],
+      motifs: ["deli", "automation", "ritual"],
+      themes: ["automation", "ritual", "labor"],
+      img:"../img/collection_works/industrial_myths/the_artificial_deli_gate.webp",
+      desc:[
+        "In 'The Artificial Deli-gate', prophecy has been industrialized.",
+        "A fortune teller with a living code screen for a face calmly offers a **Deluxe Submarine** while gazing into a luminous prediction orb. Behind the brick wall, an immense marble-green octopus wrapped around a temple marked 'L.L.M.' quietly reveals the hidden machinery beneath modern intelligence. A roadside sign points toward 'Proxies', while an orderly procession of anonymous figures patiently waits, each carrying an identical bag of chips as though participating in an invisible algorithmic ritual.",
+        "The painting asks a simple but unsettling question:",
+        "When intelligence becomes infinitely accessible, are we choosing our thoughts... or merely selecting from a menu?",
+        "Like much of the Dream Agent archive, symbolism replaces certainty. The sandwich becomes information. Chips become disposable consumption. The oracle has become software. Even prophecy now arrives through infrastructure.",
+        "This work explores the strange mythology emerging around artificial intelligence, automation, and machine reasoning.",
+      ],
+      links:{ xrp:"#",
+      os:"#",
+      sr:"#"}
+    },
     /////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////
     // SIGNALS AND ASCENSIONS 
