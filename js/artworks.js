@@ -334,7 +334,7 @@ window.allWorks = [
       style:"Oil-style",
       featured: true,
       dateCreated: "2022-10-06",
-      related:["the_tech_era"],
+      related:["the_tech_era", "internet_of_the_old_world", "internet_of_the_middle_world", "internet_of_the_new_world"],
       motifs: ["orbs", "glowing"],
       themes: ["digital culture", "seclusion", "contemplation"],
       img:"../img/collection_works/digital_unconscious/internet_of_the_modern_world.webp",
