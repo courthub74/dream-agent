@@ -356,7 +356,7 @@ window.allWorks = [
       style:"Oil-style",
       featured: true,
       dateCreated: "2026-05-15",
-      related:["the_artificial_deligate"],
+      related:["the_artificial_deli-gate"],
       motifs: ["robot", "ceremony", "ritual"],
       themes: ["technology", "artificial intelligence", "data centers"],
       img:"../img/collection_works/digital_unconscious/the_artificial_monty.webp",
