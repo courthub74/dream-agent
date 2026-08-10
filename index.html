@@ -1962,7 +1962,7 @@ font-weight: 500;
           <div class="cc-track">
 
              <!-- SYMBOLS IN MOTION -->
-            <a href="collection_pages/symbols.html" class="group reveal-card reveal-left">
+            <a href="collection_pages/symbols.html" class="group reveal-card">
               <img src="img/collection_covers/new_covers/symbols_in_motion_cover.webp"  alt="Dream Agent AI surrealist artwork — Symbols in Motion collection" width="1200" height="800" />
               <div class="shade"></div>
               <div class="copy">
@@ -2327,21 +2327,59 @@ font-weight: 500;
     })();
 
     // Reveal cards with GSAP (respects reduced motion)
-    (function(){
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const cards = Array.from(document.querySelectorAll('#collections .reveal-card'));
-      if (!cards.length) return;
-      if (prefersReduced || typeof gsap === 'undefined') { cards.forEach(el => el.classList.add('visible')); return; }
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          const el = entry.target; io.unobserve(el);
-          const fromX = el.classList.contains('reveal-left') ? -28 : 28;
-          gsap.fromTo(el, { opacity: 0, x: fromX, y: 10 }, { opacity: 1, x: 0, y: 0, duration: .85, ease: 'power2.out' });
-        });
-      }, { threshold: .22 });
-      cards.forEach((el, i) => setTimeout(() => io.observe(el), i * 70));
-    })();
+    // Reveal collection cards without disturbing carousel position
+(function () {
+  const prefersReduced =
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const cards = Array.from(
+    document.querySelectorAll('#collections .reveal-card')
+  );
+
+  if (!cards.length) return;
+
+  if (prefersReduced || typeof gsap === 'undefined') {
+    gsap?.set(cards, {
+      opacity: 1,
+      x: 0,
+      y: 0
+    });
+
+    return;
+  }
+
+  // Establish the hidden state without moving cards horizontally
+  gsap.set(cards, {
+    opacity: 0,
+    x: 0,
+    y: 10
+  });
+
+  const collectionsSection =
+    document.getElementById('collections');
+
+  const io = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) return;
+
+      gsap.to(cards, {
+        opacity: 1,
+        x: 0,
+        y: 0,
+        duration: 0.85,
+        stagger: 0.08,
+        ease: 'power2.out'
+      });
+
+      io.disconnect();
+    },
+    {
+      threshold: 0.22
+    }
+  );
+
+  io.observe(collectionsSection);
+})();
 
     // Title rotators: start when visible, pause when hidden, honor reduced motion
     function makeRotator(el, titles, intervalMs = 3000){
@@ -2419,7 +2457,8 @@ font-weight: 500;
 
       // const cardSelector = ':scope > a.group';
       // changing card 
-      const cardSelector = '.cc-track > a.group';
+      // const cardSelector = '.cc-track > a.group';
+      const cardSelector = ':scope > a.group';
       let shell = null, viewport = null, track = null, prevBtn = null, nextBtn = null, dotsWrap = null, dots = [];
       let cardsCache = []; let index = 0; let stepPx = 0; let slotsPerView = 1; let pages = 1; let ro = null;
       let rafId = 0, scrollIdleTimer = 0; const SCROLL_IDLE_MS = 140;
@@ -2551,11 +2590,44 @@ font-weight: 500;
   ro.observe(viewport);
 
   // initial and safety re-measures
-  requestAnimationFrame(() => {
-    measure(); buildDots(); goToIndex(index, false); updateArrows(); updateDots();
-  });
-  setTimeout(() => { measure(); buildDots(); updateArrows(); updateDots(); }, 300);
-}
+
+  // Let's start with a fresh page load at carousel position 0
+
+  // Always begin a fresh page load at carousel position 0
+    index = 0;
+    viewport.scrollLeft = 0;
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          measure();
+          buildDots();
+
+          index = 0;
+          viewport.scrollLeft = 0;
+          goToIndex(0, false);
+
+          updateArrows();
+          updateDots();
+        });
+      });
+
+      // Catch late layout / browser scroll restoration
+      window.addEventListener(
+        'load',
+        () => {
+          measure();
+
+          index = 0;
+          viewport.scrollLeft = 0;
+          goToIndex(0, false);
+
+          updateArrows();
+          updateDots();
+        },
+        { once: true }
+      );
+
+    }
 
     function disable() {
       if (!shell) return;
