@@ -2461,7 +2461,7 @@ font-weight: 500;
       const cardSelector = ':scope > a.group';
       let shell = null, viewport = null, track = null, prevBtn = null, nextBtn = null, dotsWrap = null, dots = [];
       let cardsCache = []; let index = 0; let stepPx = 0; let slotsPerView = 1; let pages = 1; let ro = null;
-      let rafId = 0, scrollIdleTimer = 0; const SCROLL_IDLE_MS = 140;
+      let rafId = 0;
 
       function getGap(){ const cs = getComputedStyle(track); const g = parseFloat(cs.columnGap || cs.gap || 0); return isNaN(g) ? 0 : g; }
       function getCardWidth(){ const card = track?.querySelector('a.group'); return card ? card.getBoundingClientRect().width : 0; }
@@ -2532,7 +2532,24 @@ font-weight: 500;
 
       function goToIndex(i, smooth=true){ index = clamp(i); const left = index * stepPx; if (smooth && 'scrollTo' in viewport) viewport.scrollTo({left, behavior:'smooth'}); else viewport.scrollLeft = left; updateArrows(); updateDots(); }
 
-      function onScroll(){ if (rafId) cancelAnimationFrame(rafId); rafId = requestAnimationFrame(()=>{ if (stepPx <= 0) return; const pending = clamp(Math.round(viewport.scrollLeft / stepPx)); updateArrows(); clearTimeout(scrollIdleTimer); scrollIdleTimer = setTimeout(()=>{ if (index !== pending) index = pending; updateDots(); }, SCROLL_IDLE_MS); }); }
+      // OnScroll
+      function onScroll() {
+        if (rafId) cancelAnimationFrame(rafId);
+
+        rafId = requestAnimationFrame(() => {
+          if (stepPx <= 0) return;
+
+          const pending = clamp(
+            Math.round(viewport.scrollLeft / stepPx)
+          );
+
+          // Keep the logical index synced with the actual viewport immediately
+          index = pending;
+
+          updateArrows();
+          updateDots();
+        });
+}
 
       function enable() {
       if (shell) return;
