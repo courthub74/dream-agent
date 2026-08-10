@@ -2889,53 +2889,57 @@ console.log(getCurrentWorks());
     
     // Animate the Current works cards on scroll into view
     function animateCurrentWorkCards() {
-      const cards = Array.from(
-        document.querySelectorAll('.current-work-card')
-      );
+  const cards = Array.from(
+    document.querySelectorAll('.current-work-card')
+  );
 
-      if (!cards.length) return;
+  if (!cards.length) return;
 
-      const prefersReducedMotion =
-        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const prefersReducedMotion =
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      if (prefersReducedMotion || !window.gsap) {
-        cards.forEach(card => {
-          card.style.opacity = '1';
-          card.style.transform = 'none';
-        });
+  if (prefersReducedMotion || !window.gsap) {
+    cards.forEach(card => {
+      card.style.opacity = '1';
+      card.style.transform = 'none';
+    });
 
-        return;
-      }
+    return;
+  }
 
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (!entry.isIntersecting) return;
+  // IMPORTANT:
+  // Hide them BEFORE IntersectionObserver begins watching.
+  gsap.set(cards, {
+    opacity: 0,
+    y: 18
+  });
 
-          gsap.fromTo(
-          cards,
-          {
-            opacity: 0,
-            y: 12
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1.15,
-            stagger: 0.18,
-            ease: 'power2.out'
-          }
-        );
+  const currentWorksDesktop =
+    document.getElementById('currentWorksDesktop');
 
-          observer.disconnect();
-        },
-        {
-          threshold: 0.2
-        }
-      );
+  if (!currentWorksDesktop) return;
 
-      observer.observe(document.getElementById('currentWorksDesktop'));
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) return;
+
+      gsap.to(cards, {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        stagger: 0.12,
+        ease: 'power2.out'
+      });
+
+      observer.disconnect();
+    },
+    {
+      threshold: 0.2
     }
+  );
 
+  observer.observe(currentWorksDesktop);
+}
   
 
 
