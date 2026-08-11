@@ -47,7 +47,7 @@ This separation ensures:
 
 - Clean production workflow
 - No exposed backend dependencies
-- Fast global performance via Netlify
+- Fast global performance
 - Controlled release cadence
 
 ---
