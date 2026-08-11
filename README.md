@@ -2,6 +2,14 @@
     <img src="./img/logos/DreamAgentBlue.jpg" width="150" alt="Dream Agent Logo">
 </p>
 
+**Current Version: 2.0**
+
+Official website and digital archive for Dream Agent.
+
+🌐 dreamagent.art
+
+---
+
 ## Overview
 
 **dreamagent.art** is the official promotional website for Dream Agent — an anonymous surrealist art identity exploring symbolism, mythology, economic themes, and machine-assisted oil-style works.
