@@ -499,7 +499,8 @@ window.allWorks = [
       img:"../img/collection_works/dominion_archives/imperious_kingdom.webp",
       desc:[
           "A monumental profile occupies the foreground, seated before a ceremonial landscape where ritualized figures assemble beneath the pediment marked 'Northland'. The woman’s posture is still, composed, and detached from the activity unfolding behind her. Gold adornment and architectural symmetry elevate the scene into a formal tableau of order and hierarchy.",
-          "The figures gathered across the lawn exchange gestures of recognition and alignment while the central subject remains outside their exchange. Authority is not performed in motion but established through position, scale, and separation. The composition records the architecture of power: the individual who embodies it, and the system that assembles around it."
+          "The figures gathered across the lawn exchange gestures of recognition and alignment while the central subject remains outside their exchange. Authority is not performed in motion but established through position, scale, and separation.",
+          "The composition records the architecture of power: the individual who embodies it, and the system that assembles around it."
       ],
       links:{ xrp:"https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916E01A39FB05CBFA56", 
       os:"#", 
