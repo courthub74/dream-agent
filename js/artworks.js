@@ -202,7 +202,7 @@ window.allWorks = [
     year: "2026",
     style: "Oil-style",
     featured: true,
-    dateCreated: "2026-07-25",
+    dateCreated: "2026-10-27",
     related: ["god_comma"],
     motifs: [
       "surveying",
@@ -1370,6 +1370,33 @@ window.allWorks = [
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9167822E70E05CBFA73",
+      os: "#",
+      sr: "#",
+    },
+  },
+  // Cornerstone Kearney
+  {
+    id: "cornerstone_kearney",
+    collection: "war_and_feast",
+    title: "Cornerstone Kearney",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-10-25",
+    related: [
+      "prince_carl_after_the_salt_conquering_speaking_an_ancient_language",
+      "coeur_of_the_grapes",
+    ],
+    motifs: ["construction", "foundation"],
+    themes: ["labor", "industry", "progress"],
+    img: "../img/collection_works/war_and_feast/cornerstone_kearney.webp",
+    desc: [
+      "‘Cornerstone Kearney’ places an ordinary meal within the architecture of permanence. Beneath the vaults of a French Gothic cathedral, a man in yellow Tudor dress sits mid-sentence at a copper harvest table, knife and fork poised above three stacked slices of pepperoni pizza.",
+      "A tiny orb glows beside his plate. Beyond the glass partition, a heart with blue ventricles pumps water into the sunlit room. Sacred architecture, ceremonial clothing, and everyday appetite occupy a shared present.",
+      "Dream Agent brings these elements together in a surreal composition rendered with oil-painted texture, where grandeur depends upon the small routines taking place beneath it.",
+    ],
+    links: {
+      xrp: "#",
       os: "#",
       sr: "#",
     },
