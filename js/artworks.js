@@ -788,6 +788,89 @@ window.allWorks = [
       sr: "#",
     },
   },
+  // BOTTLING THE REPUBLIC
+  {
+    id: "bottling_the_republic",
+    collection: "industrial",
+    title: "Bottling the Republic",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-01-01",
+    related: [
+      "the_fear_room",
+      "daniels_vision_from_another_angle",
+      "discovery_of_the_indigenous",
+    ],
+    motifs: ["map", "bottles"],
+    img: "../img/collection_works/industrial_myths/bottling_the_republic.webp",
+    desc: [
+      "In 'Bottling the Republic', Dream Agent invites the viewer into a sterile, modern factory where the symbols of national identity are distilled, packaged, and prepared for consumption. On the left, dark and amber soda bottles emerge from a map of the United States—oxidized green against a burnt orange backdrop—suggesting a geographic origin stripped of borders yet full of weight. On the right, lighter bottles exit a white brick structure, their neutrality implying refinement, curation, or even erasure.",
+      "A factory worker affixes a red-crayon label to the box: 'A Case of Sovereignties'. His motion—half-routine, half-ritual—becomes a metaphor for the bureaucratic manufacturing of governance and identity. At the center, twin drinking fountains spill water onto the production line, invoking historical inequities, industrial spillage, or uncontainable truth.",
+      "Hovering above, a 1950s antenna pulses radio waves outward—a relic of a broadcast age, echoing the reach of old narratives into modern machinery.",
+      "Dream Agent fuses surrealism, political allegory, and post-industrial aesthetics into a layered visual inquiry. What does it mean to bottle a republic? And who decides the recipe?",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916B66E9CE605CBFA49",
+      os: "#",
+      sr: "#",
+    },
+  },
+  // DANIEL'S VISION FROM ANOTHER ANGLE
+  {
+    id: "daniels_vision_from_another_angle",
+    collection: "industrial",
+    title: "Daniel's vision from another angle",
+    year: "2023",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2023-06-13",
+    related: ["the_fear_room", "bottling_the_republic"],
+    motifs: ["cargo", "doves"],
+    img: "../img/collection_works/industrial_myths/daniels_vision_from_another_angle.webp",
+    desc: [
+      "A black-sea freighter noses through fog, its deck stacked not with cargo but with institutions: a courthouse façade, a broadcast tower, glass offices, and a proud marquee that mis-spells 'EXCELLENCE'—a glitch that betrays intent. Cable-chains spill from the ship like tentacles, dragging unseen systems through the tide. Above, a faint halo of radio rings ripples the sky.",
+      "On the shore, four birds stand as witnesses—three obsidian, one pale—an echo of Daniel’s layered visions and their empires. The birds face the vessel, a dissenting conscience against industrial pageantry. What arrives is not a navy, but a narrative: empire as architecture, morality as advertising, dominion as logistics.",
+      "Dream Agent tilts the prophecy 'from another angle,' asking: Who sails whom?",
+      "When institutions are freight, is the ocean carrying them—or are we?",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916CD546DE705CBFA4A",
+      os: "#",
+      sr: "#",
+    },
+  },
+  // GOD COMMA
+  {
+    id: "god_comma",
+    collection: "industrial",
+    title: "God Comma",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-10-18",
+    related: ["cursor_of_fate", "the_future_of_industry"],
+    motifs: ["comma", "oracle", "monitor_face", "procession", "mountain"],
+    themes: [
+      "ritual",
+      "divinity",
+      "language",
+      "order",
+      "collapse",
+      "interpretation",
+    ],
+    img: "../img/collection_works/industrial_myths/god_comma.webp",
+    desc: [
+      "A procession crosses the remains of a civilization beneath a dark red sky. Each figure carries a small illuminated vessel containing a glowing heart, while an immense fortune teller rises behind the ruins with a screen of multicolored code in place of a face.",
+      "The oracle grips a chainsaw with both hands, poised above a mountain of debris. The people do not worship it, confront it, or fully escape it; they curve away in the shape of a comma—preserving something human while history pauses before its next clause.",
+      "'God, Comma' depicts technological authority at the moment it becomes indistinguishable from divine judgment. The comma is not an ending. It is the fragile interval between destruction and whatever humanity permits to follow.",
+    ],
+    links: {
+      xrp: "#",
+      os: "#",
+      sr: "#",
+    },
+  },
   //  THE GREAT DIVIDE
   {
     id: "the_great_divide",
@@ -886,34 +969,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // BOTTLING THE REPUBLIC
-  {
-    id: "bottling_the_republic",
-    collection: "industrial",
-    title: "Bottling the Republic",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-01-01",
-    related: [
-      "the_fear_room",
-      "daniels_vision_from_another_angle",
-      "discovery_of_the_indigenous",
-    ],
-    motifs: ["map", "bottles"],
-    img: "../img/collection_works/industrial_myths/bottling_the_republic.webp",
-    desc: [
-      "In 'Bottling the Republic', Dream Agent invites the viewer into a sterile, modern factory where the symbols of national identity are distilled, packaged, and prepared for consumption. On the left, dark and amber soda bottles emerge from a map of the United States—oxidized green against a burnt orange backdrop—suggesting a geographic origin stripped of borders yet full of weight. On the right, lighter bottles exit a white brick structure, their neutrality implying refinement, curation, or even erasure.",
-      "A factory worker affixes a red-crayon label to the box: 'A Case of Sovereignties'. His motion—half-routine, half-ritual—becomes a metaphor for the bureaucratic manufacturing of governance and identity. At the center, twin drinking fountains spill water onto the production line, invoking historical inequities, industrial spillage, or uncontainable truth.",
-      "Hovering above, a 1950s antenna pulses radio waves outward—a relic of a broadcast age, echoing the reach of old narratives into modern machinery.",
-      "Dream Agent fuses surrealism, political allegory, and post-industrial aesthetics into a layered visual inquiry. What does it mean to bottle a republic? And who decides the recipe?",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916B66E9CE605CBFA49",
-      os: "#",
-      sr: "#",
-    },
-  },
+
   // HUMANS
   {
     id: "humans",
@@ -934,30 +990,6 @@ window.allWorks = [
       "Sometimes the strongest prisons cannot be seen.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
-  },
-  // DANIEL'S VISION FROM ANOTHER ANGLE
-  {
-    id: "daniels_vision_from_another_angle",
-    collection: "industrial",
-    title: "Daniel's vision from another angle",
-    year: "2023",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2023-06-13",
-    related: ["the_fear_room", "bottling_the_republic"],
-    motifs: ["cargo", "doves"],
-    img: "../img/collection_works/industrial_myths/daniels_vision_from_another_angle.webp",
-    desc: [
-      "A black-sea freighter noses through fog, its deck stacked not with cargo but with institutions: a courthouse façade, a broadcast tower, glass offices, and a proud marquee that mis-spells 'EXCELLENCE'—a glitch that betrays intent. Cable-chains spill from the ship like tentacles, dragging unseen systems through the tide. Above, a faint halo of radio rings ripples the sky.",
-      "On the shore, four birds stand as witnesses—three obsidian, one pale—an echo of Daniel’s layered visions and their empires. The birds face the vessel, a dissenting conscience against industrial pageantry. What arrives is not a navy, but a narrative: empire as architecture, morality as advertising, dominion as logistics.",
-      "Dream Agent tilts the prophecy 'from another angle,' asking: Who sails whom?",
-      "When institutions are freight, is the ocean carrying them—or are we?",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916CD546DE705CBFA4A",
-      os: "#",
-      sr: "#",
-    },
   },
   // THE ARTIFICIAL DELI-GATE
   {
@@ -1374,7 +1406,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // Cornerstone Kearney
+  // CORNERSTONE KEARNEY
   {
     id: "cornerstone_kearney",
     collection: "war_and_feast",
