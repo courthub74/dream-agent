@@ -1401,4 +1401,36 @@ window.allWorks = [
       sr: "#",
     },
   },
+  // OLD WINESKINS
+  {
+    id: "old_wineskins",
+    collection: "war_and_feast",
+    title: "Old Wineskins",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-10-04",
+    related: ["temple_of_openings", "the_wine_wars", "coeur_of_the_grapes"],
+    motifs: ["winekins", "heart", "strategy wood", "chessboard"],
+    themes: [
+      "tradition",
+      "consumption",
+      "heritage",
+      "transformation",
+      "renewal",
+      "legacy",
+      "preservation",
+    ],
+    img: "../img/collection_works/war_and_feast/old_wineskins.webp",
+    desc: [
+      "Two chessboards rest along a restless shoreline beneath a wine-red sky. One remains occupied by the established pieces of play. The other holds three aged leather wineskins, standing where strategy once expected its figures to be.",
+      "Across the foreground, emptied wineskins lie scattered beyond the boards. In the distance, the final letter of “STRATEGY WOOD” begins to fracture, while a monumental heart rises from the sea and circulates its own water into the atmosphere.",
+      "Created as a spiritual sequel to Temple of Openings, Old Wineskins examines the strain placed upon inherited structures when they are asked to contain a living current. The board remains intact. The vessels remain recognizable. Yet neither guarantees that the system can hold what arrives next.",
+    ],
+    links: {
+      xrp: "#",
+      os: "#",
+      sr: "#",
+    },
+  },
 ];
