@@ -77,6 +77,57 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  // THE RUSHER THE INCREMENTER AND THE PROTESTER
+  {
+    id: "the_rusher_the_incrementer_and_the_protester",
+    collection: "symbols",
+    title: "The Rusher, The Incrementer and the Protester",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-09-15",
+    related: [],
+    motifs: ["bar", "archetypes"],
+    themes: ["conflict", "identity", "agency"],
+    img: "../img/collection_works/symbols_in_motion/the_rusher_the_incrementer_and_the_protester.webp",
+    desc: [
+      "Three men sit at a dimly lit bar — a timeless tribunal of modern archetypes: The Rusher, clenched in frustration, his glass half-empty and fists tighter still; The Incrementer, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and The Protester, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
+      "Each man drinks from a different vessel — a whiskey tumbler, a wine glass, and a crushed beer can — reflecting their strategy in the silent war of agency. Crushed sugar cubes and spent lighters scatter the bar, symbols of fuel and burnout.",
+      "This oil-style portrait isn’t just a study in temperament — it’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
+      "Which one are you?",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // POLAR BEAR
+  {
+    id: "polar_bear",
+    collection: "symbols",
+    title: "Polar Bear",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-01-15",
+    related: ["temple_of_openings", "binary_tree"],
+    motifs: ["temperature", "dualities"],
+    themes: ["climate", "balance", "fragility"],
+    img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
+    desc: [
+      "A checkerboard plain stages two masked figures labeled *let* and *const*, paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
+      "The work fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163FD182E905CBFA4F",
+      os: "#",
+      sr: "#",
+    },
+  },
+
   // DREAM AGENT MAKING BIRDS
   {
     id: "dream_agent_making_birds",
@@ -125,66 +176,25 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // POLAR BEAR
-  {
-    id: "polar_bear",
-    collection: "symbols",
-    title: "Polar Bear",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-01-15",
-    related: ["temple_of_openings", "binary_tree"],
-    motifs: ["temperature", "dualities"],
-    themes: ["climate", "balance", "fragility"],
-    img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
-    desc: [
-      "A checkerboard plain stages two masked figures labeled *let* and *const*, paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
-      "The work fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163FD182E905CBFA4F",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // SURVEY
-  {
-    id: "survey",
-    collection: "symbols",
-    title: "Survey",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-10-27",
-    related: ["god_comma"],
-    motifs: [
-      "surveying",
-      "constructs",
-      "four_primary_dots",
-      "marbles",
-      "glass_cover",
-      "smoke_and_sparks",
-      "giant_observer",
-      "mountain_landscape",
-      "strategy_wood",
-    ],
 
-    themes: [
-      "classification",
-      "observation",
-      "constructed_knowledge",
-      "measurement",
-      "systems_of_order",
-      "human_interpretation",
-      "uncertainty",
-    ],
-    img: "../img/collection_works/symbols_in_motion/survey.webp",
+  // TURQUOISE PLATE
+  {
+    id: "turquoise_plate",
+    collection: "symbols",
+    title: "Turquoise Plate",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-06-15",
+    related: ["dream_agent_making_birds", "wizard_of_agent_dreams"],
+    motifs: ["plate", "ceremony", "ritual"],
+    themes: ["ceremony", "ritual", "transformation"],
+    img: "../img/collection_works/symbols_in_motion/turquoise_plate.webp",
     desc: [
-      "Across an ancient desert beneath snowcapped mountains, a stone-skinned giant presides over a field of marbled objects. Each carries its own swirling mixture of color, yet a single row has been extracted from the irregular formation and placed beneath translucent green glass.",
-      "Sparks ignite. Smoke rises.",
-      "Nearby, an enormous placard offers a heading: CONSTRUCTS. Beneath it sit four colored circles, clean and finite against the disorder of the marbles surrounding them. In the distance, STRATEGY WOOD occupies the mountainside while unselected pieces remain scattered across the ground.",
-      "Survey examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
+      "A symbolic relic from an imagined archive.",
+      "'Turquoise Plate' presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
+      "This work invites viewers to consider the significance of everyday objects in our lives and how they can become vessels for deeper meaning and spiritual connection.",
+      "The archive remembers even when history forgets.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -212,31 +222,6 @@ window.allWorks = [
       "There comes a point when the witnesses remain, the systems remain, the expectations remain, but their authority does not. Approval is no longer something waiting behind a door. It's something one grants oneself.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
-  },
-  // THE RUSHER THE INCREMENTER AND THE PROTESTER
-  {
-    id: "the_rusher_the_incrementer_and_the_protester",
-    collection: "symbols",
-    title: "The Rusher, The Incrementer and the Protester",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-09-15",
-    related: [],
-    motifs: ["bar", "archetypes"],
-    themes: ["conflict", "identity", "agency"],
-    img: "../img/collection_works/symbols_in_motion/the_rusher_the_incrementer_and_the_protester.webp",
-    desc: [
-      "Three men sit at a dimly lit bar — a timeless tribunal of modern archetypes: The Rusher, clenched in frustration, his glass half-empty and fists tighter still; The Incrementer, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and The Protester, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
-      "Each man drinks from a different vessel — a whiskey tumbler, a wine glass, and a crushed beer can — reflecting their strategy in the silent war of agency. Crushed sugar cubes and spent lighters scatter the bar, symbols of fuel and burnout.",
-      "This oil-style portrait isn’t just a study in temperament — it’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
-      "Which one are you?",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
-      os: "#",
-      sr: "#",
-    },
   },
 
   // THE GENEROUS VAGRANT
@@ -283,6 +268,47 @@ window.allWorks = [
     links: { xrp: "#", os: "#", sr: "#" },
   },
 
+  // SURVEY
+  {
+    id: "survey",
+    collection: "symbols",
+    title: "Survey",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-10-27",
+    related: ["god_comma"],
+    motifs: [
+      "surveying",
+      "constructs",
+      "four_primary_dots",
+      "marbles",
+      "glass_cover",
+      "smoke_and_sparks",
+      "giant_observer",
+      "mountain_landscape",
+      "strategy_wood",
+    ],
+
+    themes: [
+      "classification",
+      "observation",
+      "constructed_knowledge",
+      "measurement",
+      "systems_of_order",
+      "human_interpretation",
+      "uncertainty",
+    ],
+    img: "../img/collection_works/symbols_in_motion/survey.webp",
+    desc: [
+      "Across an ancient desert beneath snowcapped mountains, a stone-skinned giant presides over a field of marbled objects. Each carries its own swirling mixture of color, yet a single row has been extracted from the irregular formation and placed beneath translucent green glass.",
+      "Sparks ignite. Smoke rises.",
+      "Nearby, an enormous placard offers a heading: CONSTRUCTS. Beneath it sit four colored circles, clean and finite against the disorder of the marbles surrounding them. In the distance, STRATEGY WOOD occupies the mountainside while unselected pieces remain scattered across the ground.",
+      "Survey examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
   // THEM GUYS AND THE OLDER GUYS
   {
     id: "them_guys_and_the_older_guys",
@@ -307,27 +333,7 @@ window.allWorks = [
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
-  // TURQUOISE PLATE
-  {
-    id: "turquoise_plate",
-    collection: "symbols",
-    title: "Turquoise Plate",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-06-15",
-    related: ["dream_agent_making_birds", "wizard_of_agent_dreams"],
-    motifs: ["plate", "ceremony", "ritual"],
-    themes: ["ceremony", "ritual", "transformation"],
-    img: "../img/collection_works/symbols_in_motion/turquoise_plate.webp",
-    desc: [
-      "A symbolic relic from an imagined archive.",
-      "'Turquoise Plate' presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
-      "This work invites viewers to consider the significance of everyday objects in our lives and how they can become vessels for deeper meaning and spiritual connection.",
-      "The archive remembers even when history forgets.",
-    ],
-    links: { xrp: "#", os: "#", sr: "#" },
-  },
+
   /////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   // THE DIGITAL UNCONSCIOUS
