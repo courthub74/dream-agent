@@ -363,6 +363,83 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  //  RINSE OF TRUST
+  {
+    id: "rinse_of_trust",
+    collection: "digital",
+    title: "Rinse of Trust",
+    year: "2021",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2021-11-15",
+    related: ["lactation_of_the_ledger", "dream_agent_distilleries"],
+    motifs: ["shower", "dollar sheets"],
+    themes: ["faith", "economy", "ritual"],
+    img: "../img/collection_works/digital_unconscious/rinse_of_trust.webp",
+    desc: [
+      "In this chamber of blue and gold, faith is scrubbed clean. The faucet drips with the insignia of digital empires — XRP tears drip from one of two shower heads.  The second shower head, drips nothing hinting at a mysterious system shrouded in secrecy.",
+      "A hand extends from the glow, offering the bar of belief back to the system.",
+      "Below, soaked currency hangs like towels of devotion, dripping into the floor — the cost of staying pure in an economy of confession.",
+      "'The Rinse of Trust' examines the fragility of confidence — the way markets, religions, and algorithms depend on a constant cleansing of faith. Every rinse resets the narrative, but the residue of doubt remains.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91609C5D6F505CBFA63",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // THE ARTIFICIAL MONTY
+  {
+    id: "the_artificial_monty",
+    collection: "digital",
+    title: "The Artificial Monty",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-05-15",
+    related: ["the_artificial_deli-gate"],
+    motifs: ["robot", "ceremony", "ritual"],
+    themes: ["technology", "artificial intelligence", "data centers"],
+    img: "../img/collection_works/digital_unconscious/the_artificial_monty.webp",
+    desc: [
+      "A surreal landscape exploring the hidden ecology of artificial intelligence.",
+      "The Artificial Monty portrays AI as an act of excavation rather than invention. Anonymous workers sift through the accumulated internet while a living river carries symbols of memory, mortality, and biological existence toward a monumental temple dedicated to language itself.",
+      "The painting suggests that artificial intelligence is not born from empty machines, but from humanity's collective archive of stories, knowledge, and experience.",
+      "Every answer has an ancestry.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
+  //  INTERNET OF THE OLD WORLD
+  {
+    id: "internet_of_the_old_world",
+    collection: "digital",
+    title: "Internet of the Old World",
+    year: "2022",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2022-10-06",
+    related: [
+      "internet_of_the_middle_world",
+      "internet_of_the_new_world",
+      "internet_of_the_3rd_kingdom",
+    ],
+    motifs: ["kingdom", "crystal ball"],
+    themes: ["digital culture", "ritual", "medievalism"],
+    img: "../img/collection_works/digital_unconscious/internet of_the_old_world.webp",
+    desc: [
+      "Step into a mythic past where the digital future is foretold. 'Internet of the Old World' by Dream Agent reimagines our virtual age through the lens of medieval mysticism. Gathered before a crystal orb, cloaked figures kneel in reverence—priests, nobles, and peasants alike—before a mysterious apparition inside the orb. Looming behind them, a castle gate boldly inscribed “INTERNET” evokes a new kind of kingdom.",
+      "This painting explores how ancient rituals mirror the collective awe and submission we now show digital networks. It invites viewers to reflect on our shared data as modern prophecy and the internet as a sacred architecture of the new world order.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F2E005F605CBFA62",
+      os: "#",
+      sr: "#",
+    },
+  },
+
   // LACTATION OF THE LEDGER
   {
     id: "lactation_of_the_ledger",
@@ -382,6 +459,172 @@ window.allWorks = [
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080FA0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916DBFA34F705CBFA61",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // TECHNOLOGY AND DESIRE
+  {
+    id: "technology_and_desire",
+    collection: "digital",
+    title: "Technology and Desire",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-12-15",
+    related: ["the_great_divide", "lactation_of_the_ledger"],
+
+    motifs: [
+      "smartphone",
+      "copper_traces",
+      "moss",
+      "stag_beetles",
+      "mannequin",
+      "spider",
+      "tree_bark",
+    ],
+
+    themes: [
+      "technology",
+      "desire",
+      "connection",
+      "observation",
+      "nature",
+      "artificiality",
+      "dependency",
+    ],
+    img: "../img/collection_works/digital_unconscious/technology_and_desire.webp",
+    desc: [
+      "'Technology & Desire' stages attraction as a struggle unfolding inside a living technological ecosystem.",
+
+      "Two stag beetles contest a luminous device whose screen merges with the armored body of an insect. Copper interconnects spread through neon moss and deeply grooved bark, suggesting that circuitry has not invaded nature but evolved from within it. At the edge of the scene, a mannequin-like woman watches with immaculate detachment while a recluse spider descends into her field of vision.",
+
+      "The device promises connection, beauty, and possession. Yet every figure surrounding it is caught inside an older system of appetite: competition, observation, seduction, and predation.",
+
+      "Technology changes the object of desire. It does not necessarily change the instinct.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080FA0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916A1D3F2F905CBFA60",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // INTERNET OF THE MODERN WORLD
+  {
+    id: "internet_of_the_modern_world",
+    collection: "digital",
+    title: "Internet of the Modern World",
+    year: "2022",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2022-10-06",
+    related: [
+      "internet_of_the_old_world",
+      "the_tech_era",
+      "internet_of_the_new_world",
+    ],
+    motifs: ["orbs", "glowing"],
+    themes: ["digital culture", "seclusion", "contemplation"],
+    img: "../img/collection_works/digital_unconscious/internet_of_the_modern_world.webp",
+    desc: [
+      "In Internet of the Modern World, Dream Agent visualizes the internet not as cables and code, but as orbs of knowledge, communion, and mystery — floating quietly within domestic space. Rendered in a palette of calm teals and soft golds, four vignettes capture anonymous digital citizens, each engaging with luminous spheres that defy gravity. These orbs represent the fragments of the modern internet: ideas passed hand-to-hand, data preserved in cold storage, and interfaces that glow with silent intelligence.",
+      "The posters behind each figure subtly spell out 'internet,' while their shirts display concentric symbols — perhaps a new language of connection. Though the setting is minimal, the symbolism runs deep: the kitchen becomes a data hub, the bedroom a meditation zone, the living room a portal.",
+      "This painting reflects a modern condition: being always online, always alone — yet tethered to something larger, shared, and glowing just beyond reach.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91620ABA7F405CBFA64",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // AGE OF NONDESCRIPTDOM
+  {
+    id: "age_of_nondescriptdom",
+    collection: "digital",
+    title: "Age of Nondescriptdom",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-08-29",
+    related: ["the_tech_era", "internet_of_the_modern_world"],
+
+    motifs: [
+      "man_in_scrubs",
+      "laptops",
+      "doorway",
+      "suburban_interior",
+      "etched_text",
+    ],
+
+    themes: [
+      "identity",
+      "anonymity",
+      "conformity",
+      "ordinary_life",
+      "digital_identity",
+      "standardization",
+      "alienation",
+    ],
+    img: "../img/collection_works/digital_unconscious/age_of_nondescriptdom.webp",
+    desc: [
+      "A person sits quietly inside an ordinary suburban home, dressed in plain medical scrubs and facing two adjacent laptops. From outside the narrow window beside the front door, there is almost nothing remarkable to observe: neutral walls, simple furniture, a package by the entrance, the unexceptional posture of someone working at a table.",
+      "Only the screens complicate the scene.",
+      "An administrative inbox dissolves into coded markings, unfamiliar portraits, and unexplained insignias. A second display connects geographic points, financial figures, coordinates, medical symbols, and radio signals without revealing what any of them mean. The information could belong to routine employment, consequential research, organized manipulation, or an evening spent casually browsing.",
+      "'The Age of Nondescriptdom' examines a contemporary visual paradox: radically different functions now occupy nearly identical silhouettes. The healthcare worker and the fraudster, the programmer and the hacker, the analyst and the propagandist, the administrator and the exploiter, the activist and the provocateur may all appear as the same quiet figure illuminated by two screens.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D3F4A7F405CBFA65",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // INTERNET OF MONEY
+  {
+    id: "internet_of_money",
+    collection: "digital",
+    title: "Internet of Money",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-05-15",
+    related: [
+      "internet_of_the_old_world",
+      "internet_of_the_new_world",
+      "technology_and_desire",
+    ],
+
+    motifs: [
+      "balance_scales",
+      "glowing_orb",
+      "network_lines",
+      "currency_symbols",
+    ],
+
+    themes: [
+      "finance",
+      "decentralization",
+      "cryptocurrency",
+      "value",
+      "exchange",
+      "digital_ownership",
+      "trust",
+    ],
+    img: "../img/collection_works/digital_unconscious/internet_of_money.webp",
+    desc: [
+      "'Internet of Money' explores a peculiar imbalance: the ways people assign value to joy, sorrow, wealth, and connection in a world increasingly mediated by networks. At the center of the composition, a luminous green orb hovers above a golden scale, representing the internet itself, a vast sphere of communication, commerce, and collective imagination. Beneath it, golden roots surge through the earth like electrical pathways, suggesting that digital systems have become as foundational to modern life as rivers, roads, and forests once were.",
+
+      "On one side rests 'Happiness', engraved with the mask of sadness. On the other rests 'Sadness', marked with the mask of joy. The contradiction suggests that emotions are rarely what they appear to be from a distance. Prosperity can conceal emptiness. Struggle can produce meaning. Around the scale lie scattered currencies, paper notes, and crypto tokens, symbols of humanity's ongoing attempt to convert belief into value.",
+
+      "The landscape itself is divided between abundance and scarcity, paradise and desert, reminding us that money is not merely an economic system but a story told across civilizations. The glowing orb neither judges nor intervenes. It simply connects.",
+
+      "This work is a meditation on value, perception, and the invisible networks that increasingly shape human destiny.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916A1D3F2F905CBFA66",
       os: "#",
       sr: "#",
     },
@@ -416,130 +659,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  //  INTERNET OF THE OLD WORLD
-  {
-    id: "internet_of_the_old_world",
-    collection: "digital",
-    title: "Internet of the Old World",
-    year: "2022",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2022-10-06",
-    related: [
-      "internet_of_the_middle_world",
-      "internet_of_the_new_world",
-      "internet_of_the_3rd_kingdom",
-    ],
-    motifs: ["kingdom", "crystal ball"],
-    themes: ["digital culture", "ritual", "medievalism"],
-    img: "../img/collection_works/digital_unconscious/internet of_the_old_world.webp",
-    desc: [
-      "Step into a mythic past where the digital future is foretold. 'Internet of the Old World' by Dream Agent reimagines our virtual age through the lens of medieval mysticism. Gathered before a crystal orb, cloaked figures kneel in reverence—priests, nobles, and peasants alike—before a mysterious apparition inside the orb. Looming behind them, a castle gate boldly inscribed “INTERNET” evokes a new kind of kingdom.",
-      "This painting explores how ancient rituals mirror the collective awe and submission we now show digital networks. It invites viewers to reflect on our shared data as modern prophecy and the internet as a sacred architecture of the new world order.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F2E005F605CBFA62",
-      os: "#",
-      sr: "#",
-    },
-  },
-  //  RINSE OF TRUST
-  {
-    id: "rinse_of_trust",
-    collection: "digital",
-    title: "Rinse of Trust",
-    year: "2021",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2021-11-15",
-    related: ["lactation_of_the_ledger", "dream_agent_distilleries"],
-    motifs: ["shower", "dollar sheets"],
-    themes: ["faith", "economy", "ritual"],
-    img: "../img/collection_works/digital_unconscious/rinse_of_trust.webp",
-    desc: [
-      "In this chamber of blue and gold, faith is scrubbed clean. The faucet drips with the insignia of digital empires — XRP tears drip from one of two shower heads.  The second shower head, drips nothing hinting at a mysterious system shrouded in secrecy.",
-      "A hand extends from the glow, offering the bar of belief back to the system.",
-      "Below, soaked currency hangs like towels of devotion, dripping into the floor — the cost of staying pure in an economy of confession.",
-      "'The Rinse of Trust' examines the fragility of confidence — the way markets, religions, and algorithms depend on a constant cleansing of faith. Every rinse resets the narrative, but the residue of doubt remains.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91609C5D6F505CBFA63",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // INTERNET OF THE MODERN WORLD
-  {
-    id: "internet_of_the_modern_world",
-    collection: "digital",
-    title: "Internet of the Modern World",
-    year: "2022",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2022-10-06",
-    related: [
-      "internet_of_the_old_world",
-      "the_tech_era",
-      "internet_of_the_new_world",
-    ],
-    motifs: ["orbs", "glowing"],
-    themes: ["digital culture", "seclusion", "contemplation"],
-    img: "../img/collection_works/digital_unconscious/internet_of_the_modern_world.webp",
-    desc: [
-      "In Internet of the Modern World, Dream Agent visualizes the internet not as cables and code, but as orbs of knowledge, communion, and mystery — floating quietly within domestic space. Rendered in a palette of calm teals and soft golds, four vignettes capture anonymous digital citizens, each engaging with luminous spheres that defy gravity. These orbs represent the fragments of the modern internet: ideas passed hand-to-hand, data preserved in cold storage, and interfaces that glow with silent intelligence.",
-      "The posters behind each figure subtly spell out 'internet,' while their shirts display concentric symbols — perhaps a new language of connection. Though the setting is minimal, the symbolism runs deep: the kitchen becomes a data hub, the bedroom a meditation zone, the living room a portal.",
-      "This painting reflects a modern condition: being always online, always alone — yet tethered to something larger, shared, and glowing just beyond reach.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91620ABA7F405CBFA64",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // THE ARTIFICIAL MONTY
-  {
-    id: "the_artificial_monty",
-    collection: "digital",
-    title: "The Artificial Monty",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-05-15",
-    related: ["the_artificial_deli-gate"],
-    motifs: ["robot", "ceremony", "ritual"],
-    themes: ["technology", "artificial intelligence", "data centers"],
-    img: "../img/collection_works/digital_unconscious/the_artificial_monty.webp",
-    desc: [
-      "A surreal landscape exploring the hidden ecology of artificial intelligence.",
-      "The Artificial Monty portrays AI as an act of excavation rather than invention. Anonymous workers sift through the accumulated internet while a living river carries symbols of memory, mortality, and biological existence toward a monumental temple dedicated to language itself.",
-      "The painting suggests that artificial intelligence is not born from empty machines, but from humanity's collective archive of stories, knowledge, and experience.",
-      "Every answer has an ancestry.",
-    ],
-    links: { xrp: "#", os: "#", sr: "#" },
-  },
-  // // HUMANS
-  // {
-  //   id: "humans",
-  //   collection: "digital",
-  //   title:"Humans",
-  //   year:"2026",
-  //   style:"Oil-style",
-  //   featured: true,
-  //   dateCreated: "2026-06-15",
-  //   related:[],
-  //   motifs: ["prison", "freedom", "similarity"],
-  //   themes: ["confinement", "liberty", "existentialism"],
-  //   img:"../img/collection_works/digital_unconscious/humans.webp",
-  //   desc:[
-  //     "A surreal meditation on visible and invisible confinement.",
-  //     "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
-  //     "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
-  //     "Sometimes the strongest prisons cannot be seen.",
-  //   ],
-  //   links:{ xrp:"#",
-  //   os:"#",
-  //   sr:"#"}
-  // },
+
   // INTERNET OF THE NEW WORLD
   {
     id: "internet_of_the_new_world",
