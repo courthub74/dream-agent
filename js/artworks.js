@@ -277,7 +277,7 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-10-27",
-    related: ["god_comma"],
+    related: ["the_refactoring_ritual", "the_census_ritual"],
     motifs: [
       "surveying",
       "constructs",
@@ -304,7 +304,7 @@ window.allWorks = [
       "Across an ancient desert beneath snowcapped mountains, a stone-skinned giant presides over a field of marbled objects. Each carries its own swirling mixture of color, yet a single row has been extracted from the irregular formation and placed beneath translucent green glass.",
       "Sparks ignite. Smoke rises.",
       "Nearby, an enormous placard offers a heading: CONSTRUCTS. Beneath it sit four colored circles, clean and finite against the disorder of the marbles surrounding them. In the distance, STRATEGY WOOD occupies the mountainside while unselected pieces remain scattered across the ground.",
-      "Survey examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
+      "'Survey' examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -741,31 +741,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // PRINCE CARL AFTER THE SALT CONQUERING SPEAKING AN ANCIENT LANGUAGE
-  {
-    id: "prince_carl_after_the_salt_conquering_speaking_an_ancient_language",
-    collection: "dominion",
-    title: "Prince Carl after the Salt Conquering Speaking an Ancient Language",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-04-15",
-    related: ["prince_carl_laying"],
-    motifs: ["salt", "language", "conquest"],
-    img: "../img/collection_works/dominion_archives/prince_carl_after_the_salt_conquering.webp",
-    desc: [
-      "After the Salt Conquering, Prince Carl sits upon the edge of the Atlantic, wrapped in furs, speaking in a language older than kingdoms and newer than algorithms.",
-      "A glowing orb rests before him like a captured star while two silent witnesses listen from the margins. Around his neck hangs a pendant reading *Social Media*, transforming a modern phrase into a royal relic.",
-      "In this surreal vision, Dream Agent collapses centuries into a single moment: ancient ritual, digital communication, and the eternal human desire to be heard.",
-      "Is Prince Carl a conqueror, a prophet, an influencer, or merely another storyteller speaking into the void?",
-      "As waves crash against dark stone and the sky fractures with celestial light, the distinction becomes irrelevant.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F7000AF805CBFA57",
-      os: "#",
-      sr: "#",
-    },
-  },
+
   // IMPERIOUS KINGDOM
   {
     id: "imperious_kingdom",
@@ -789,30 +765,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // INTERNET OF THE 3RD KINGDOM
-  {
-    id: "internet_of_the_3rd_kingdom",
-    collection: "dominion",
-    title: "Internet of the 3rd Kingdom",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-11-15",
-    related: ["internet_of_the_new_world"],
-    motifs: ["printing_press", "panic"],
-    themes: ["paranoia", "ritual"],
-    img: "../img/collection_works/dominion_archives/internet_of_the 3rd_kingdom.webp",
-    desc: [
-      "In 'Internet of the 3rd Kingdom', a secret stone corridor becomes a theater of paranoia and ritual. Figures in medieval tunics scatter with scrolls of information, as though caught in the chaos of a leaking archive. At the forefront, a faceless man holds a bleeding sphere, accompanied by a powdered judge holding a glowing Ace of Spades —symbols of chance, judgment, and hidden authority.",
-      "Above them, a blood-red banner bears a compass-like sigil, while a massive crystal orb in the distance swallows flying swords and documents, as if consuming history itself. This is the Kingdom of Networks—half-feudal, half-digital—where law, secrecy, and data collide.",
-      "Dream Agent paints a world where the 'architecture of power' is ancient, yet the 'currency of control' is information.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163BB17DF405CBFA5A",
-      os: "#",
-      sr: "#",
-    },
-  },
+
   // SALTWATER ELECTRONICS
   {
     id: "saltwater_electronics",
@@ -839,6 +792,59 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  // INTERNET OF THE 3RD KINGDOM
+  {
+    id: "internet_of_the_3rd_kingdom",
+    collection: "dominion",
+    title: "Internet of the 3rd Kingdom",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-11-15",
+    related: ["internet_of_the_new_world"],
+    motifs: ["printing_press", "panic"],
+    themes: ["paranoia", "ritual"],
+    img: "../img/collection_works/dominion_archives/internet_of_the 3rd_kingdom.webp",
+    desc: [
+      "In 'Internet of the 3rd Kingdom', a secret stone corridor becomes a theater of paranoia and ritual. Figures in medieval tunics scatter with scrolls of information, as though caught in the chaos of a leaking archive. At the forefront, a faceless man holds a bleeding sphere, accompanied by a powdered judge holding a glowing Ace of Spades —symbols of chance, judgment, and hidden authority.",
+      "Above them, a blood-red banner bears a compass-like sigil, while a massive crystal orb in the distance swallows flying swords and documents, as if consuming history itself. This is the Kingdom of Networks—half-feudal, half-digital—where law, secrecy, and data collide.",
+      "Dream Agent paints a world where the 'architecture of power' is ancient, yet the 'currency of control' is information.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163BB17DF405CBFA5A",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // MEAN AND CLEAN
+  {
+    id: "mean_and_clean",
+    collection: "dominion",
+    title: "Mean and Clean",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-04-15",
+    related: ["imperious_kingdom"],
+    motifs: ["crown", "gold chains", "microphones"],
+    themes: ["status", "power", "scrutiny"],
+    img: "../img/collection_works/dominion_archives/mean_and_clean.webp",
+    desc: [
+      "In 'Mean and Clean', Dream Agent stages a royal press conference where no words are spoken, only power is broadcast.",
+
+      "A faceless metallic figure crowned in gold sits before a swarm of microphones. Chains hang behind him like ceremonial trophies. The coat is warm, the crown is cold, and the silence is louder than any speech.",
+
+      "This work explores the aesthetic of control, and the polished cruelty of power as spectacle. ",
+    ],
+    links: {
+      xrp: "#",
+      os: "#",
+      sr: "#",
+    },
+  },
+
   // BIG FOREST TAHHEED
   {
     id: "big_forest_taheed",
@@ -850,6 +856,7 @@ window.allWorks = [
     dateCreated: "2025-09-18",
     related: ["the_biblicals", "imperious_kingdom"],
     motifs: ["forest", "stewardship"],
+    themes: ["balance", "ethics", "human_scale"],
     img: "../img/collection_works/dominion_archives/big_forest_taheed.webp",
     desc: [
       "'Big Forest Taheed' presents a monumental figure standing between the myth of the frontier and the modern paradox of restraint. Dressed in a sailor’s uniform, carrying an axe over his shoulder, the figure is not a conqueror but a steward—his presence bound by the sign at his feet: 'Just enough for shelter, nothing more.'",
@@ -862,6 +869,81 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  // PRINCE CARL AFTER THE SALT CONQUERING SPEAKING AN ANCIENT LANGUAGE
+  {
+    id: "prince_carl_after_the_salt_conquering_speaking_an_ancient_language",
+    collection: "dominion",
+    title: "Prince Carl after the Salt Conquering Speaking an Ancient Language",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-04-15",
+    related: ["prince_carl_laying"],
+    motifs: ["salt", "language", "conquest"],
+    themes: ["history", "communication", "legacy"],
+    img: "../img/collection_works/dominion_archives/prince_carl_after_the_salt_conquering.webp",
+    desc: [
+      "After the Salt Conquering, Prince Carl sits upon the edge of the Atlantic, wrapped in furs, speaking in a language older than kingdoms and newer than algorithms.",
+      "A glowing orb rests before him like a captured star while two silent witnesses listen from the margins. Around his neck hangs a pendant reading *Social Media*, transforming a modern phrase into a royal relic.",
+      "In this surreal vision, Dream Agent collapses centuries into a single moment: ancient ritual, digital communication, and the eternal human desire to be heard.",
+      "Is Prince Carl a conqueror, a prophet, an influencer, or merely another storyteller speaking into the void?",
+      "As waves crash against dark stone and the sky fractures with celestial light, the distinction becomes irrelevant.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F7000AF805CBFA57",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // INTERNET OF THE 9TH EMPIRE
+  {
+    id: "internet_of_the_9th_empire",
+    collection: "dominion",
+    title: "Internet of the 9th Empire",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-10-15",
+    related: ["internet_of_the_3rd_kingdom", "internet_of_the_new_world"],
+    motifs: ["glowing orbs", "crown", "domed towers"],
+    themes: ["power", "civilization", "connection"],
+    img: "../img/collection_works/dominion_archives/internet_of_the_9th_empire.webp",
+    desc: [
+      "A vision of civilization after knowledge becomes its highest currency.",
+      "'Internet of the 9th Empire' depicts rulers who govern through illumination rather than force. Before them stretches a society where every individual holds a glowing sphere, symbolizing universal access to collective memory and shared understanding.",
+      "The work transforms the internet from a technological network into a cultural inheritance spanning generations and civilizations.",
+      "Its greatest monument is not stone.",
+      "It is connection.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
+  // SOME THINGS SOUND LIKE THE MORNING
+  {
+    id: "some_things_sound_like_the_morning",
+    collection: "dominion",
+    title: "Some Things Sound Like the Morning",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-06-15",
+    related: ["imperious_kingdom", "the_biblicals"],
+    motifs: ["shower", "light", "bonsai waterfall"],
+    img: "../img/collection_works/dominion_archives/some_things_sound_like_the_morning.webp",
+    desc: [
+      "Every civilization begins with a language it cannot fully explain.",
+      "'Some Things Sound Like the Morning' transforms an ordinary shower into a sanctuary of transmission. Morning sunlight pours through the fixture, replacing flowing water, casting golden frequencies across a chamber where a microphone waits beneath the light. On one wall, 'M = Mineral' suggests that voice originates in the deep architecture of the earth. On another, the Hebrew word חיים (Life) quietly anchors the composition, introducing breath, spirit, and living memory into the ritual.",
+      "Between them stands the figure, suspended between stone and speech, matter and meaning. The bonsai waterfall reinforces the painting's central current: life is not manufactured but cultivated, flowing patiently through generations before emerging as language. This work asks whether the first sounds of civilization were less an invention than a reception, as though every morning still carries echoes of the world's original voice.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F7000AF805CBFA57",
+      os: "#",
+      sr: "#",
+    },
+  },
+
   // SOME THINGS WERE MEANT TO LAST FOREVER
   {
     id: "some_things_were_meant_to_last_forever",
@@ -886,27 +968,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // INTERNET OF THE 9TH EMPIRE
-  {
-    id: "internet_of_the_9th_empire",
-    collection: "dominion",
-    title: "Internet of the 9th Empire",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-10-15",
-    related: [],
-    motifs: ["empire", "internet", "ritual"],
-    img: "../img/collection_works/dominion_archives/internet_of_the_9th_empire.webp",
-    desc: [
-      "A vision of civilization after knowledge becomes its highest currency.",
-      "Internet of the 9th Empire depicts rulers who govern through illumination rather than force. Before them stretches a society where every individual holds a glowing sphere, symbolizing universal access to collective memory and shared understanding.",
-      "The work transforms the internet from a technological network into a cultural inheritance spanning generations and civilizations.",
-      "Its greatest monument is not stone.",
-      "It is connection.",
-    ],
-    links: { xrp: "#", os: "#", sr: "#" },
-  },
+
   // THE REFACTORING RITUAL
   {
     id: "the_refactoring_ritual",
@@ -916,11 +978,7 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-10-15",
-    related: [
-      "the_census_ritual",
-      "bottling_the_republic",
-      "saltwater_electronics",
-    ],
+    related: ["the_census_ritual", "bottling_the_republic", "survey"],
     tags: ["spy", "birds"],
     img: "../img/collection_works/dominion_archives/the_refactoring_ritual.webp",
     desc: [
@@ -933,28 +991,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // SOME THINGS SOUND LIKE THE MORNING
-  {
-    id: "some_things_sound_like_the_morning",
-    collection: "dominion",
-    title: "Some Things Sound Like the Morning",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-06-15",
-    related: ["imperious_kingdom", "the_biblicals"],
-    motifs: ["shower", "light", "bonsai waterfall"],
-    img: "../img/collection_works/dominion_archives/some_things_sound_like_the_morning.webp",
-    desc: [
-      "Every civilization begins with a language it cannot fully explain., 'Some Things Sound Like the Morning' transforms an ordinary shower into a sanctuary of transmission. Morning sunlight pours through the fixture, replacing flowing water, casting golden frequencies across a chamber where a microphone waits beneath the light. On one wall, 'M = Mineral' suggests that voice originates in the deep architecture of the earth. On another, the Hebrew word חיים (Life) quietly anchors the composition, introducing breath, spirit, and living memory into the ritual.",
-      "Between them stands the figure, suspended between stone and speech, matter and meaning. The bonsai waterfall reinforces the painting's central current: life is not manufactured but cultivated, flowing patiently through generations before emerging as language. This work asks whether the first sounds of civilization were less an invention than a reception, as though every morning still carries echoes of the world's original voice.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F7000AF805CBFA57",
-      os: "#",
-      sr: "#",
-    },
-  },
+
   /////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   // INDUSTRIAL MYTHS
@@ -1040,7 +1077,7 @@ window.allWorks = [
   {
     id: "god_comma",
     collection: "industrial",
-    title: "God Comma",
+    title: "God, Comma",
     year: "2026",
     style: "Oil-style",
     featured: true,
