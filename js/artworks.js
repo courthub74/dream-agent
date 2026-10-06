@@ -77,54 +77,6 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // THE RUSHER THE INCREMENTER AND THE PROTESTER
-  {
-    id: "the_rusher_the_incrementer_and_the_protester",
-    collection: "symbols",
-    title: "The Rusher, The Incrementer and the Protester",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-09-15",
-    related: [],
-    motifs: ["bar", "archetypes"],
-    themes: ["conflict", "identity", "agency"],
-    img: "../img/collection_works/symbols_in_motion/the_rusher_the_incrementer_and_the_protester.webp",
-    desc: [
-      "Three men sit at a dimly lit bar — a timeless tribunal of modern archetypes: The Rusher, clenched in frustration, his glass half-empty and fists tighter still; The Incrementer, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and The Protester, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
-      "Each man drinks from a different vessel — a whiskey tumbler, a wine glass, and a crushed beer can — reflecting their strategy in the silent war of agency. Crushed sugar cubes and spent lighters scatter the bar, symbols of fuel and burnout.",
-      "This oil-style portrait isn’t just a study in temperament — it’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
-      "Which one are you?",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // POLAR BEAR
-  {
-    id: "polar_bear",
-    collection: "symbols",
-    title: "Polar Bear",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-01-15",
-    related: ["temple_of_openings", "binary_tree"],
-    motifs: ["temperature", "dualities"],
-    themes: ["climate", "balance", "fragility"],
-    img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
-    desc: [
-      "A checkerboard plain stages two masked figures labeled *let* and *const*, paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
-      "The work fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163FD182E905CBFA4F",
-      os: "#",
-      sr: "#",
-    },
-  },
   // DREAM AGENT MAKING BIRDS
   {
     id: "dream_agent_making_birds",
@@ -173,26 +125,28 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // TURQUOISE PLATE
+  // POLAR BEAR
   {
-    id: "turquoise_plate",
+    id: "polar_bear",
     collection: "symbols",
-    title: "Turquoise Plate",
+    title: "Polar Bear",
     year: "2026",
     style: "Oil-style",
     featured: true,
-    dateCreated: "2026-06-15",
-    related: ["dream_agent_making_birds", "wizard_of_agent_dreams"],
-    motifs: ["plate", "ceremony", "ritual"],
-    themes: ["ceremony", "ritual", "transformation"],
-    img: "../img/collection_works/symbols_in_motion/turquoise_plate.webp",
+    dateCreated: "2026-01-15",
+    related: ["temple_of_openings", "binary_tree"],
+    motifs: ["temperature", "dualities"],
+    themes: ["climate", "balance", "fragility"],
+    img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
     desc: [
-      "A symbolic relic from an imagined archive.",
-      "'Turquoise Plate' presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
-      "This work invites viewers to consider the significance of everyday objects in our lives and how they can become vessels for deeper meaning and spiritual connection.",
-      "The archive remembers even when history forgets.",
+      "A checkerboard plain stages two masked figures labeled *let* and *const*, paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
+      "The work fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
     ],
-    links: { xrp: "#", os: "#", sr: "#" },
+    links: {
+      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163FD182E905CBFA4F",
+      os: "#",
+      sr: "#",
+    },
   },
   // SURVEY
   {
@@ -234,6 +188,101 @@ window.allWorks = [
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
+
+  // THE BIRD SCENE
+  {
+    id: "the_bird_scene",
+    collection: "symbols",
+    title: "The Bird Scene",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-06-15",
+    related: ["wizard_of_agent_dreams", "dream_agent_making_birds"],
+    motifs: ["bird", "flight", "freedom"],
+    themes: ["liberation", "transcendence", "wildness"],
+    img: "../img/collection_works/symbols_in_motion/the_bird_scene.webp",
+    desc: [
+      "'The Bird Scene' captures the moment just before delivery becomes revelation.",
+      "A faceless courier walks a suburban driveway carrying a red box like a sacrament. Plumbers on one side. Electricians on the other. Wealth displayed like uniform. Loyalty worn like chains. Inside the house: a bullseye — not a decoration, but a destination.",
+
+      "Beneath his feet, forgotten machines scatter. Old screens are rejected by his gravity. The past cannot keep up with the messenger. Above him, birds move in formation — not nature, but surveillance.",
+
+      "Yet the courier continues.",
+      "There comes a point when the witnesses remain, the systems remain, the expectations remain, but their authority does not. Approval is no longer something waiting behind a door. It's something one grants oneself.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+  // THE RUSHER THE INCREMENTER AND THE PROTESTER
+  {
+    id: "the_rusher_the_incrementer_and_the_protester",
+    collection: "symbols",
+    title: "The Rusher, The Incrementer and the Protester",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-09-15",
+    related: [],
+    motifs: ["bar", "archetypes"],
+    themes: ["conflict", "identity", "agency"],
+    img: "../img/collection_works/symbols_in_motion/the_rusher_the_incrementer_and_the_protester.webp",
+    desc: [
+      "Three men sit at a dimly lit bar — a timeless tribunal of modern archetypes: The Rusher, clenched in frustration, his glass half-empty and fists tighter still; The Incrementer, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and The Protester, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
+      "Each man drinks from a different vessel — a whiskey tumbler, a wine glass, and a crushed beer can — reflecting their strategy in the silent war of agency. Crushed sugar cubes and spent lighters scatter the bar, symbols of fuel and burnout.",
+      "This oil-style portrait isn’t just a study in temperament — it’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
+      "Which one are you?",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // THE GENEROUS VAGRANT
+  {
+    id: "the_generous_vagrant",
+    collection: "symbols",
+    title: "The Generous Vagrant",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-10-01",
+    related: ["the_starving_millionare"],
+
+    motifs: [
+      "masked_man",
+      "shopping_cart",
+      "burdens",
+      "storefront",
+      "urban_street",
+      "origin_story",
+    ],
+
+    themes: [
+      "generosity",
+      "displacement",
+      "burden",
+      "scarcity",
+      "dignity",
+      "social_value",
+      "contradiction",
+    ],
+    img: "../img/collection_works/symbols_in_motion/the_generous_vagrant.webp",
+    desc: [
+      "The Generous Vagrant' presents an anonymous healer moving through an abandoned commercial district beneath an almost offensively pleasant sky. Society sees only his deteriorating clothes, concealed face, and battered shopping cart. What it fails to recognize is that the cart contains the burdens he has quietly removed from others.",
+
+      "Knotted masses, collapsed masks, empty coats, and stone-like worries crowd the rusted frame, each leaking traces of warm ivory light. Nearby, a neatly dressed stranger stands with a peaceful hollow illuminated in their chest—the evidence of an exchange that occurred without payment, recognition, or ceremony.",
+
+      "Above the healer, a polished billboard elevates manufactured sweetness into spectacle: an immaculate faceless authority presents an enormous chocolate bar while the genuine act of relief passes unnoticed below. Behind both figures, a brightly colored smiley face partially conceals the words 'ORIGIN STORY', replacing difficult history with performed happiness.",
+
+      "The vagrant carries a battered book titled 'LESSONS TO TEACH', but offers no sermon. His knowledge exists independently of anyone’s willingness to acknowledge its source.",
+
+      "The central paradox remains unresolved: the person who appears to possess the least is quietly carrying what everyone else needs removed.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
   // THEM GUYS AND THE OLDER GUYS
   {
     id: "them_guys_and_the_older_guys",
@@ -255,6 +304,27 @@ window.allWorks = [
       "It suggests something more subtle.",
       "Every society develops institutions that learn how stories influence behavior. Over time, those institutions become traditions, industries, and eventually invisible assumptions.",
       // "This work is a meditation on the invisible forces that shape culture, the tension between innovation and tradition, and the ways in which communities negotiate their shared narratives.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+  // TURQUOISE PLATE
+  {
+    id: "turquoise_plate",
+    collection: "symbols",
+    title: "Turquoise Plate",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-06-15",
+    related: ["dream_agent_making_birds", "wizard_of_agent_dreams"],
+    motifs: ["plate", "ceremony", "ritual"],
+    themes: ["ceremony", "ritual", "transformation"],
+    img: "../img/collection_works/symbols_in_motion/turquoise_plate.webp",
+    desc: [
+      "A symbolic relic from an imagined archive.",
+      "'Turquoise Plate' presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
+      "This work invites viewers to consider the significance of everyday objects in our lives and how they can become vessels for deeper meaning and spiritual connection.",
+      "The archive remembers even when history forgets.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
