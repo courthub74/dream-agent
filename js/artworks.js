@@ -1279,77 +1279,53 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // LORI'S HOUSE
+
+  // THE MAGIC OF '86
   {
-    id: "loris_house",
+    id: "magic_of_86",
     collection: "signals",
-    title: "Lori's House",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-01-01",
-    related: ["conrads_house", "shannons_house"],
-    motifs: ["stairs", "neon"],
-    themes: ["family", "identity", "excitement"],
-    tags: ["stairs", "neon"],
-    img: "../img/collection_works/signals_and_ascensions/loris_house.webp",
-    desc: [
-      "A suburban dream refracted through surrealist lenses: a Queen of Poland descends 1980s stairs, passing a glowing fish tank where Bitcoin, Ethereum, and Dollar signs drift like exotic creatures. On the carpet, a fiery-haired pop star dances with three women—Black, Asian, and Hispanic—celebrating joy, diversity, and rebellion. In the background, a red-haired mother stirs something unseen, a quiet anchor to the domestic world.",
-      "This work balances the absurd with the regal: the weight of crowns and currencies meets the exuberance of neon-lit youth. Both history and myth converge under one roof, questioning the hierarchies of power, gender, money, and memory.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080FA0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916655D1B0D05CBFA67",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // THE BIBLICALS
-  {
-    id: "the_biblicals",
-    collection: "signals",
-    title: "The Biblicals",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-01-01",
-    related: ["some_things_sound_like_the_morning", "imperious_kingdom"],
-    motifs: ["family", "heritage", "dance"],
-    themes: ["faith", "tradition", "identity"],
-    img: "../img/collection_works/signals_and_ascensions/the_biblicals.webp",
-    desc: [
-      "'The Biblicals' is a visual hymn—a layered scene where heritage, reverence, and resilience meet in a sunlit room. In the foreground, a man in an ermine fur coat and navy cap lowers his brim, guarding his gaze while embodying quiet strength. Behind him, a woman in a Choctaw dress moves in sacred rhythm, hands lifted in dance, as two children in red coats rejoice in mirrored movement. Between them all, Hebrew letters are inscribed on a clay wall, hinting at an ancient river—spiritual currents running beneath the moment. Ferns frame the scene, while bottles at the base serve as silent relics of rituals past. A piano in the corner, stacked with books, suggests memory, learning, and song.",
-      "This work invites reflection on how ancestral traditions, faith, and modern identity weave into one shared continuum.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916AA0E8E0A05CBFA6A",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // REVOLUTIONARY BALLOON
-  {
-    id: "revolutionary_balloon",
-    collection: "signals",
-    title: "Revolutionary Balloon",
+    title: "Magic of '86",
     year: "2023",
     style: "Oil-style",
     featured: true,
     dateCreated: "2023-06-13",
-    related: [],
-    motifs: ["balloon", "ascension", "knowledge"],
-    themes: ["information flow", "legacy", "culture"],
-    img: "../img/collection_works/signals_and_ascensions/revolutionary_balloon.webp",
+    related: ["tartarian_standard_deluxe"],
+    motifs: ["stadium", "hip-hop", "punk"],
+    themes: ["rebellion", "expression", "culture"],
+    img: "../img/collection_works/signals_and_ascensions/the_magic_of_86.webp",
     desc: [
-      "A Renaissance-era figure ascends in a striped hot air balloon, scattering ancient knowledge—cryptic sheets of coded text—into the air. Below, four hands of diverse origins hold smartphones. One displays hieroglyph-like text, while the others burst with cascading streams of water, as if their screens were ancient fountains.",
-      "In the distance rise the Sphinx, Notre-Dame, and the Empire State Building—monuments of civilization, framed between electrical towers sparking with energy from the floating basket above.",
-      "'Revolutionary Balloon' is a surreal allegory of information flow—where legacy meets signal, and culture is transmitted not only through paper, but through code and conductivity. This is Gutenberg’s ghost sailing the skies of digital modernity.",
+      "In 'Magic of '86', three cultural avatars—hip-hop, punk, and suburban youth—collide in a stadium of roaring multitudes. A figure in a Bubble goose down holds an electrified film reel from one side of the stage, while an Indie Rock-like vocalist in mid-cry fuses it in the middle with cinematic force. On the opposite end, a figure in a Dapper Dan-style tracksuit and gold jewelry of that era grips the other reel, completing the circuit. Each wears surrealist visors in the styles of Picasso, Klee, and Matisse. The electricity between them is symbolic, a spark of cross-genre unity, a visual remix of race, culture, and rhythm from an era that echoed rebellion and expression.",
+      "This piece merges theater, iconography, and myth into a kinetic dream sequence. A rare portal into the subconscious of the 1980s cultural evolution.",
     ],
     links: {
-      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9169328BD0B05CBFA69",
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916C0F45F0905CBFA6B",
       os: "#",
       sr: "#",
     },
   },
+
+  // FASHION STATEMENT
+  {
+    id: "fashion_statement",
+    collection: "signals",
+    title: "Fashion Statement",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-01-01",
+    related: [],
+    motifs: ["fashion", "identity", "expression"],
+    themes: ["identity", "expression", "belonging"],
+    desc: [
+      "A surreal meditation on identity, evolution, and the symbols we wear.",
+      "Fashion Statement presents a ghostlike figure passing through a ceremonial corridor where animals and mysterious aerial forms are carved into opposing walls. The architecture resembles both a museum and a sacred passage, inviting viewers to consider the narratives that shape human identity.",
+      "Rather than depicting clothing, the work suggests that belief itself may be the oldest form of fashion.",
+      "Every civilization dresses the unknown in different symbols.",
+    ],
+    img: "../img/collection_works/signals_and_ascensions/fashion_statement.webp",
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
   // CONRAD'S HOUSE
   {
     id: "conrads_house",
@@ -1374,75 +1350,57 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // THEM GODS AND THE OLDER GODS
+
+  // LORI'S HOUSE
   {
-    id: "them_gods_and_the_older_gods",
+    id: "loris_house",
     collection: "signals",
-    title: "Them Gods and the Older Gods",
+    title: "Lori's House",
     year: "2025",
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-01-01",
-    related: ["them_guys_and_the_older_guys"],
-    motifs: ["gods", "mythology", "ascension"],
-    themes: ["belief", "civilization", "myth"],
+    related: ["conrads_house", "shannons_house"],
+    motifs: ["stairs", "neon"],
+    themes: ["family", "identity", "excitement"],
+    tags: ["stairs", "neon"],
+    img: "../img/collection_works/signals_and_ascensions/loris_house.webp",
     desc: [
-      // "A meditation on the evolution of belief.",
-      "Them Gods and the Older Gods presents an imagined gathering where civilizations, philosophies, and generations overlap. Ancient architecture, timeless conversation, and symbolic figures dissolve distinctions between past and present, suggesting that humanity continually replaces one system of meaning with another.",
-      // "The work explores the invisible continuity beneath changing religions, ideologies, technologies, and cultures.",
-      "Perhaps every generation worships something.",
-      "Only history decides what becomes mythology.",
-    ],
-    img: "../img/collection_works/signals_and_ascensions/them_gods_and_the_older_gods.webp",
-    links: { xrp: "#", os: "#", sr: "#" },
-  },
-  // TATARIAN STANDARD DELUXE
-  {
-    id: "tartarian_standard_deluxe",
-    collection: "signals",
-    title: "Tartarian Standard Deluxe",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-01-01",
-    related: ["magic_of_86"],
-    motifs: ["guitarist", "tartaria", "lightening"],
-    themes: ["myth", "history", "value"],
-    img: "../img/collection_works/signals_and_ascensions/tartarian_standard_deluxe.webp",
-    desc: [
-      "A faceless guitarist sits beneath the domes of a lost empire — the 'Tartarian skyline' glowing under a crescent moon. His hat bears the ironic brand “Standard Deluxe,” a paradox of value in a world of imitation.",
-      "Beside him, a crowned observer points in revelation toward the inscription, as if decoding a sacred frequency. Behind them, a billboard of the Black Madonna hums like an ancient server — faith meets circuitry, royalty meets circuitry, art meets commodity.",
-      "This painting examines how style becomes relic, how performance becomes devotion, and how luxury rebrands the divine.",
+      "A suburban dream refracted through surrealist lenses: a Queen of Poland descends 1980s stairs, passing a glowing fish tank where Bitcoin, Ethereum, and Dollar signs drift like exotic creatures. On the carpet, a fiery-haired pop star dances with three women—Black, Asian, and Hispanic—celebrating joy, diversity, and rebellion. In the background, a red-haired mother stirs something unseen, a quiet anchor to the domestic world.",
+      "This work balances the absurd with the regal: the weight of crowns and currencies meets the exuberance of neon-lit youth. Both history and myth converge under one roof, questioning the hierarchies of power, gender, money, and memory.",
     ],
     links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9164E774A0E05CBFA66",
+      xrp: "https://xrp.cafe/nft/00080FA0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916655D1B0D05CBFA67",
       os: "#",
       sr: "#",
     },
   },
-  // THE MAGIC OF '86
+
+  // REVOLUTIONARY BALLOON
   {
-    id: "magic_of_86",
+    id: "revolutionary_balloon",
     collection: "signals",
-    title: "Magic of '86",
+    title: "Revolutionary Balloon",
     year: "2023",
     style: "Oil-style",
     featured: true,
     dateCreated: "2023-06-13",
-    related: ["tartarian_standard_deluxe"],
-    motifs: ["stadium", "hip-hop", "punk"],
-    themes: ["rebellion", "expression", "culture"],
-    img: "../img/collection_works/signals_and_ascensions/the_magic_of_86.webp",
+    related: [],
+    motifs: ["balloon", "ascension", "knowledge"],
+    themes: ["information flow", "legacy", "culture"],
+    img: "../img/collection_works/signals_and_ascensions/revolutionary_balloon.webp",
     desc: [
-      "In 'Magic of '86', three cultural avatars—hip-hop, punk, and suburban youth—collide in a stadium of roaring multitudes. A figure in a Bubble goose down holds an electrified film reel from one side of the stage, while an Indie Rock-like vocalist in mid-cry fuses it in the middle with cinematic force. On the opposite end, a figure in a Dapper Dan-style tracksuit and gold jewelry of that era grips the other reel, completing the circuit. Each wears surrealist visors in the styles of Picasso, Klee, and Matisse. The electricity between them is symbolic, a spark of cross-genre unity, a visual remix of race, culture, and rhythm from an era that echoed rebellion and expression.",
-      "This piece merges theater, iconography, and myth into a kinetic dream sequence. A rare portal into the subconscious of the 1980s cultural evolution.",
+      "A Renaissance-era figure ascends in a striped hot air balloon, scattering ancient knowledge—cryptic sheets of coded text—into the air. Below, four hands of diverse origins hold smartphones. One displays hieroglyph-like text, while the others burst with cascading streams of water, as if their screens were ancient fountains.",
+      "In the distance rise the Sphinx, Notre-Dame, and the Empire State Building—monuments of civilization, framed between electrical towers sparking with energy from the floating basket above.",
+      "'Revolutionary Balloon' is a surreal allegory of information flow—where legacy meets signal, and culture is transmitted not only through paper, but through code and conductivity. This is Gutenberg’s ghost sailing the skies of digital modernity.",
     ],
     links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916C0F45F0905CBFA6B",
+      xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9169328BD0B05CBFA69",
       os: "#",
       sr: "#",
     },
   },
+
   //   // SEPHARDIC TANGO
   {
     id: "sephardic_tango",
@@ -1467,27 +1425,83 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // FASHION STATEMENT
+
+  // TATARIAN STANDARD DELUXE
   {
-    id: "fashion_statement",
+    id: "tartarian_standard_deluxe",
     collection: "signals",
-    title: "Fashion Statement",
+    title: "Tartarian Standard Deluxe",
     year: "2025",
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-01-01",
-    related: [],
-    motifs: ["fashion", "identity", "expression"],
-    themes: ["identity", "expression", "belonging"],
+    related: ["magic_of_86"],
+    motifs: ["guitarist", "tartaria", "lightening"],
+    themes: ["myth", "history", "value"],
+    img: "../img/collection_works/signals_and_ascensions/tartarian_standard_deluxe.webp",
     desc: [
-      "A surreal meditation on identity, evolution, and the symbols we wear.",
-      "Fashion Statement presents a ghostlike figure passing through a ceremonial corridor where animals and mysterious aerial forms are carved into opposing walls. The architecture resembles both a museum and a sacred passage, inviting viewers to consider the narratives that shape human identity.",
-      "Rather than depicting clothing, the work suggests that belief itself may be the oldest form of fashion.",
-      "Every civilization dresses the unknown in different symbols.",
+      "A faceless guitarist sits beneath the domes of a lost empire — the 'Tartarian skyline' glowing under a crescent moon. His hat bears the ironic brand “Standard Deluxe,” a paradox of value in a world of imitation.",
+      "Beside him, a crowned observer points in revelation toward the inscription, as if decoding a sacred frequency. Behind them, a billboard of the Black Madonna hums like an ancient server — faith meets circuitry, royalty meets circuitry, art meets commodity.",
+      "This painting examines how style becomes relic, how performance becomes devotion, and how luxury rebrands the divine.",
     ],
-    img: "../img/collection_works/signals_and_ascensions/fashion_statement.webp",
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9164E774A0E05CBFA66",
+      os: "#",
+      sr: "#",
+    },
+  },
+  
+  // THE BIBLICALS
+  {
+    id: "the_biblicals",
+    collection: "signals",
+    title: "The Biblicals",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-01-01",
+    related: ["some_things_sound_like_the_morning", "imperious_kingdom"],
+    motifs: ["family", "heritage", "dance"],
+    themes: ["faith", "tradition", "identity"],
+    img: "../img/collection_works/signals_and_ascensions/the_biblicals.webp",
+    desc: [
+      "'The Biblicals' is a visual hymn—a layered scene where heritage, reverence, and resilience meet in a sunlit room. In the foreground, a man in an ermine fur coat and navy cap lowers his brim, guarding his gaze while embodying quiet strength. Behind him, a woman in a Choctaw dress moves in sacred rhythm, hands lifted in dance, as two children in red coats rejoice in mirrored movement. Between them all, Hebrew letters are inscribed on a clay wall, hinting at an ancient river—spiritual currents running beneath the moment. Ferns frame the scene, while bottles at the base serve as silent relics of rituals past. A piano in the corner, stacked with books, suggests memory, learning, and song.",
+      "This work invites reflection on how ancestral traditions, faith, and modern identity weave into one shared continuum.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916AA0E8E0A05CBFA6A",
+      os: "#",
+      sr: "#",
+    },
+  },
+  
+  
+  // THEM GODS AND THE OLDER GODS
+  {
+    id: "them_gods_and_the_older_gods",
+    collection: "signals",
+    title: "Them Gods and the Older Gods",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-01-01",
+    related: ["them_guys_and_the_older_guys"],
+    motifs: ["gods", "mythology", "ascension"],
+    themes: ["belief", "civilization", "myth"],
+    desc: [
+      // "A meditation on the evolution of belief.",
+      "Them Gods and the Older Gods presents an imagined gathering where civilizations, philosophies, and generations overlap. Ancient architecture, timeless conversation, and symbolic figures dissolve distinctions between past and present, suggesting that humanity continually replaces one system of meaning with another.",
+      // "The work explores the invisible continuity beneath changing religions, ideologies, technologies, and cultures.",
+      "Perhaps every generation worships something.",
+      "Only history decides what becomes mythology.",
+    ],
+    img: "../img/collection_works/signals_and_ascensions/them_gods_and_the_older_gods.webp",
     links: { xrp: "#", os: "#", sr: "#" },
   },
+  
+  
+  
+  
   /////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   // WAR AND FEAST
