@@ -1543,26 +1543,26 @@ window.allWorks = [
     },
   },
 
-  // COEUR OF THE GRAPES
+  // MAMMON STADIUM
   {
-    id: "coeur_of_the_grapes",
+    id: "mammon_stadium",
     collection: "war_and_feast",
-    title: "Coeur of the Grapes",
+    title: "Mammon Stadium",
     year: "2025",
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: ["the_wine_wars"],
-    motifs: ["heart", "river"],
-    themes: ["romance", "indulgence", "desire"],
-    img: "../img/collection_works/war_and_feast/coeur_of_the_grapes.webp",
+    related: [],
+    motifs: ["bugs", "gold"],
+    themes: ["greed", "consumption", "spectatorship"],
+    img: "../img/collection_works/war_and_feast/mammon_stadium.webp",
     desc: [
-      "'Coeur of the Grapes' is a surreal celebration of romance, indulgence, and the fragile infrastructure of desire. In this evocative composition, a monumental human heart towers over a vineyard town, pumping rich, cerulean rivers through a sun-scorched landscape. At the forefront, a woman dressed in red smiles with closed eyes, glass of sparkling wine in hand, as a disembodied hand rests on her shoulder — a gesture at once intimate and ambiguous.",
-      "This piece plays on the French word 'coeur' (heart) and the ancient symbolism of wine as both communion and seduction. The arteries feeding the land suggest a circulatory system of love and control, while the woman’s radiant joy hints at either blissful ignorance or deep satisfaction.",
-      "A hypnotic blend of anatomical realism and classic oil-style glamour, 'Coeur of the Grapes' is a study in beauty, power, and what we choose to celebrate — even as we’re consumed by it.",
+      "In 'Mammon Stadium', Dream Agent transforms the ancient coliseum into a financial amphitheater. The golden statue of Mammon towers above the fray, bathed in divine light, as gladiatorial bugs scuttle across a hockey-lined battlefield littered with pills. The crowd is not flesh but wealth itself—coins, bills, and symbols of capital—stacked into seats of power.",
+      "The arena becomes a surreal merger of sport, empire, addiction, and currency, where spectatorship is measured in monetary presence rather than human eyes.",
+      "This painting interrogates the rituals of modern finance and consumption, presenting the spectacle of wealth as both entertainment and domination.",
     ],
     links: {
-      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC91652974EF705CBFA5B",
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9167822E70E05CBFA73",
       os: "#",
       sr: "#",
     },
@@ -1592,6 +1592,32 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  // COEUR OF THE GRAPES
+  {
+    id: "coeur_of_the_grapes",
+    collection: "war_and_feast",
+    title: "Coeur of the Grapes",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-11-15",
+    related: ["the_wine_wars"],
+    motifs: ["heart", "river"],
+    themes: ["romance", "indulgence", "desire"],
+    img: "../img/collection_works/war_and_feast/coeur_of_the_grapes.webp",
+    desc: [
+      "'Coeur of the Grapes' is a surreal celebration of romance, indulgence, and the fragile infrastructure of desire. In this evocative composition, a monumental human heart towers over a vineyard town, pumping rich, cerulean rivers through a sun-scorched landscape. At the forefront, a woman dressed in red smiles with closed eyes, glass of sparkling wine in hand, as a disembodied hand rests on her shoulder — a gesture at once intimate and ambiguous.",
+      "This piece plays on the French word 'coeur' (heart) and the ancient symbolism of wine as both communion and seduction. The arteries feeding the land suggest a circulatory system of love and control, while the woman’s radiant joy hints at either blissful ignorance or deep satisfaction.",
+      "A hypnotic blend of anatomical realism and classic oil-style glamour, 'Coeur of the Grapes' is a study in beauty, power, and what we choose to celebrate — even as we’re consumed by it.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC91652974EF705CBFA5B",
+      os: "#",
+      sr: "#",
+    },
+  },
+
   // THE ASYMETRICAL JACE
   {
     id: "the_asymmetrical_jace",
@@ -1615,30 +1641,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // MAMMON STADIUM
-  {
-    id: "mammon_stadium",
-    collection: "war_and_feast",
-    title: "Mammon Stadium",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-11-15",
-    related: [],
-    motifs: ["bugs", "gold"],
-    themes: ["greed", "consumption", "spectatorship"],
-    img: "../img/collection_works/war_and_feast/mammon_stadium.webp",
-    desc: [
-      "In 'Mammon Stadium', Dream Agent transforms the ancient coliseum into a financial amphitheater. The golden statue of Mammon towers above the fray, bathed in divine light, as gladiatorial bugs scuttle across a hockey-lined battlefield littered with pills. The crowd is not flesh but wealth itself—coins, bills, and symbols of capital—stacked into seats of power.",
-      "The arena becomes a surreal merger of sport, empire, addiction, and currency, where spectatorship is measured in monetary presence rather than human eyes.",
-      "This painting interrogates the rituals of modern finance and consumption, presenting the spectacle of wealth as both entertainment and domination.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9167822E70E05CBFA73",
-      os: "#",
-      sr: "#",
-    },
-  },
+  
   // CORNERSTONE KEARNEY
   {
     id: "cornerstone_kearney",
