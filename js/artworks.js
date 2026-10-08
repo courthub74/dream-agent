@@ -1006,9 +1006,28 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: ["the_tech_era", "the_future_of_industry", "god_comma"],
-    motifs: ["fortune teller", "cursor"],
-    themes: ["agency", "automation", "illusion of choice"],
+    related: ["future_of_industry", "the_tech_era", "the_guerre"],
+    motifs: [
+      "fortune_teller",
+      "computer_cursor",
+      "crystal_ball",
+      "chainsaw",
+      "axes",
+      "dump_truck",
+      "sports_car",
+      "bonsai_waterfall",
+      "wooden_workshop",
+    ],
+
+    themes: [
+      "human_agency",
+      "automation",
+      "illusion_of_choice",
+      "technological_determinism",
+      "labor",
+      "prediction",
+      "industrial_transition",
+    ],
     img: "../img/collection_works/industrial_myths/cursor_of_fate.webp",
     desc: [
       "A modern oracle for the algorithmic age. 'Cursor of Fate' transforms the iconic fortune teller into an artificial intelligence whose face has become a luminous screen marked by a single cursor. Surrounded by symbols of labor, ambition, craftsmanship, and contemplation, the figure presides over a table of possibilities rather than certainties.",
@@ -1021,6 +1040,81 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  //  THE GREAT DIVIDE
+  {
+    id: "the_great_divide",
+    collection: "industrial",
+    title: "The Great Divide",
+    year: "2018",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2018-6-15",
+    related: ["lactation_of_the_ledger", "binary_tree"],
+    motifs: ["bitcoin", "baby", "protest"],
+    themes: ["generational conflict", "digital value", "rebirth"],
+    img: "../img/collection_works/industrial_myths/the_great_divide.webp",
+    desc: [
+      "The Great Divide is a meditation on the birth of digital value amidst generational and ideological conflict. A solemn green matriarch cradles a golden baby marked with the Bitcoin symbol — a digital messiah wrapped in swaddling wealth. Around her, the youth sit silently with laptops, bearing the weight of a new world, while protesters and skeptics stand on the opposing cliff, holding blank signs and accusations.",
+      "Set against a cosmic desert canyon under constellations of coded systems, this painting questions what is inherited, what is mined, and what is rejected. The gold rock at the feet of the critic speaks to the relics of the past; the baby to a future still being written.",
+      "🪐 Blockchain as womb. Protest as ritual. Code as constellation.",
+      "This is not just a divide — it is a rebirth.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916AE2E92F105CBFA5F",
+      os: "#",
+      sr: "#",
+    },
+  },
+
+  // THE TECH ERA
+  {
+    id: "the_tech_era",
+    collection: "industrial",
+    title: "The Tech Era",
+    year: "2025",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2025-08-25",
+    related: ["cursor_of_fate", "internet_of_the_modern_world"],
+    motifs: ["technology", "urban life", "prosperity"],
+    themes: ["progress", "isolation", "synchronization"],
+    img: "../img/collection_works/industrial_myths/the_tech_era.webp",
+    desc: [
+      "In 'The Tech Era,' Dream Agent conjures a surreal crossroads of technological elegance and ancient mystery. A cadre of faceless urbanites—Yuppies, Buppies, and Cypherpunks—glide through a snow-laced city on electric scooters, disconnected yet synchronized.",
+      "They pass a glowing crystal ball ceremony, a hypnotic marble garage spewing water from the mountains, and a mystical Zoltar figure beside a woman carefully sewing a half-finished turban.",
+      "Above, a giant floating tooth—a relic or prophecy?—hovers between two epochs: analog ruin and digital rebirth. Symbols abound: the neon globe of globalism, the ever-watching mountain temple, and a store sign encoded in planetary language.",
+      "This is not just a painting—it’s a portal.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9161205E0EB05CBFA4D",
+      os: "https://opensea.io/item/ethereum/0x870520570ea3cd36ec19a8494c2a08b131727a83/1",
+      sr: "#",
+    },
+  },
+
+  // HUMANS
+  {
+    id: "humans",
+    collection: "industrial",
+    title: "Humans",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-03-15",
+    related: [],
+    motifs: ["prison", "freedom", "similarity"],
+    themes: ["confinement", "liberty", "existentialism"],
+    img: "../img/collection_works/industrial_myths/humans.webp",
+    desc: [
+      "A surreal meditation on visible and invisible confinement.",
+      "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
+      "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
+      "Sometimes the strongest prisons cannot be seen.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
   // BOTTLING THE REPUBLIC
   {
     id: "bottling_the_republic",
@@ -1049,6 +1143,146 @@ window.allWorks = [
       sr: "#",
     },
   },
+
+  // THE ARTIFICIAL DELI-GATE
+  {
+    id: "the_artificial_deli-gate",
+    collection: "industrial",
+    title: "The Artificial Deli-gate",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-08-03",
+    related: [
+      "the_future_of_industry",
+      "the_artificial_monty",
+      "cursor_of_fate",
+    ],
+    motifs: ["deli", "automation", "ritual"],
+    themes: ["automation", "ritual", "labor"],
+    img: "../img/collection_works/industrial_myths/the_artificial_deli_gate.webp",
+    desc: [
+      "In 'The Artificial Deli-gate', prophecy has been industrialized.",
+      "A fortune teller with a living code screen for a face calmly offers a **Deluxe Submarine** while gazing into a luminous prediction orb. Behind the brick wall, an immense marble-green octopus wrapped around a temple marked 'L.L.M.' quietly reveals the hidden machinery beneath modern intelligence. A roadside sign points toward 'Proxies', while an orderly procession of anonymous figures patiently waits, each carrying an identical bag of chips as though participating in an invisible algorithmic ritual.",
+      "The painting asks a simple but unsettling question:",
+      "When intelligence becomes infinitely accessible, are we choosing our thoughts... or merely selecting from a menu?",
+      "Like much of the Dream Agent archive, symbolism replaces certainty. The sandwich becomes information. Chips become disposable consumption. The oracle has become software. Even prophecy now arrives through infrastructure.",
+      "This work explores the strange mythology emerging around artificial intelligence, automation, and machine reasoning.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
+  // ANDROMEDA DENTAL
+  {
+    id: "andromeda_dental",
+    collection: "industrial",
+    title: "Andromeda Dental",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-08-03",
+    related: [
+      "the_future_of_industry",
+      "the_artificial_deli-gate",
+      "technology_and_desire",
+    ],
+
+    motifs: [
+      "female_figure",
+      "white_hot_hair",
+      "dental_instruments",
+      "cosmic_background",
+      "glowing_light",
+    ],
+
+    themes: [
+      "automation",
+      "medical_technology",
+      "human_transformation",
+      "artificiality",
+      "precision",
+      "beauty",
+      "technological_intervention",
+    ],
+    img: "../img/collection_works/industrial_myths/andromeda_dental.webp",
+    desc: [
+      "In 'Andromeda Dental', a faceless woman with white-hot, flowing hair examines a gate of monumental ivory fangs. A small mirror rests in her hand. Beyond the gate, a luminous microchip stands upright beneath a white turban.",
+      "Dream Agent brings the gestures of routine care into an impossible courtyard. Teeth become architecture; circuitry acquires ceremonial dress. The woman continues her inspection as though every threshold requires an examination.",
+      "The mirror offers a fragment of a structure too large to see at once.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
+  // THE GUERRE
+  {
+    id: "the_guerre",
+    collection: "industrial",
+    title: "The Guerre",
+    year: "2026",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2026-08-03",
+    related: ["cursor_of_fate", "the_tech_era", "the_soap_wars"],
+
+    motifs: [
+      "monitor_faced_oracle",
+      "ray_gun",
+      "glowing_orb",
+      "delivery_drones",
+      "computer_terminal",
+      "smartphones",
+      "miniature_soldiers",
+      "office_chair",
+      "glass_sculptures",
+      "eyeball_cereal",
+      "futuristic_city",
+    ],
+
+    themes: [
+      "conflict",
+      "technological_warfare",
+      "automation",
+      "digital_control",
+      "power",
+      "surveillance",
+      "systemic_collapse",
+    ],
+    img: "../img/collection_works/industrial_myths/the_guerre.webp",
+    desc: [
+      "A city churns beneath a fortune teller whose face has become a blank monitor. In one hand, a red crystal ball contains the promise of what comes next; in the other, a leaf blower pushes the present into perpetual motion. Smartphones and drones occupy the sky while dark marble figures scatter through a landscape increasingly designed around them rather than for them.",
+
+      "At ground level, an obsolete CRT displays `</Centered Div>` above an immaculate modern desk and a chair whose occupant appears to have been violently erased. Ice-carved Viking horns confront one another in the foreground while plates and bowls of AI slop accumulate across the terrain.",
+
+      "'The Guerre' imagines technological transition not as a clean succession of eras, but as a crowded territorial dispute between prediction, automation, abundance, obsolescence, human labor, and the systems competing to occupy the center.",
+    ],
+    links: { xrp: "#", os: "#", sr: "#" },
+  },
+
+  // THE FEAR ROOM
+  {
+    id: "the_fear_room",
+    collection: "industrial",
+    title: "The Fear Room",
+    year: "2023",
+    style: "Oil-style",
+    featured: true,
+    dateCreated: "2023-06-20",
+    related: ["bottling_the_republic", "daniels_vision_from_another_angle"],
+    motifs: ["priest", "war"],
+    img: "../img/collection_works/industrial_myths/the_fear_room.webp",
+    desc: [
+      "'In The Fear Room', Dream Agent dissects the systemic machinery of submission and indoctrination. A lineup of children—bent, broken, and bowed—passes through gateways of authority and assimilation, watched over by figures of religion, capital, and control. Behind them, a portrait of soldiers against fire echoes the violence of inherited obedience.",
+      "A suited man holds out cash while guiding heads into future-making devices, beneath the glow of a microchip idol labeled 'FUTURE'—a cynical altar to technological determinism. The atmosphere is thick with unease, yet calculated and quiet. This is not chaos—it’s organized despair.",
+      "This NFT immortalizes a moment of ideological conditioning, where hope flickers in the cracks of institutionally imposed fear. One child, far right, sits upright—an ambiguous figure of peace or resignation.",
+      "The painting invites collectors to reckon with the infrastructures of fear and the quiet violence of societal programming.",
+    ],
+    links: {
+      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916A3A8D0DA05CBFA3D",
+      os: "#",
+      sr: "#",
+    },
+  },
+
   // DANIEL'S VISION FROM ANOTHER ANGLE
   {
     id: "daniels_vision_from_another_angle",
@@ -1104,56 +1338,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  //  THE GREAT DIVIDE
-  {
-    id: "the_great_divide",
-    collection: "industrial",
-    title: "The Great Divide",
-    year: "2018",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2018-6-15",
-    related: ["lactation_of_the_ledger", "binary_tree"],
-    motifs: ["bitcoin", "baby", "protest"],
-    themes: ["generational conflict", "digital value", "rebirth"],
-    img: "../img/collection_works/industrial_myths/the_great_divide.webp",
-    desc: [
-      "The Great Divide is a meditation on the birth of digital value amidst generational and ideological conflict. A solemn green matriarch cradles a golden baby marked with the Bitcoin symbol — a digital messiah wrapped in swaddling wealth. Around her, the youth sit silently with laptops, bearing the weight of a new world, while protesters and skeptics stand on the opposing cliff, holding blank signs and accusations.",
-      "Set against a cosmic desert canyon under constellations of coded systems, this painting questions what is inherited, what is mined, and what is rejected. The gold rock at the feet of the critic speaks to the relics of the past; the baby to a future still being written.",
-      "🪐 Blockchain as womb. Protest as ritual. Code as constellation.",
-      "This is not just a divide — it is a rebirth.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916AE2E92F105CBFA5F",
-      os: "#",
-      sr: "#",
-    },
-  },
-  // THE TECH ERA
-  {
-    id: "the_tech_era",
-    collection: "industrial",
-    title: "The Tech Era",
-    year: "2025",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2025-08-25",
-    related: ["cursor_of_fate", "internet_of_the_modern_world"],
-    motifs: ["technology", "urban life", "prosperity"],
-    themes: ["progress", "isolation", "synchronization"],
-    img: "../img/collection_works/industrial_myths/the_tech_era.webp",
-    desc: [
-      "In 'The Tech Era,' Dream Agent conjures a surreal crossroads of technological elegance and ancient mystery. A cadre of faceless urbanites—Yuppies, Buppies, and Cypherpunks—glide through a snow-laced city on electric scooters, disconnected yet synchronized.",
-      "They pass a glowing crystal ball ceremony, a hypnotic marble garage spewing water from the mountains, and a mystical Zoltar figure beside a woman carefully sewing a half-finished turban.",
-      "Above, a giant floating tooth—a relic or prophecy?—hovers between two epochs: analog ruin and digital rebirth. Symbols abound: the neon globe of globalism, the ever-watching mountain temple, and a store sign encoded in planetary language.",
-      "This is not just a painting—it’s a portal.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9161205E0EB05CBFA4D",
-      os: "https://opensea.io/item/ethereum/0x870520570ea3cd36ec19a8494c2a08b131727a83/1",
-      sr: "#",
-    },
-  },
+
   //  THE FUTURE OF INDUSTRY
   {
     id: "the_future_of_industry",
@@ -1170,7 +1355,7 @@ window.allWorks = [
       "'The Future of Industry' envisions a new epoch where human thought, machine learning, and ritual converge.",
       "In a dimly lit hall, a faceless oracle—its features replaced by cascading code—presides over a circle of silent thinkers. Before them rest luminous brains and crystal spheres: emblems of creativity, computation, and prophecy.",
       "The chamber holds two thresholds—one descending into shadow and uncertainty, the other opening toward a radiant expanse of possibility. This spatial duality mirrors the conflict between the foreseen and the unforeseen, the designed and the emergent, that defines our technological ascent.",
-      "The work poses a question: when machines divine and humans compute, who truly shapes the future of labor?",
+      "This work poses a question: when machines divine and humans compute, who truly shapes the future of labor?",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC91675DD2ED405CBFA3B",
@@ -1178,79 +1363,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  // THE FEAR ROOM
-  {
-    id: "the_fear_room",
-    collection: "industrial",
-    title: "The Fear Room",
-    year: "2023",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2023-06-20",
-    related: ["bottling_the_republic", "daniels_vision_from_another_angle"],
-    motifs: ["priest", "war"],
-    img: "../img/collection_works/industrial_myths/the_fear_room.webp",
-    desc: [
-      "'In The Fear Room', Dream Agent dissects the systemic machinery of submission and indoctrination. A lineup of children—bent, broken, and bowed—passes through gateways of authority and assimilation, watched over by figures of religion, capital, and control. Behind them, a portrait of soldiers against fire echoes the violence of inherited obedience.",
-      "A suited man holds out cash while guiding heads into future-making devices, beneath the glow of a microchip idol labeled 'FUTURE'—a cynical altar to technological determinism. The atmosphere is thick with unease, yet calculated and quiet. This is not chaos—it’s organized despair.",
-      "This NFT immortalizes a moment of ideological conditioning, where hope flickers in the cracks of institutionally imposed fear. One child, far right, sits upright—an ambiguous figure of peace or resignation.",
-      "The painting invites collectors to reckon with the infrastructures of fear and the quiet violence of societal programming.",
-    ],
-    links: {
-      xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916A3A8D0DA05CBFA3D",
-      os: "#",
-      sr: "#",
-    },
-  },
 
-  // HUMANS
-  {
-    id: "humans",
-    collection: "industrial",
-    title: "Humans",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-03-15",
-    related: [],
-    motifs: ["prison", "freedom", "similarity"],
-    themes: ["confinement", "liberty", "existentialism"],
-    img: "../img/collection_works/industrial_myths/humans.webp",
-    desc: [
-      "A surreal meditation on visible and invisible confinement.",
-      "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
-      "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
-      "Sometimes the strongest prisons cannot be seen.",
-    ],
-    links: { xrp: "#", os: "#", sr: "#" },
-  },
-  // THE ARTIFICIAL DELI-GATE
-  {
-    id: "the_artificial_deli-gate",
-    collection: "industrial",
-    title: "The Artificial Deli-gate",
-    year: "2026",
-    style: "Oil-style",
-    featured: true,
-    dateCreated: "2026-08-03",
-    related: [
-      "the_future_of_industry",
-      "the_artificial_monty",
-      "cursor_of_fate",
-    ],
-    motifs: ["deli", "automation", "ritual"],
-    themes: ["automation", "ritual", "labor"],
-    img: "../img/collection_works/industrial_myths/the_artificial_deli_gate.webp",
-    desc: [
-      "In 'The Artificial Deli-gate', prophecy has been industrialized.",
-      "A fortune teller with a living code screen for a face calmly offers a **Deluxe Submarine** while gazing into a luminous prediction orb. Behind the brick wall, an immense marble-green octopus wrapped around a temple marked 'L.L.M.' quietly reveals the hidden machinery beneath modern intelligence. A roadside sign points toward 'Proxies', while an orderly procession of anonymous figures patiently waits, each carrying an identical bag of chips as though participating in an invisible algorithmic ritual.",
-      "The painting asks a simple but unsettling question:",
-      "When intelligence becomes infinitely accessible, are we choosing our thoughts... or merely selecting from a menu?",
-      "Like much of the Dream Agent archive, symbolism replaces certainty. The sandwich becomes information. Chips become disposable consumption. The oracle has become software. Even prophecy now arrives through infrastructure.",
-      "This work explores the strange mythology emerging around artificial intelligence, automation, and machine reasoning.",
-    ],
-    links: { xrp: "#", os: "#", sr: "#" },
-  },
   /////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   // SIGNALS AND ASCENSIONS
