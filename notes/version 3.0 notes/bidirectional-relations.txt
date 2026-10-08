@@ -1,0 +1,151 @@
+Yes. 🎯 **I think bidirectional relationships would be a valuable addition to the Dream Agent archive**, especially as your collections grow.
+
+But I'd implement them slightly differently from what you're proposing.
+
+### 1. The idea: Reciprocal relationships
+
+Suppose your metadata contains:
+
+```javascript
+// The Bird Scene
+related: [
+  "dream_agent_making_birds",
+  "future_of_industry",
+  "the_great_divide"
+]
+```
+
+Currently, that tells the website which paintings *The Bird Scene* relates to.
+
+But suppose *Future of Industry* doesn't explicitly reference *The Bird Scene*.
+
+Your proposed functionality would automatically establish that connection.
+
+**The Bird Scene → Future of Industry**
+
+becomes:
+
+**The Bird Scene ↔ Future of Industry**
+
+That's useful because visitors can discover the relationship from either painting.
+
+### 2. The catch: Our three-relationship maximum
+
+Here's where things get interesting.
+
+Imagine *Future of Industry* already has three curated relationships:
+
+```javascript
+related: [
+  "cursor_of_fate",
+  "the_tech_era",
+  "dream_agent_making_birds"
+]
+```
+
+Now *The Bird Scene* references it.
+
+If we automatically add that reciprocal relationship to the metadata, *Future of Industry* suddenly has four.
+
+And as your archive grows, popular paintings could accumulate dozens of reciprocal relationships.
+
+That would undermine our carefully curated maximum of three.
+
+### 3. My recommendation: Separate curated and discovered relationships
+
+I'd preserve your existing metadata exactly as it is.
+
+Then have the website calculate reciprocal relationships dynamically.
+
+For example:
+
+```javascript
+// Future of Industry
+related: [
+  "cursor_of_fate",
+  "the_tech_era",
+  "dream_agent_making_birds"
+]
+```
+
+The website could identify that *The Bird Scene* also references *Future of Industry*, without modifying either artwork's metadata.
+
+Conceptually:
+
+```javascript
+const curated = artwork.related;
+
+const incoming = allWorks
+  .filter(work => work.related.includes(artwork.id))
+  .map(work => work.id);
+```
+
+You could then combine them:
+
+```javascript
+const connections = [
+  ...new Set([...curated, ...incoming])
+];
+```
+
+This gives you a complete network of relationships without duplicating information.
+
+### 4. How I'd display them
+
+For dreamagent.art, I'd distinguish between two types of connections.
+
+**Related Works**
+
+Your three hand-selected conceptual relationships.
+
+**Also Connected**
+
+Additional paintings that reference the current artwork.
+
+For example:
+
+**Future of Industry**
+
+Related Works:
+- Cursor of Fate
+- The Tech Era
+- Dream Agent Making Birds
+
+Also Connected:
+- The Bird Scene
+
+That preserves your artistic judgment while allowing visitors to discover connections you didn't explicitly assign in both directions.
+
+### 5. An even more interesting future possibility
+
+Eventually, your archive could develop into a navigable network.
+
+A visitor opens *Dream Agent Making Birds*.
+
+They discover *Future of Industry*.
+
+From there, they discover *The Bird Scene*.
+
+Then *The Great Divide*.
+
+Each painting becomes an entry point into a larger conceptual structure.
+
+And because these connections are based on ideas rather than superficial visual similarities, the experience becomes something closer to exploring an interconnected body of thought.
+
+### My recommendation for Dream Agent 3.0
+
+**Yes to automatic reciprocal discovery. No to automatically rewriting the metadata.**
+
+I'd implement three rules:
+
+1. Keep `related` limited to three manually curated works per painting.
+2. Calculate incoming relationships dynamically from `window.allWorks`.
+3. Display additional connections separately, with a reasonable limit to prevent clutter.
+
+One important detail: **a reciprocal connection should mean that visitors can navigate both ways, not necessarily that both paintings are equally important to each other's interpretation.**
+
+That distinction preserves your curatorial intent.
+
+And the best part? Since you're already maintaining a centralized `window.allWorks` registry, this could be implemented entirely in JavaScript without a database.
+
+**I'd save this for Dream Agent 3.0 rather than interrupt our current metadata cleanup.** Your existing architecture is already well positioned for it.

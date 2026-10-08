@@ -35,9 +35,27 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2021-09-15",
-    related: ["binary_tree", "polar_bear"],
-    motifs: ["strategy wood", "chessboard", "temple", "ocean"],
-    themes: ["beginnings", "civilization", "colonialism", "faith", "doubt"],
+    rrelated: ["old_wineskins", "survey", "binary_tree"],
+
+    motifs: [
+      "strategy_wood",
+      "chessboards",
+      "chess_pieces",
+      "classical_temple",
+      "waterfall",
+      "ocean",
+      "concentric_sun",
+    ],
+
+    themes: [
+      "beginnings",
+      "civilization",
+      "strategy",
+      "power",
+      "colonialism",
+      "faith",
+      "uncertainty",
+    ],
     img: "../img/collection_works/symbols_in_motion/temple_of_openings.webp",
     desc: [
       "Two chessboards face the Pacific at sunset — one arranged for faith, the other for doubt. The white pieces align in formation before the ancient temple, where water pours from marble columns like divine cognition.",
@@ -87,9 +105,28 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-09-15",
-    related: [],
-    motifs: ["bar", "archetypes"],
-    themes: ["conflict", "identity", "agency"],
+    related: ["humans"],
+
+    motifs: [
+      "three_men",
+      "monocle",
+      "drinking_glasses",
+      "beer_can",
+      "ashtray",
+      "cigarette_lighter",
+      "wooden_table",
+      "dark_interior",
+    ],
+
+    themes: [
+      "identity",
+      "human_behavior",
+      "social_archetypes",
+      "individuality",
+      "conformity",
+      "contrasting_perspectives",
+      "human_condition",
+    ],
     img: "../img/collection_works/symbols_in_motion/the_rusher_the_incrementer_and_the_protester.webp",
     desc: [
       "Three men sit at a dimly lit bar — a timeless tribunal of modern archetypes: The Rusher, clenched in frustration, his glass half-empty and fists tighter still; The Incrementer, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and The Protester, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
@@ -113,9 +150,29 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-01-15",
-    related: ["temple_of_openings", "binary_tree"],
-    motifs: ["temperature", "dualities"],
-    themes: ["climate", "balance", "fragility"],
+    related: ["binary_tree", "temple_of_openings", "the_great_divide"],
+
+    motifs: [
+      "masked_figures",
+      "let_and_const_shirts",
+      "thermometer",
+      "scarred_orb",
+      "cathedral",
+      "marble_columns",
+      "checkerboard_floor",
+      "snowcapped_mountains",
+      "offering_bowls",
+    ],
+
+    themes: [
+      "duality",
+      "immutability",
+      "change",
+      "environmental_fragility",
+      "measurement",
+      "technological_order",
+      "sacred_authority",
+    ],
     img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
     desc: [
       "A checkerboard plain stages two masked figures labeled *let* and *const*, paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
@@ -137,9 +194,31 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-07-15",
-    related: ["turquoise_plate", "wizard_of_agent_dreams"],
-    motifs: ["spy", "machine", "birds"],
-    themes: ["mystery", "devotion", "transformation"],
+    related: ["the_future_of_industry", "the_bird_scene"],
+
+    motifs: [
+      "faceless_figure",
+      "trench_coat",
+      "fedora",
+      "white_wings",
+      "flying_birds",
+      "birdcage",
+      "mechanical_device",
+      "watering_can",
+      "sunflower",
+      "garden",
+      "inscription",
+    ],
+
+    themes: [
+      "creation",
+      "artificial_life",
+      "human_agency",
+      "freedom",
+      "transformation",
+      "authorship",
+      "divine_creation",
+    ],
     img: "../img/collection_works/symbols_in_motion/dream_agent_making_birds.webp",
     desc: [
       "'Dream Agent Making Birds' captures the faceless spy in a sacred moment of release. Standing before a red cage that holds a glowing machine, the spy extends his gloved hands—not to release a bird, but to reveal wings of light. Above, a chain of birds arcs through the morning sky, echoing the engraving 'Soli Deo Gloria' on the window sill. It is both prayer and ritual: an act of making, not owning—where flight itself becomes the art.",
@@ -160,9 +239,28 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-02-15",
-    related: [],
-    motifs: ["bat", "evening"],
-    themes: ["transience", "intimacy", "contemplation"],
+    related: ["technology_and_desire"],
+
+    motifs: [
+      "woman",
+      "black_dress",
+      "pearl_necklace",
+      "bat",
+      "open_doorway",
+      "bare_trees",
+      "suburban_house",
+      "twilight_sky",
+    ],
+
+    themes: [
+      "desire",
+      "intimacy",
+      "vulnerability",
+      "transience",
+      "unawareness",
+      "duality",
+      "anticipation",
+    ],
     img: "../img/collection_works/symbols_in_motion/hormones_95.webp",
     desc: [
       "'Hormones ’95' captures a private interior moment framed against an exterior disturbance. A young woman stands within the warm geometry of a lit window, her posture composed and downward facing, while the night outside carries an approaching shape.",
@@ -186,9 +284,29 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-06-15",
-    related: ["dream_agent_making_birds", "wizard_of_agent_dreams"],
-    motifs: ["plate", "ceremony", "ritual"],
-    themes: ["ceremony", "ritual", "transformation"],
+    related: ["dream_agent_making_birds", "cornerstone_kearney"],
+
+    motifs: [
+      "faceless_figure",
+      "fedora",
+      "trench_coat",
+      "turquoise_plaque",
+      "anatomical_heart",
+      "birds",
+      "crystal_orb",
+      "flowing_water",
+      "gothic_architecture",
+    ],
+
+    themes: [
+      "anonymity",
+      "identity",
+      "spirituality",
+      "preservation",
+      "transformation",
+      "symbolic_inheritance",
+      "authorship",
+    ],
     img: "../img/collection_works/symbols_in_motion/turquoise_plate.webp",
     desc: [
       "A symbolic relic from an imagined archive.",
@@ -318,9 +436,34 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-03-15",
-    related: ["them_gods_and_the_older_gods"],
-    motifs: ["group", "age", "community"],
-    themes: ["community", "age", "identity"],
+    related: [
+      "them_gods_and_the_older_gods",
+      "survey",
+      "the_rusher_the_incrementer_and_the_protester",
+    ],
+
+    motifs: [
+      "cowboys",
+      "western_saloon",
+      "cigars",
+      "crystal_ball",
+      "strategy_wood",
+      "mountain",
+      "wooden_table",
+      "hand_drawn_diagram",
+      "whiskey_glass",
+      "hanging_lanterns",
+    ],
+
+    themes: [
+      "generational_knowledge",
+      "informal_authority",
+      "collective_identity",
+      "social_hierarchy",
+      "tradition",
+      "belief_systems",
+      "uncertainty",
+    ],
     img: "../img/collection_works/symbols_in_motion/them_guys_and_the_older_guys.webp",
     desc: [
       "'Them Guys and the Older Guys' examines the unseen architecture behind cultural narratives.",
@@ -1563,7 +1706,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  
+
   // THE BIBLICALS
   {
     id: "the_biblicals",
@@ -1587,8 +1730,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  
-  
+
   // THEM GODS AND THE OLDER GODS
   {
     id: "them_gods_and_the_older_gods",
@@ -1611,10 +1753,7 @@ window.allWorks = [
     img: "../img/collection_works/signals_and_ascensions/them_gods_and_the_older_gods.webp",
     links: { xrp: "#", os: "#", sr: "#" },
   },
-  
-  
-  
-  
+
   /////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   // WAR AND FEAST
@@ -1768,7 +1907,7 @@ window.allWorks = [
       sr: "#",
     },
   },
-  
+
   // CORNERSTONE KEARNEY
   {
     id: "cornerstone_kearney",
