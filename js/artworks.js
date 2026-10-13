@@ -461,7 +461,7 @@ window.allWorks = [
       "Across an ancient desert beneath snowcapped mountains, a stone-skinned giant presides over a field of marbled objects. Each carries its own swirling mixture of color, yet a single row has been extracted from the irregular formation and placed beneath translucent green glass.",
       "Sparks ignite. Smoke rises.",
       "Nearby, an enormous placard offers a heading: CONSTRUCTS. Beneath it sit four colored circles, clean and finite against the disorder of the marbles surrounding them. In the distance, STRATEGY WOOD occupies the mountainside while unselected pieces remain scattered across the ground.",
-      "'Survey' examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
+      "<em>Survey</em> examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -505,7 +505,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/them_guys_and_the_older_guys.webp",
     desc: [
-      "'Them Guys and the Older Guys' examines the unseen architecture behind cultural narratives.",
+      "<em>Them Guys and the Older Guys</em> examines the unseen architecture behind cultural narratives.",
       "Set within a frontier saloon, the painting imagines storytellers, skeptics, and strategists gathered around a conversation that extends beyond the room itself. At the center stands a weathered monument marked 'Strategy Wood,'' a symbolic inversion of Hollywood. Rather than celebrating entertainment, it points toward the mechanisms through which stories are shaped, distributed, and remembered.",
       "The crystal ball rests quietly on the table, suggesting that perception itself has become something to forecast, influence, and negotiate. Around it, conversations unfold between generations. The 'them guys' inherit ideas while the 'older guys' pass along methods, whether intentionally or unconsciously.",
       "The work does not claim that culture is centrally controlled.",
@@ -558,7 +558,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/digital_unconscious/internet_of_the_middle_world.webp",
     desc: [
-      "'Internet of the Middle World' captures a surreal 1980s-style mall scene where the digital age seeps into analog life. Neon signs divide the corridor into 'INTER' and 'NET', while glowing orbs—crystal-ball-like internet terminals—float atop fountains and pedestals. Shoppers gaze into them with reverence, as if accessing forgotten futures.",
+      "<em>Internet of the Middle World</em> captures a surreal 1980s-style mall scene where the digital age seeps into analog life. Neon signs divide the corridor into 'INTER' and 'NET', while glowing orbs—crystal-ball-like internet terminals—float atop fountains and pedestals. Shoppers gaze into them with reverence, as if accessing forgotten futures.",
       "The color palette leans into nostalgic earth tones, contrasted with electric blues, subtly evoking early digital aesthetics. The arcade machines flicker like proto-portals, while every character appears paused between eras—caught between the physical and the virtual, the mundane and the mythic.",
       "This piece reimagines the birth of the internet not as a tech boom, but as a spiritual-commercial ritual in the temple of capitalism.",
     ],
@@ -607,7 +607,7 @@ window.allWorks = [
       "In this chamber of blue and gold, faith is scrubbed clean. The faucet drips with the insignia of digital empires — XRP tears drip from one of two shower heads.  The second shower head, drips nothing hinting at a mysterious system shrouded in secrecy.",
       "A hand extends from the glow, offering the bar of belief back to the system.",
       "Below, soaked currency hangs like towels of devotion, dripping into the floor — the cost of staying pure in an economy of confession.",
-      "'The Rinse of Trust' examines the fragility of confidence — the way markets, religions, and algorithms depend on a constant cleansing of faith. Every rinse resets the narrative, but the residue of doubt remains.",
+      "<em>The Rinse of Trust</em> examines the fragility of confidence — the way markets, religions, and algorithms depend on a constant cleansing of faith. Every rinse resets the narrative, but the residue of doubt remains.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91609C5D6F505CBFA63",
@@ -631,7 +631,7 @@ window.allWorks = [
     img: "../img/collection_works/digital_unconscious/the_artificial_monty.webp",
     desc: [
       "A surreal landscape exploring the hidden ecology of artificial intelligence.",
-      "The Artificial Monty portrays AI as an act of excavation rather than invention. Anonymous workers sift through the accumulated internet while a living river carries symbols of memory, mortality, and biological existence toward a monumental temple dedicated to language itself.",
+      "<em>The Artificial Monty</em> portrays AI as an act of excavation rather than invention. Anonymous workers sift through the accumulated internet while a living river carries symbols of memory, mortality, and biological existence toward a monumental temple dedicated to language itself.",
       "The painting suggests that artificial intelligence is not born from empty machines, but from humanity's collective archive of stories, knowledge, and experience.",
       "Every answer has an ancestry.",
     ],
@@ -675,7 +675,8 @@ window.allWorks = [
     ],
     img: "../img/collection_works/digital_unconscious/internet of_the_old_world.webp",
     desc: [
-      "Step into a mythic past where the digital future is foretold. 'Internet of the Old World' by Dream Agent reimagines our virtual age through the lens of medieval mysticism. Gathered before a crystal orb, cloaked figures kneel in reverence—priests, nobles, and peasants alike—before a mysterious apparition inside the orb. Looming behind them, a castle gate boldly inscribed “INTERNET” evokes a new kind of kingdom.",
+      "Step into a mythic past where the digital future is foretold.",
+      "<em>Internet of the Old World</em> by Dream Agent reimagines our virtual age through the lens of medieval mysticism. Gathered before a crystal orb, cloaked figures kneel in reverence—priests, nobles, and peasants alike—before a mysterious apparition inside the orb. Looming behind them, a castle gate boldly inscribed “INTERNET” evokes a new kind of kingdom.",
       "This painting explores how ancient rituals mirror the collective awe and submission we now show digital networks. It invites viewers to reflect on our shared data as modern prophecy and the internet as a sacred architecture of the new world order.",
     ],
     links: {
