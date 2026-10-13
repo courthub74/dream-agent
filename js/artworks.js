@@ -60,7 +60,7 @@ window.allWorks = [
     desc: [
       "Two chessboards rest along a coastal shore, their opposing arrangements suggesting different versions of the same society. One stands in orderly formation, its pieces uniform and recognizable. The other presents an irregular assembly of black, brown, yellow, and white, occupying positions that resist conventional expectations.",
       "Across the water, Strategy Wood is carved into a mountainside, overlooking a classical temple from which water descends toward the sea. Above the horizon, a hypnotic sun radiates, casting its influence across both arrangements. The landscape suggests a world where perception is shaped as much by repetition as by experience.",
-      "Here, the chessboard becomes more than a contest of opposing sides, where familiar identities occupy unfamiliar positions. It is a landscape of inherited assumptions, prescribed roles, and possibilities beyond the arrangements already in play.",
+      "In <em>Temple of Openings</em> the chessboard becomes more than a contest of opposing sides, where familiar identities occupy unfamiliar positions. It is a landscape of inherited assumptions, prescribed roles, and possibilities beyond the arrangements already in play.",
       "Before the first move, someone has already arranged the pieces.",
     ],
     links: {
@@ -98,7 +98,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/binary_tree.webp",
     desc: [
-      "'Binary Tree' unfolds inside an elegant, surreal social club where refinement and ambiguity coexist. A poised woman in a divided green-and-white dress stands between two faceless attendants, each presenting a different arrangement of objects. One offers a bonsai and martini, the other a bronze vessel and white wine. Their contrasting appearances suggest opposing possibilities, although the significance of either offering remains uncertain.",
+      "<em>Binary Tree</em> unfolds inside an elegant, surreal social club where refinement and ambiguity coexist. A poised woman in a divided green-and-white dress stands between two faceless attendants, each presenting a different arrangement of objects. One offers a bonsai and martini, the other a bronze vessel and white wine. Their contrasting appearances suggest opposing possibilities, although the significance of either offering remains uncertain.",
       "Behind them, a great window branches into the silhouette of a tree, while portraits observe from the surrounding walls. Directional arrows point toward opposing destinations, introducing an orderly system of choices into a setting where little is explained. The woman's confident posture contrasts with the uncertainty of what is being offered.",
       "Here, decision-making becomes a performance of authority, where appearances suggest clarity without necessarily providing it. The distinction between two paths may be less meaningful than the expectation that one must be chosen.",
       "Power becomes an attitude rather than an answer.",
@@ -143,10 +143,13 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/the_rusher_the_incrementer_and_the_protester.webp",
     desc: [
-      "Three men sit at a dimly lit bar — a timeless tribunal of modern archetypes: The Rusher, clenched in frustration, his glass half-empty and fists tighter still; The Incrementer, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and The Protester, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
-      "Each man drinks from a different vessel — a whiskey tumbler, a wine glass, and a crushed beer can — reflecting their strategy in the silent war of agency. Crushed sugar cubes and spent lighters scatter the bar, symbols of fuel and burnout.",
-      "This oil-style portrait isn’t just a study in temperament — it’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
-      "Which one are you?",
+      "Three men sit at a dimly lit bar, a timeless tribunal of modern archetypes. <em>The Rusher</em>, clenched in frustration, his glass half-empty and fists tighter still; <em>The Incrementer</em>, precise and calculating, a monocled figure clad in pinstripes, sipping with a measured grace; and <em>The Protester</em>, puffed-cheeked and clad in a tracksuit, caught mid-reaction, somewhere between rebellion and retreat.",
+
+      "Each man drinks from a different vessel: a whiskey tumbler, a wine glass, and a crushed beer can, reflecting their strategy in the silent war of agency. Crushed sugar cubes and spent lighters scatter the bar, symbols of fuel and burnout.",
+
+      "This oil-style portrait isn’t just a study in temperament. It’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
+
+      "<strong>Which one are you?</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
@@ -235,7 +238,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/dream_agent_making_birds.webp",
     desc: [
-      "'Dream Agent Making Birds' captures the faceless spy in a sacred moment of release. Standing before a red cage that holds a glowing machine, the spy extends his gloved hands—not to release a bird, but to reveal wings of light. Above, a chain of birds arcs through the morning sky, echoing the engraving 'Soli Deo Gloria' on the window sill. It is both prayer and ritual: an act of making, not owning—where flight itself becomes the art.",
+      "<em>Dream Agent Making Birds</em> captures the faceless spy in a sacred moment of release. Standing before a red cage that holds a glowing machine, the spy extends his gloved hands—not to release a bird, but to reveal wings of light. Above, a chain of birds arcs through the morning sky, echoing the engraving 'Soli Deo Gloria' on the window sill. It is both prayer and ritual: an act of making, not owning—where flight itself becomes the art.",
       "This piece bridges mystery and devotion, weaving together technology, faith, and surreal transformation. A meditation on creation, release, and the unseen hands that move history.",
     ],
     links: {
@@ -277,7 +280,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/hormones_95.webp",
     desc: [
-      "'Hormones ’95' captures a private interior moment framed against an exterior disturbance. A young woman stands within the warm geometry of a lit window, her posture composed and downward facing, while the night outside carries an approaching shape.",
+      "<em>Hormones ’95</em> captures a private interior moment framed against an exterior disturbance. A young woman stands within the warm geometry of a lit window, her posture composed and downward facing, while the night outside carries an approaching shape.",
       "The painting contrasts two forms of emergence: the quiet architecture of self-presentation and the sudden arrival of instinct. Pearls, evening fabric, and controlled posture form the interior language of social structure, while the winged presence in the night sky introduces a separate rhythm.",
       "The composition situates the viewer between these systems. The window frame functions as a threshold device, dividing cultivated identity from the unpredictable mechanics of the outside world.",
       "Within the Dream Agent archive, this painting documents the moment when internal order meets external signal.",
@@ -324,7 +327,7 @@ window.allWorks = [
     img: "../img/collection_works/symbols_in_motion/turquoise_plate.webp",
     desc: [
       "A symbolic relic from an imagined archive.",
-      "'Turquoise Plate' presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
+      "<em>Turquoise Plate</em> presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
       "This work invites viewers to consider the significance of everyday objects in our lives and how they can become vessels for deeper meaning and spiritual connection.",
       "The archive remembers even when history forgets.",
     ],
@@ -370,7 +373,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/the_bird_scene.webp",
     desc: [
-      "'The Bird Scene' captures the moment just before delivery becomes revelation.",
+      "<em>The Bird Scene</em> captures the moment just before delivery becomes revelation.",
       "A faceless courier walks a suburban driveway carrying a red box like a sacrament. Plumbers on one side. Electricians on the other. Wealth displayed like uniform. Loyalty worn like chains. Inside the house: a bullseye — not a decoration, but a destination.",
 
       "Beneath his feet, forgotten machines scatter. Old screens are rejected by his gravity. The past cannot keep up with the messenger. Above him, birds move in formation — not nature, but surveillance.",
@@ -412,7 +415,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/the_generous_vagrant.webp",
     desc: [
-      "The Generous Vagrant' presents an anonymous healer moving through an abandoned commercial district beneath an almost offensively pleasant sky. Society sees only his deteriorating clothes, concealed face, and battered shopping cart. What it fails to recognize is that the cart contains the burdens he has quietly removed from others.",
+      "<em>The Generous Vagrant</em> presents an anonymous healer moving through an abandoned commercial district beneath an almost offensively pleasant sky. Society sees only his deteriorating clothes, concealed face, and battered shopping cart. What it fails to recognize is that the cart contains the burdens he has quietly removed from others.",
 
       "Knotted masses, collapsed masks, empty coats, and stone-like worries crowd the rusted frame, each leaking traces of warm ivory light. Nearby, a neatly dressed stranger stands with a peaceful hollow illuminated in their chest—the evidence of an exchange that occurred without payment, recognition, or ceremony.",
 
