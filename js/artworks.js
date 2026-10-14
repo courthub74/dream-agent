@@ -192,7 +192,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
     desc: [
-      "A checkerboard plain stages two masked figures labeled 'let' and 'const', paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
+      "A checkerboard plain stages two masked figures labeled <em>let</em> and <em>const</em>, facing one another as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",     
       "<em>Polar Bear</em> fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
     ],
     links: {
