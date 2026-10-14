@@ -1019,8 +1019,35 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2024-01-01",
-    related: ["the_refactoring_ritual", "bottling_the_republic"],
-    motifs: ["kitchen", "myth", "memory"],
+    related: [
+      "the_census_ritual",
+      "bottling_the_republic",
+      "them_gods_and_the_older_gods",
+    ],
+
+    motifs: [
+      "kitchen",
+      "butter_spread",
+      "frying_pan",
+      "american_flags",
+      "labeled_bottles",
+      "portrait_medallions",
+      "radiant_medallion",
+      "human_figures",
+      "green_lamp",
+      "stove",
+    ],
+
+    themes: [
+      "historical_revisionism",
+      "cultural_identity",
+      "institutional_authority",
+      "knowledge_production",
+      "collective_memory",
+      "historical_narratives",
+      "information_control",
+      "national_identity",
+    ],
     img: "../img/collection_works/dominion_archives/discovery_of_the_indigenous.webp",
     desc: [
       "In 'Discovery of the Indigenous', Dream Agent constructs a searing, symbolic kitchen scene where myth, media, and memory simmer in a glowing amber palette. At its center, a radiant coin illuminates a countertop tableau—a surreal altar of distorted Americana. A headless torso pours forth a nested maternal figure into a green bottle labeled 'The Agriculture was already KNOWN', confronting narratives of invention with truths of ancestral cultivation. Beside it, a reddish bottle declares, 'THEY AIN'T AFRICAN', challenging imposed identities and colonial mislabeling.",
