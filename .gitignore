@@ -1,0 +1,32 @@
+
+# Crash reports
+*.stackdump
+*.log
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+desktop.ini
+
+# VS Code local settings
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Local build output
+dist/
