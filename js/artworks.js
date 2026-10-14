@@ -1050,9 +1050,9 @@ window.allWorks = [
     ],
     img: "../img/collection_works/dominion_archives/discovery_of_the_indigenous.webp",
     desc: [
-      "In 'Discovery of the Indigenous', Dream Agent constructs a searing, symbolic kitchen scene where myth, media, and memory simmer in a glowing amber palette. At its center, a radiant coin illuminates a countertop tableau—a surreal altar of distorted Americana. A headless torso pours forth a nested maternal figure into a green bottle labeled 'The Agriculture was already KNOWN', confronting narratives of invention with truths of ancestral cultivation. Beside it, a reddish bottle declares, 'THEY AIN'T AFRICAN', challenging imposed identities and colonial mislabeling.",
-      "Above, a melting stick of butter stamped 'WIKIPEDIA Googled BUTTER SPREAD' slowly drips, its American flag suggesting the spoon-fed digital rewriting of history. Below, a skillet of golden liquid overflows, blending nourishment and loss, as a crumpled flag sinks beside it—symbol of a buried or burned truth. On the stove’s surface, a woman’s portrait gazes forward from a round frame, echoed in the form emerging from the man's chest—an emblem of lineage and remembrance,",
-      "With uncanny warmth and spiritual satire, this painting deconstructs the narrative of “discovery” and reclaims it through layered indigenous presence, agricultural memory, and the falsity of erasure. The kitchen, both domestic and historical, becomes a site of alchemical resistance.",
+      "In <em>Discovery of the Indigenous</em>, Dream Agent constructs a searing, symbolic kitchen scene where myth, media, and memory simmer in a glowing amber palette. At its center, a radiant coin illuminates a countertop tableau, a surreal altar of distorted Americana. A headless torso pours forth a nested maternal figure into a green bottle labeled 'The Agriculture was already KNOWN', confronting narratives of invention with truths of ancestral cultivation. Beside it, a reddish bottle declares, 'THEY AIN'T AFRICAN', challenging imposed identities and colonial mislabeling.",
+      "Above, a melting stick of butter stamped 'WIKIPEDIA Googled BUTTER SPREAD' slowly drips, its American flag suggesting the spoon-fed digital rewriting of history. Below, a skillet of golden liquid overflows, blending nourishment and loss, as a crumpled flag sinks beside it, a symbol of a buried or burned truth. On the stove's surface, a woman's portrait gazes forward from a round frame, echoed in the form emerging from the man's chest, an emblem of lineage and remembrance.",
+      "With uncanny warmth and spiritual satire, this painting deconstructs the narrative of 'discovery' and reclaims it through layered indigenous presence, agricultural memory, and the falsity of erasure. The kitchen, both domestic and historical, becomes a site of alchemical resistance.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9169B68C6E405CBFA53",
@@ -1070,8 +1070,29 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-03-16",
-    related: ["some_things_sound_like_the_morning", "the_biblicals"],
-    motifs: ["city", "power", "ceremony", "order"],
+    related: ["hip_hop_1978", "fashion_statement", "mean_and_clean"],
+
+    motifs: [
+      "seated_woman",
+      "ornate_throne",
+      "gold_chain",
+      "gold_earrings",
+      "red_and_blue_tracksuits",
+      "handshake",
+      "northland_building",
+      "classical_archway",
+    ],
+
+    themes: [
+      "self_expression",
+      "cultural_identity",
+      "street_regality",
+      "fashion_individualism",
+      "youth_culture",
+      "creative_rebellion",
+      "self_defined_status",
+      "cultural_memory",
+    ],
     img: "../img/collection_works/dominion_archives/imperious_kingdom.webp",
     desc: [
       "A monumental profile occupies the foreground, seated before a ceremonial landscape where ritualized figures assemble beneath the pediment marked 'Northland'. The woman’s posture is still, composed, and detached from the activity unfolding behind her. Gold adornment and architectural symmetry elevate the scene into a formal tableau of order and hierarchy.",
