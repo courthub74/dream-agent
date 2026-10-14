@@ -192,7 +192,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
     desc: [
-      "A checkerboard plain stages two masked figures labeled <em>let</em> and <em>const</em>, facing one another as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",     
+      "A checkerboard plain stages two masked figures labeled <em>let</em> and <em>const</em>, facing one another as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
       "<em>Polar Bear</em> fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
     ],
     links: {
@@ -974,14 +974,35 @@ window.allWorks = [
     dateCreated: "2020-10-03",
     related: [
       "discovery_of_the_indigenous",
-      "the_refactoring_ritual",
-      "saltwater_electronics",
+      "age_of_nondescriptdom",
+      "temple_of_openings",
     ],
-    motifs: ["procession", "stone gate", "desert"],
+
+    motifs: [
+      "stone_gateway",
+      "1868_inscription",
+      "horns",
+      "robed_figures",
+      "procession",
+      "desert",
+      "mountains",
+      "raised_arms",
+    ],
+
+    themes: [
+      "identity",
+      "classification",
+      "institutional_authority",
+      "collective_identity",
+      "historical_memory",
+      "belonging",
+      "social_order",
+      "ritual",
+    ],
     img: "../img/collection_works/dominion_archives/the_census_ritual.webp",
     desc: [
-      "A solemn procession of robed figures winds across a cracked desert floor, funneled through a monolithic stone frame etched with the year 1868—a date loaded with political memory and post-war reshuffling. Towering over the crowd, a bald sentinel holds open the gate, as if officiating a rite of passage or a reckoning of identities. The twin red horns atop the stone portal echo silent warning.",
-      "'The Census Ritual' explores themes of enumeration, erasure, and conformity within the historical machinery of power. Here, the ritual of “counting” becomes symbolic of control—of being seen not as individuals, but as entries in a ledger of empire.",
+      "A solemn procession of robed figures winds across a cracked desert floor, funneled through a monolithic stone frame etched with the year 1868, a date loaded with political memory and postwar reshuffling. Towering over the crowd, a bald sentinel holds open the gate, as if officiating a rite of passage or a reckoning of identities. The twin red horns atop the stone portal echo a silent warning.",
+      "The Census Ritual explores themes of enumeration, erasure, and conformity within the historical machinery of power. Here, the ritual of counting becomes symbolic of control, of being seen not as individuals, but as entries in a ledger of empire.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9168482F5E705CBFA52",
@@ -2041,10 +2062,10 @@ window.allWorks = [
     id: "cornerstone_kearney",
     collection: "war_and_feast",
     title: "Cornerstone Kearney",
-    year: "2025",
+    year: "2026",
     style: "Oil-style",
     featured: true,
-    dateCreated: "2026-10-25",
+    dateCreated: "2026-10-05",
     related: [
       "prince_carl_after_the_salt_conquering_speaking_an_ancient_language",
       "coeur_of_the_grapes",
