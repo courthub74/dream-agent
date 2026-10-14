@@ -149,7 +149,7 @@ window.allWorks = [
 
       "This oil-style portrait isn’t just a study in temperament. It’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
 
-      "<strong>Which one are you?</strong>",
+      "Which one are you?",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
@@ -193,7 +193,7 @@ window.allWorks = [
     img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
     desc: [
       "A checkerboard plain stages two masked figures labeled 'let' and 'const', paused in mutual orientation as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
-      "The work fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
+      "<em>Polar Bear</em> fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163FD182E905CBFA4F",
