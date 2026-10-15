@@ -1097,7 +1097,7 @@ window.allWorks = [
     desc: [
       "A monumental profile occupies the foreground, seated before a ceremonial landscape where ritualized figures assemble beneath the pediment marked 'Northland'. The woman’s posture is still, composed, and detached from the activity unfolding behind her. Gold adornment and architectural symmetry elevate the scene into a formal tableau of order and hierarchy.",
       "The figures gathered across the lawn exchange gestures of recognition and alignment while the central subject remains outside their exchange. Authority is not performed in motion but established through position, scale, and separation.",
-      "The composition records the architecture of power: the individual who embodies it, and the system that assembles around it.",
+      "<em>Imperious Kingdom</em> records the architecture of power: the individual who embodies it, and the system that assembles around it.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916E01A39FB05CBFA56",
@@ -1110,21 +1110,44 @@ window.allWorks = [
   {
     id: "saltwater_electronics",
     collection: "dominion",
-    title: "Saltwater Electronics",
+    title: "Etch the Empire",
     year: "2021",
     style: "Oil-style",
     featured: true,
     dateCreated: "2021-10-11",
     related: [
-      "the_census_ritual",
-      "the_refactoring_ritual",
-      "discovery_of_the_indigenous",
-    ],
-    motifs: ["ocean", "gods"],
+  "the_census_ritual",
+  "discovery_of_the_indigenous",
+  "bottling_the_republic"
+],
+
+motifs: [
+  "etch_a_sketch",
+  "united_states_map",
+  "directional_arrows",
+  "classical_statues",
+  "tridents",
+  "stone_blocks",
+  "1846_inscription",
+  "lightning",
+  "ocean",
+  "salt_shaker"
+],
+
+themes: [
+  "territorial_expansion",
+  "imperialism",
+  "historical_revision",
+  "political_authority",
+  "national_identity",
+  "historical_memory",
+  "constructed_boundaries",
+  "mythmaking"
+],
     img: "../img/collection_works/dominion_archives/salt_water_electronics.webp",
     desc: [
       "Three ancient bronze gods of logic, sea, and war stand on the edge of civilization’s ocean, lifting an 'Etch A Sketch' like a new divine tablet. The crude map it displays—arrows of commerce, migration, and data—etches a nervous system over the American continent. Beneath, the sand cracks with 'electrical salt', where old myth meets circuitry. A salt shaker, a bottle, and a date (1846) whisper of invention, revolution, and dissolution.",
-      "In 'Saltwater Electronics', Dream Agent fuses mythological statuary with post-industrial nostalgia, asking: 'What happens when the gods inherit our technology and redraw the world from the beach of history'",
+      "In <em>Etch the Empire</em>, Dream Agent fuses mythological statuary with post-industrial nostalgia, asking: 'What happens when the gods inherit our technology and redraw the world from the beach of history'",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080000B57E780C6A5EF299540E01B0E8C6DB1B83CFC916B24E97E505CBFA54",
