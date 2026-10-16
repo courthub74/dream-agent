@@ -1274,7 +1274,7 @@ window.allWorks = [
     img: "../img/collection_works/dominion_archives/big_forest_taheed.webp",
     desc: [
       "<em>Big Forest Taheed</em> presents a monumental figure standing between the myth of the frontier and the modern paradox of restraint. Dressed in a sailor’s uniform, carrying an axe over his shoulder, Taheed is not a conqueror but a steward, guided by his own philosophy: <strong>Just enough for shelter, nothing more.</strong>",
-      "The painting considers the legacy of industry, expansion, and survival through an individual ethic of sufficiency. At the base, two bottles recall questions of ancestry, identity, and the historical narratives surrounding the Americas. Their quiet presence introduces another layer beneath the vast cornfield and evergreen trees, where cultivation and wilderness occupy the same landscape.",
+      "The painting considers the legacy of industry, expansion, and survival through an individual ethic of sufficiency. At the base, two familiar bottles appear, carrying traces of a history that extends beyond the landscape. Their quiet presence introduces another layer beneath the vast cornfield and evergreen trees, where cultivation and wilderness occupy the same landscape.",
       "A meditation on self-determination, stewardship, and the meaning of enough.",
     ],
     links: {
@@ -1293,9 +1293,25 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-04-15",
-    related: ["prince_carl_laying"],
-    motifs: ["salt", "language", "conquest"],
-    themes: ["history", "communication", "legacy"],
+    
+related: [
+  "prince_carl_laying",
+  "mean_and_clean",
+  "internet_of_the_9th_empire"
+],
+motifs: [
+  "fur-clad figures",
+  "social media inscription",
+  "glowing orb",
+  "ocean"
+],
+themes: [
+  "authority",
+  "communication",
+  "cultural conquest",
+  "legacy"
+],
+
     img: "../img/collection_works/dominion_archives/prince_carl_after_the_salt_conquering.webp",
     desc: [
       "After the Salt Conquering, Prince Carl sits upon the edge of the Atlantic, wrapped in furs, speaking in a language older than kingdoms and newer than algorithms.",
@@ -1320,16 +1336,31 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-10-15",
-    related: ["internet_of_the_3rd_kingdom", "internet_of_the_new_world"],
-    motifs: ["glowing orbs", "crown", "domed towers"],
-    themes: ["power", "civilization", "connection"],
+    
+related: [
+  "internet_of_the_3rd_kingdom",
+  "internet_of_the_old_world",
+  "prince_carl_after_the_salt_conquering_speaking_an_ancient_language"
+],
+motifs: [
+  "glowing orbs",
+  "crowned figures",
+  "domed towers",
+  "crowd"
+],
+themes: [
+  "collective intelligence",
+  "civilization",
+  "cultural inheritance",
+  "connection"
+],
+
     img: "../img/collection_works/dominion_archives/internet_of_the_9th_empire.webp",
     desc: [
       "A vision of civilization after knowledge becomes its highest currency.",
-      "'Internet of the 9th Empire' depicts rulers who govern through illumination rather than force. Before them stretches a society where every individual holds a glowing sphere, symbolizing universal access to collective memory and shared understanding.",
+      "<em>Internet of the 9th Empire</em> depicts rulers who govern through illumination rather than force. Before them stretches a society where every individual holds a glowing sphere, symbolizing universal access to collective memory and shared understanding.",
       "The work transforms the internet from a technological network into a cultural inheritance spanning generations and civilizations.",
-      "Its greatest monument is not stone.",
-      "It is connection.",
+      "Its greatest monument is not stone, it is connection.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
