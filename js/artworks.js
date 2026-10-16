@@ -1147,7 +1147,6 @@ window.allWorks = [
     img: "../img/collection_works/dominion_archives/salt_water_electronics.webp",
     desc: [
       "Three ancient bronze gods of logic, sea, and war stand on the edge of civilization’s ocean, lifting an <em>Etch A Sketch</em> like a new divine tablet. The crude map it displays, with arrows of commerce, migration, and data, etches a nervous system over the American continent. Beneath, the sand cracks with 'electrical salt', where old myth meets circuitry. A salt shaker, a bottle, and a date (1846) whisper of invention, revolution, and dissolution.",
-
       "In <em>Etch the Empire</em>, Dream Agent fuses mythological statuary with post-industrial nostalgia, asking a question:",
       "<strong>'What happens when the gods inherit our technology and redraw the world from the beach of history?'</strong>",
     ],
@@ -1196,9 +1195,9 @@ window.allWorks = [
     ],
     img: "../img/collection_works/dominion_archives/internet_of_the 3rd_kingdom.webp",
     desc: [
-      "In 'Internet of the 3rd Kingdom', a secret stone corridor becomes a theater of paranoia and ritual. Figures in medieval tunics scatter with scrolls of information, as though caught in the chaos of a leaking archive. At the forefront, a faceless man holds a bleeding sphere, accompanied by a powdered judge holding a glowing Ace of Spades —symbols of chance, judgment, and hidden authority.",
-      "Above them, a blood-red banner bears a compass-like sigil, while a massive crystal orb in the distance swallows flying swords and documents, as if consuming history itself. This is the Kingdom of Networks—half-feudal, half-digital—where law, secrecy, and data collide.",
-      "Dream Agent paints a world where the 'architecture of power' is ancient, yet the 'currency of control' is information.",
+      "In Internet of the 3rd Kingdom, a secret stone corridor becomes a theater of paranoia and ritual. Figures in medieval tunics scatter with scrolls of information, as though caught in the chaos of a leaking archive. At the forefront, a faceless man holds a bleeding sphere, accompanied by a powdered judge holding a glowing Ace of Spades, symbols of chance, judgment, and hidden authority.",
+      "Above them, a blood-red banner bears a compass-like sigil, while a massive crystal orb in the distance swallows flying swords and documents, as if consuming history itself. This is the Kingdom of Networks, half-feudal and half-digital, where law, secrecy, and data collide.",
+      "Dream Agent paints a world where the architecture of power is ancient, yet the currency of control is information.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163BB17DF405CBFA5A",
@@ -1216,16 +1215,22 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-04-15",
-    related: ["imperious_kingdom"],
-    motifs: ["crown", "gold chains", "microphones"],
-    themes: ["status", "power", "scrutiny"],
+
+    related: ["imperious_kingdom", "the_tech_era", "age_of_nondescriptdom"],
+    motifs: [
+      "gold crown",
+      "metallic mask",
+      "gold chains",
+      "microphones",
+      "recording devices",
+    ],
+    themes: ["power", "status", "public image", "authority", "spectacle"],
+
     img: "../img/collection_works/dominion_archives/mean_and_clean.webp",
     desc: [
-      "In 'Mean and Clean', Dream Agent stages a royal press conference where no words are spoken, only power is broadcast.",
-
+      "In <em>Mean and Clean</em>, Dream Agent stages a royal press conference where no words are spoken, yet power appears to be broadcast.",
       "A faceless metallic figure crowned in gold sits before a swarm of microphones. Chains hang behind him like ceremonial trophies. The coat is warm, the crown is cold, and the silence is louder than any speech.",
-
-      "This work explores the aesthetic of control, and the polished cruelty of power as spectacle. ",
+      "The scene brings together authority, public image, and the polished cruelty of power as spectacle. Whether the figure commands the audience or depends upon its attention remains uncertain.",
     ],
     links: {
       xrp: "#",
@@ -1243,14 +1248,34 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-09-18",
-    related: ["the_biblicals", "imperious_kingdom"],
-    motifs: ["forest", "stewardship"],
-    themes: ["balance", "ethics", "human_scale"],
+
+    related: [
+      "discovery_of_the_indigenous",
+      "etch_the_empire",
+      "the_generous_vagrant",
+    ],
+
+    motifs: [
+      "axe",
+      "sailor uniform",
+      "pine trees",
+      "wooden sign",
+      "cornfield",
+      "bottles",
+    ],
+    themes: [
+      "self-determination",
+      "sufficiency",
+      "stewardship",
+      "restraint",
+      "human dignity",
+    ],
+
     img: "../img/collection_works/dominion_archives/big_forest_taheed.webp",
     desc: [
-      "'Big Forest Taheed' presents a monumental figure standing between the myth of the frontier and the modern paradox of restraint. Dressed in a sailor’s uniform, carrying an axe over his shoulder, the figure is not a conqueror but a steward—his presence bound by the sign at his feet: 'Just enough for shelter, nothing more.'",
-      "The painting confronts the legacy of industry, expansion, and survival, reframing them through an ethic of balance. The bottles at the base serve as mute totems—red and green, warning and permission—while the vast field of corn and evergreen trees remind us of the eternal tension between cultivation and wilderness.",
-      "A meditation on sufficiency, stewardship, and the human scale within endless landscapes.",
+      "<em>Big Forest Taheed</em> presents a monumental figure standing between the myth of the frontier and the modern paradox of restraint. Dressed in a sailor’s uniform, carrying an axe over his shoulder, Taheed is not a conqueror but a steward, guided by his own philosophy: <strong>Just enough for shelter, nothing more.</strong>",
+      "The painting considers the legacy of industry, expansion, and survival through an individual ethic of sufficiency. At the base, two bottles recall questions of ancestry, identity, and the historical narratives surrounding the Americas. Their quiet presence introduces another layer beneath the vast cornfield and evergreen trees, where cultivation and wilderness occupy the same landscape.",
+      "A meditation on self-determination, stewardship, and the meaning of enough.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916C93468FA05CBFA55",
