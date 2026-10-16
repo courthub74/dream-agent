@@ -149,7 +149,7 @@ window.allWorks = [
 
       "This oil-style portrait isn’t just a study in temperament. It’s a tension-filled séance of capitalism, identity, and pacing in the digital age.",
 
-      "Which one are you?",
+      "<strong>Which one are you?</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D17472D905CBFA3F",
@@ -1116,38 +1116,40 @@ window.allWorks = [
     featured: true,
     dateCreated: "2021-10-11",
     related: [
-  "the_census_ritual",
-  "discovery_of_the_indigenous",
-  "bottling_the_republic"
-],
+      "the_census_ritual",
+      "discovery_of_the_indigenous",
+      "bottling_the_republic",
+    ],
 
-motifs: [
-  "etch_a_sketch",
-  "united_states_map",
-  "directional_arrows",
-  "classical_statues",
-  "tridents",
-  "stone_blocks",
-  "1846_inscription",
-  "lightning",
-  "ocean",
-  "salt_shaker"
-],
+    motifs: [
+      "etch_a_sketch",
+      "united_states_map",
+      "directional_arrows",
+      "classical_statues",
+      "tridents",
+      "stone_blocks",
+      "1846_inscription",
+      "lightning",
+      "ocean",
+      "salt_shaker",
+    ],
 
-themes: [
-  "territorial_expansion",
-  "imperialism",
-  "historical_revision",
-  "political_authority",
-  "national_identity",
-  "historical_memory",
-  "constructed_boundaries",
-  "mythmaking"
-],
+    themes: [
+      "territorial_expansion",
+      "imperialism",
+      "historical_revision",
+      "political_authority",
+      "national_identity",
+      "historical_memory",
+      "constructed_boundaries",
+      "mythmaking",
+    ],
     img: "../img/collection_works/dominion_archives/salt_water_electronics.webp",
     desc: [
-      "Three ancient bronze gods of logic, sea, and war stand on the edge of civilization’s ocean, lifting an 'Etch A Sketch' like a new divine tablet. The crude map it displays—arrows of commerce, migration, and data—etches a nervous system over the American continent. Beneath, the sand cracks with 'electrical salt', where old myth meets circuitry. A salt shaker, a bottle, and a date (1846) whisper of invention, revolution, and dissolution.",
-      "In <em>Etch the Empire</em>, Dream Agent fuses mythological statuary with post-industrial nostalgia, asking: 'What happens when the gods inherit our technology and redraw the world from the beach of history'",
+      "Three ancient bronze gods of logic, sea, and war stand on the edge of civilization’s ocean, lifting an <em>Etch A Sketch</em> like a new divine tablet. The crude map it displays, with arrows of commerce, migration, and data, etches a nervous system over the American continent. Beneath, the sand cracks with 'electrical salt', where old myth meets circuitry. A salt shaker, a bottle, and a date (1846) whisper of invention, revolution, and dissolution.",
+
+      "In <em>Etch the Empire</em>, Dream Agent fuses mythological statuary with post-industrial nostalgia, asking a question:",
+      "<strong>'What happens when the gods inherit our technology and redraw the world from the beach of history?'</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080000B57E780C6A5EF299540E01B0E8C6DB1B83CFC916B24E97E505CBFA54",
@@ -1165,9 +1167,33 @@ themes: [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: ["internet_of_the_new_world"],
-    motifs: ["printing_press", "panic"],
-    themes: ["paranoia", "ritual"],
+    related: [
+      "internet_of_the_old_world",
+      "the_tech_era",
+      "the_refactoring_ritual",
+    ],
+
+    motifs: [
+      "stone_corridor",
+      "arched_ceiling",
+      "glowing_device",
+      "masked_figure",
+      "sword",
+      "hanging_banner",
+      "compass_emblem",
+      "parchment",
+      "robed_figures",
+    ],
+
+    themes: [
+      "information_control",
+      "institutional_authority",
+      "technological_disruption",
+      "fear",
+      "knowledge",
+      "social_upheaval",
+      "historical_continuity",
+    ],
     img: "../img/collection_works/dominion_archives/internet_of_the 3rd_kingdom.webp",
     desc: [
       "In 'Internet of the 3rd Kingdom', a secret stone corridor becomes a theater of paranoia and ritual. Figures in medieval tunics scatter with scrolls of information, as though caught in the chaos of a leaking archive. At the forefront, a faceless man holds a bleeding sphere, accompanied by a powdered judge holding a glowing Ace of Spades —symbols of chance, judgment, and hidden authority.",
@@ -1341,8 +1367,23 @@ themes: [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-10-15",
-    related: ["the_census_ritual", "bottling_the_republic", "survey"],
-    tags: ["spy", "birds"],
+
+    related: ["the_census_ritual", "survey", "bottling_the_republic"],
+    motifs: [
+      "stone archway",
+      "top hat",
+      "procession",
+      "silhouettes",
+      "city skyline",
+    ],
+    themes: [
+      "social transformation",
+      "classification",
+      "collective identity",
+      "historical transition",
+      "institutional power",
+    ],
+
     img: "../img/collection_works/dominion_archives/the_refactoring_ritual.webp",
     desc: [
       "'The Refactoring Ritual' by Dream Agent is a surreal procession through the archway of time, marked '1940'. At its helm looms a faceless figure in a black tuxedo and top hat, holding the stone portal adorned with twin horns. On one side, the crowd emerges in muted earth tones—on the other, they dissolve into stark silhouettes of black and white, as if stripped to archetypes. The skyline towers like watchful sentinels, the air thick with unspoken agreements.",
@@ -1439,9 +1480,32 @@ themes: [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-08-25",
-    related: ["cursor_of_fate", "internet_of_the_modern_world"],
-    motifs: ["technology", "urban life", "prosperity"],
-    themes: ["progress", "isolation", "synchronization"],
+    related: [
+      "cursor_of_fate",
+      "internet_of_the_3rd_kingdom",
+      "the_future_of_industry",
+    ],
+
+    motifs: [
+      "electric_scooters",
+      "zoltar_machine",
+      "glowing_tooth",
+      "glowing_orbs",
+      "classical_temple",
+      "waterfall",
+      "mountains",
+      "hooded_figures",
+    ],
+
+    themes: [
+      "technological_adaptation",
+      "collective_behavior",
+      "automation",
+      "modernity",
+      "human_agency",
+      "technological_progress",
+      "social_conformity",
+    ],
     img: "../img/collection_works/industrial_myths/the_tech_era.webp",
     desc: [
       "In 'The Tech Era,' Dream Agent conjures a surreal crossroads of technological elegance and ancient mystery. A cadre of faceless urbanites—Yuppies, Buppies, and Cypherpunks—glide through a snow-laced city on electric scooters, disconnected yet synchronized.",
