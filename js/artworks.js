@@ -1374,12 +1374,30 @@ themes: [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-06-15",
-    related: ["imperious_kingdom", "the_biblicals"],
-    motifs: ["shower", "light", "bonsai waterfall"],
+    
+related: [
+  "rinse_of_trust",
+  "the_biblicals",
+  "the_future_of_industry"
+],
+motifs: [
+  "shower fixture",
+  "microphone",
+  "golden light",
+  "bonsai waterfall",
+  "Hebrew lettering"
+],
+themes: [
+  "origins of language",
+  "transmission",
+  "life and matter",
+  "ancestral knowledge"
+],
+
     img: "../img/collection_works/dominion_archives/some_things_sound_like_the_morning.webp",
     desc: [
       "Every civilization begins with a language it cannot fully explain.",
-      "'Some Things Sound Like the Morning' transforms an ordinary shower into a sanctuary of transmission. Morning sunlight pours through the fixture, replacing flowing water, casting golden frequencies across a chamber where a microphone waits beneath the light. On one wall, 'M = Mineral' suggests that voice originates in the deep architecture of the earth. On another, the Hebrew word חיים (Life) quietly anchors the composition, introducing breath, spirit, and living memory into the ritual.",
+      "<em>Some Things Sound Like the Morning</em> transforms an ordinary shower into a sanctuary of transmission. Morning sunlight pours through the fixture, replacing flowing water, casting golden frequencies across a chamber where a microphone waits beneath the light. On one wall, 'M = Mineral' suggests that voice originates in the deep architecture of the earth. On another, the Hebrew word חיים (Life) quietly anchors the composition, introducing breath, spirit, and living memory into the ritual.",
       "Between them stands the figure, suspended between stone and speech, matter and meaning. The bonsai waterfall reinforces the painting's central current: life is not manufactured but cultivated, flowing patiently through generations before emerging as language. This work asks whether the first sounds of civilization were less an invention than a reception, as though every morning still carries echoes of the world's original voice.",
     ],
     links: {
