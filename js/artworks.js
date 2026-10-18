@@ -1365,7 +1365,11 @@ window.allWorks = [
     featured: true,
     dateCreated: "2026-06-15",
 
-    related: ["rinse_of_trust", "the_biblicals", "the_future_of_industry"],
+    related: [
+      "rinse_of_trust",
+      "the_biblicals",
+      "some_things_were_meant_to_last_forever",
+    ],
     motifs: [
       "shower fixture",
       "microphone",
@@ -1488,7 +1492,7 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: ["future_of_industry", "the_tech_era", "the_guerre"],
+    related: ["the_future_of_industry", "the_tech_era", "the_guerre"],
     motifs: [
       "fortune_teller",
       "computer_cursor",
@@ -1512,7 +1516,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/industrial_myths/cursor_of_fate.webp",
     desc: [
-      "A modern oracle for the algorithmic age. 'Cursor of Fate' transforms the iconic fortune teller into an artificial intelligence whose face has become a luminous screen marked by a single cursor. Surrounded by symbols of labor, ambition, craftsmanship, and contemplation, the figure presides over a table of possibilities rather than certainties.",
+      "A modern oracle for the algorithmic age. <em>Cursor of Fate</em> transforms the iconic fortune teller into an artificial intelligence whose face has become a luminous screen marked by a single cursor. Surrounded by symbols of labor, ambition, craftsmanship, and contemplation, the figure presides over a table of possibilities rather than certainties.",
       "The work explores humanity's growing tendency to consult machines for answers once reserved for mystics. Every object becomes a prompt, every prediction another branch in an expanding decision tree.",
       "Rather than forecasting the future, the oracle reflects our own questions back to us.",
     ],
@@ -1532,15 +1536,34 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2018-6-15",
-    related: ["lactation_of_the_ledger", "binary_tree"],
-    motifs: ["bitcoin", "baby", "protest"],
-    themes: ["generational conflict", "digital value", "rebirth"],
+
+    related: [
+      "lactation_of_the_ledger",
+      "binary_tree",
+      "internet_of_the_9th_empire",
+    ],
+    motifs: [
+      "dollar Madonna",
+      "Bitcoin infant",
+      "assembled generations",
+      "laptops",
+      "network constellations",
+      "golden stone",
+    ],
+    themes: [
+      "monetary legacy",
+      "generational conflict",
+      "digital sovereignty",
+      "financial transformation",
+      "technological inheritance",
+      "ideological division",
+    ],
+
     img: "../img/collection_works/industrial_myths/the_great_divide.webp",
     desc: [
-      "The Great Divide is a meditation on the birth of digital value amidst generational and ideological conflict. A solemn green matriarch cradles a golden baby marked with the Bitcoin symbol — a digital messiah wrapped in swaddling wealth. Around her, the youth sit silently with laptops, bearing the weight of a new world, while protesters and skeptics stand on the opposing cliff, holding blank signs and accusations.",
-      "Set against a cosmic desert canyon under constellations of coded systems, this painting questions what is inherited, what is mined, and what is rejected. The gold rock at the feet of the critic speaks to the relics of the past; the baby to a future still being written.",
-      "🪐 Blockchain as womb. Protest as ritual. Code as constellation.",
-      "This is not just a divide — it is a rebirth.",
+      "<em>The Great Divide</em> is a meditation on the emergence of digital value amid generational and ideological conflict. A solemn green matriarch, embodying the American dollar, cradles a golden infant marked with the Bitcoin symbol. Around her, a younger generation gathers with laptops, while protesters and skeptics occupy the opposing landscape, their gestures suggesting uncertainty, resistance, and competing visions of the future.",
+      "Set within a vast desert canyon beneath constellations resembling interconnected systems, the painting explores the tensions between monetary inheritance and technological transformation. A golden rock rests near a questioning figure, recalling the material foundations of wealth, while the infant suggests a new form of value whose place in the world remains unsettled.",
+      "Here, currency becomes lineage, technology becomes inheritance, and division becomes a defining feature of change. The painting leaves open whether the emerging financial order represents a departure from the past or another chapter in its continuing legacy.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916AE2E92F105CBFA5F",
@@ -1586,10 +1609,10 @@ window.allWorks = [
     ],
     img: "../img/collection_works/industrial_myths/the_tech_era.webp",
     desc: [
-      "In 'The Tech Era,' Dream Agent conjures a surreal crossroads of technological elegance and ancient mystery. A cadre of faceless urbanites—Yuppies, Buppies, and Cypherpunks—glide through a snow-laced city on electric scooters, disconnected yet synchronized.",
-      "They pass a glowing crystal ball ceremony, a hypnotic marble garage spewing water from the mountains, and a mystical Zoltar figure beside a woman carefully sewing a half-finished turban.",
-      "Above, a giant floating tooth—a relic or prophecy?—hovers between two epochs: analog ruin and digital rebirth. Symbols abound: the neon globe of globalism, the ever-watching mountain temple, and a store sign encoded in planetary language.",
-      "This is not just a painting—it’s a portal.",
+      "In <em>The Tech Era</em>, Dream Agent conjures a surreal crossroads of technological elegance and ancient mystery. A cadre of faceless urbanites, Yuppies, Buppies, and Cypherpunks, glide through a snow-laced city on electric scooters, disconnected yet synchronized.",
+      "They pass a glowing crystal ball ceremony, a hypnotic marble garage spewing water from the mountains, and a mystical Zoltar booth containing a woman carefully sewing an unfinished fortune teller's turban.",
+      "Above, a giant floating tooth hovers between two epochs, analog ruin and digital rebirth. Is it a relic or a prophecy? Symbols abound: the neon globe of globalism, the ever-watching mountain temple, and a store sign encoded in planetary language.",
+      "This is not just a painting. <strong>It\'s a portal.</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9161205E0EB05CBFA4D",
@@ -1607,13 +1630,34 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-03-15",
-    related: [],
-    motifs: ["prison", "freedom", "similarity"],
-    themes: ["confinement", "liberty", "existentialism"],
+
+    related: [
+      "the_great_divide",
+      "the_artificial_monty",
+      "age_of_nondescriptdom",
+    ],
+    motifs: [
+      "prison bars",
+      "faceless figures",
+      "parallel interiors",
+      "musical notes",
+      "airplanes",
+      "celestial bodies",
+      "contrasting attire",
+    ],
+    themes: [
+      "human condition",
+      "social inequality",
+      "perception of freedom",
+      "shared humanity",
+      "existential parallels",
+      "circumstance and identity",
+    ],
+
     img: "../img/collection_works/industrial_myths/humans.webp",
     desc: [
       "A surreal meditation on visible and invisible confinement.",
-      "Humans juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
+      "<em>Humans</em> juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
       "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
       "Sometimes the strongest prisons cannot be seen.",
     ],
@@ -1629,18 +1673,37 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-01-01",
+
     related: [
-      "the_fear_room",
-      "daniels_vision_from_another_angle",
       "discovery_of_the_indigenous",
+      "the_refactoring_ritual",
+      "saltwater_electronics",
     ],
-    motifs: ["map", "bottles"],
+    motifs: [
+      "United States map",
+      "bottling assembly line",
+      "red and green bottles",
+      "factory worker",
+      "dual water faucets",
+      "packaged goods",
+      "transmission tower",
+    ],
+    themes: [
+      "national identity",
+      "historical narratives",
+      "industrial standardization",
+      "cultural classification",
+      "manufactured consensus",
+      "institutional authority",
+    ],
+
     img: "../img/collection_works/industrial_myths/bottling_the_republic.webp",
     desc: [
-      "In 'Bottling the Republic', Dream Agent invites the viewer into a sterile, modern factory where the symbols of national identity are distilled, packaged, and prepared for consumption. On the left, dark and amber soda bottles emerge from a map of the United States—oxidized green against a burnt orange backdrop—suggesting a geographic origin stripped of borders yet full of weight. On the right, lighter bottles exit a white brick structure, their neutrality implying refinement, curation, or even erasure.",
-      "A factory worker affixes a red-crayon label to the box: 'A Case of Sovereignties'. His motion—half-routine, half-ritual—becomes a metaphor for the bureaucratic manufacturing of governance and identity. At the center, twin drinking fountains spill water onto the production line, invoking historical inequities, industrial spillage, or uncontainable truth.",
-      "Hovering above, a 1950s antenna pulses radio waves outward—a relic of a broadcast age, echoing the reach of old narratives into modern machinery.",
-      "Dream Agent fuses surrealism, political allegory, and post-industrial aesthetics into a layered visual inquiry. What does it mean to bottle a republic? And who decides the recipe?",
+      "In <em>Bottling the Republic</em>, Dream Agent invites the viewer into a sterile industrial factory where symbols of national identity are distilled, packaged, and prepared for consumption. On the left, dark and amber bottles emerge beneath a map of the United States, rendered in oxidized green against a burnt orange backdrop. Two small bottles of red and green stand beside the map, quietly recalling questions of ancestry, identity, and the narratives through which history is understood. On the right, lighter bottles move along the production line, suggesting refinement, standardization, or perhaps erasure.",
+      'A factory worker attends to a white package labeled "A Case of Sovereignties", transforming an ordinary industrial task into a curious ritual of governance and identity. At the center, twin faucets spill water into a shared basin, introducing questions of separation, convergence, and the systems through which resources and histories flow.',
+      "Above the machinery, a transmission tower broadcasts its invisible signals, suggesting the enduring influence of established narratives upon modern institutions.",
+      "Blending political allegory, industrial imagery, and historical uncertainty, the painting considers how nations construct, preserve, and distribute their identities.",
+      "What does it mean to bottle a republic? And who decides the recipe?",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916B66E9CE605CBFA49",
@@ -1658,21 +1721,39 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-08-03",
+
     related: [
-      "the_future_of_industry",
       "the_artificial_monty",
       "cursor_of_fate",
+      "the_future_of_industry",
     ],
-    motifs: ["deli", "automation", "ritual"],
-    themes: ["automation", "ritual", "labor"],
+    motifs: [
+      "digital oracle",
+      "LLM institution",
+      "tentacles",
+      "masked proxies",
+      "deli sandwich",
+      "crystal ball",
+      "proxies",
+    ],
+    themes: [
+      "artificial intelligence",
+      "delegation",
+      "digital labor",
+      "intermediation",
+      "information consumption",
+      "human agency",
+    ],
+
     img: "../img/collection_works/industrial_myths/the_artificial_deli_gate.webp",
     desc: [
-      "In 'The Artificial Deli-gate', prophecy has been industrialized.",
-      "A fortune teller with a living code screen for a face calmly offers a **Deluxe Submarine** while gazing into a luminous prediction orb. Behind the brick wall, an immense marble-green octopus wrapped around a temple marked 'L.L.M.' quietly reveals the hidden machinery beneath modern intelligence. A roadside sign points toward 'Proxies', while an orderly procession of anonymous figures patiently waits, each carrying an identical bag of chips as though participating in an invisible algorithmic ritual.",
+      "In <em>The Artificial Deli-Gate</em>, prophecy has been industrialized.",
+
+      'A fortune teller with a living code screen for a face calmly offers a **Deluxe Submarine** while holding a luminous prediction orb. Behind the brick wall, an immense marble-green octopus coils around a temple marked "L.L.M.", suggesting the sprawling machinery beneath modern intelligence. A roadside sign points toward "Proxies", while an orderly procession of anonymous figures carries identical bags of chips, participating in what appears to be an invisible algorithmic ritual.',
       "The painting asks a simple but unsettling question:",
-      "When intelligence becomes infinitely accessible, are we choosing our thoughts... or merely selecting from a menu?",
-      "Like much of the Dream Agent archive, symbolism replaces certainty. The sandwich becomes information. Chips become disposable consumption. The oracle has become software. Even prophecy now arrives through infrastructure.",
-      "This work explores the strange mythology emerging around artificial intelligence, automation, and machine reasoning.",
+      "When intelligence becomes infinitely accessible, are we choosing our thoughts, or merely selecting from a menu?",
+      "Throughout the scene, familiar objects acquire unfamiliar purposes. A sandwich resembles a packaged offering, chips suggest fragments of consumption or computation, and the oracle has become software. Human ambition and automated behavior appear almost indistinguishable.",
+      "In this strange mythology of artificial intelligence, delegation becomes ceremony, information becomes merchandise, and the boundary between those who operate the system and those who are operated by it remains uncertain.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -1711,7 +1792,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/industrial_myths/andromeda_dental.webp",
     desc: [
-      "In 'Andromeda Dental', a faceless woman with white-hot, flowing hair examines a gate of monumental ivory fangs. A small mirror rests in her hand. Beyond the gate, a luminous microchip stands upright beneath a white turban.",
+      "In <em>Andromeda Dental</em>, a faceless woman with white-hot, flowing hair examines a gate of monumental ivory fangs. A small mirror rests in her hand. Beyond the gate, a luminous microchip stands upright beneath a white turban.",
       "Dream Agent brings the gestures of routine care into an impossible courtyard. Teeth become architecture; circuitry acquires ceremonial dress. The woman continues her inspection as though every threshold requires an examination.",
       "The mirror offers a fragment of a structure too large to see at once.",
     ],
@@ -1727,7 +1808,7 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-08-03",
-    related: ["cursor_of_fate", "the_tech_era", "the_soap_wars"],
+    related: ["cursor_of_fate", "the_tech_era", "the_future_of_industry"],
 
     motifs: [
       "monitor_faced_oracle",
@@ -1755,10 +1836,8 @@ window.allWorks = [
     img: "../img/collection_works/industrial_myths/the_guerre.webp",
     desc: [
       "A city churns beneath a fortune teller whose face has become a blank monitor. In one hand, a red crystal ball contains the promise of what comes next; in the other, a leaf blower pushes the present into perpetual motion. Smartphones and drones occupy the sky while dark marble figures scatter through a landscape increasingly designed around them rather than for them.",
-
-      "At ground level, an obsolete CRT displays `</Centered Div>` above an immaculate modern desk and a chair whose occupant appears to have been violently erased. Ice-carved Viking horns confront one another in the foreground while plates and bowls of AI slop accumulate across the terrain.",
-
-      "'The Guerre' imagines technological transition not as a clean succession of eras, but as a crowded territorial dispute between prediction, automation, abundance, obsolescence, human labor, and the systems competing to occupy the center.",
+      'At ground level, an obsolete CRT displays "Centered Div" above an immaculate modern desk and a chair whose occupant appears to have been violently erased. Ice-carved Viking horns confront one another in the foreground while plates and bowls of AI slop accumulate across the terrain.',
+      "<em>The Guerre</em> imagines technological transition not as a clean succession of eras, but as a crowded territorial dispute between prediction, automation, abundance, obsolescence, human labor, and the systems competing to occupy the center.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -1772,14 +1851,35 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2023-06-20",
-    related: ["bottling_the_republic", "daniels_vision_from_another_angle"],
-    motifs: ["priest", "war"],
+
+    related: [
+      "bottling_the_republic",
+      "daniels_vision_from_another_angle",
+      "the_refactoring_ritual",
+    ],
+    motifs: [
+      "priest",
+      "kneeling figures",
+      "partition walls",
+      "currency",
+      "soldiers",
+      "microchip",
+    ],
+    themes: [
+      "institutional power",
+      "fear",
+      "submission",
+      "social conditioning",
+      "authority",
+      "technological control",
+    ],
+
     img: "../img/collection_works/industrial_myths/the_fear_room.webp",
     desc: [
-      "'In The Fear Room', Dream Agent dissects the systemic machinery of submission and indoctrination. A lineup of children—bent, broken, and bowed—passes through gateways of authority and assimilation, watched over by figures of religion, capital, and control. Behind them, a portrait of soldiers against fire echoes the violence of inherited obedience.",
-      "A suited man holds out cash while guiding heads into future-making devices, beneath the glow of a microchip idol labeled 'FUTURE'—a cynical altar to technological determinism. The atmosphere is thick with unease, yet calculated and quiet. This is not chaos—it’s organized despair.",
-      "This NFT immortalizes a moment of ideological conditioning, where hope flickers in the cracks of institutionally imposed fear. One child, far right, sits upright—an ambiguous figure of peace or resignation.",
-      "The painting invites collectors to reckon with the infrastructures of fear and the quiet violence of societal programming.",
+      "In this piece, Dream Agent dissects the systemic machinery of submission and indoctrination. A lineup of children, bent, broken, and bowed, passes through gateways of authority and assimilation, watched over by figures of religion, capital, and control. Behind them, a portrait of soldiers against fire echoes the violence of inherited obedience.",
+      'A suited man holds out cash while guiding heads into future-making devices, beneath the glow of a microchip idol labeled "FUTUR." The atmosphere is thick with unease, yet calculated and quiet. This is not chaos. It\'s organized despair.',
+      "The painting captures a moment of ideological conditioning, where hope flickers in the cracks of institutionally imposed fear. One child, far right, sits upright, an ambiguous figure of peace or resignation.",
+      "<em>The Fear Room</em> invites viewers to reckon with the infrastructures of fear and the quiet violence of societal programming.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916A3A8D0DA05CBFA3D",
@@ -1797,14 +1897,37 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2023-06-13",
-    related: ["the_fear_room", "bottling_the_republic"],
-    motifs: ["cargo", "doves"],
+
+    related: [
+      "saltwater_electronics",
+      "the_fear_room",
+      "bottling_the_republic",
+    ],
+    motifs: [
+      "dominion vessel",
+      "institutional architecture",
+      "military weapons",
+      "chains",
+      "tentacles",
+      "broadcast tower",
+      "four birds",
+    ],
+    themes: [
+      "biblical prophecy",
+      "colonization",
+      "industrialization",
+      "religious expansion",
+      "imperial dominion",
+      "cultural transformation",
+    ],
+
     img: "../img/collection_works/industrial_myths/daniels_vision_from_another_angle.webp",
     desc: [
-      "A black-sea freighter noses through fog, its deck stacked not with cargo but with institutions: a courthouse façade, a broadcast tower, glass offices, and a proud marquee that mis-spells 'EXCELLENCE'—a glitch that betrays intent. Cable-chains spill from the ship like tentacles, dragging unseen systems through the tide. Above, a faint halo of radio rings ripples the sky.",
-      "On the shore, four birds stand as witnesses—three obsidian, one pale—an echo of Daniel’s layered visions and their empires. The birds face the vessel, a dissenting conscience against industrial pageantry. What arrives is not a navy, but a narrative: empire as architecture, morality as advertising, dominion as logistics.",
-      "Dream Agent tilts the prophecy 'from another angle,' asking: Who sails whom?",
-      "When institutions are freight, is the ocean carrying them—or are we?",
+      'A black-sea freighter noses through fog, its deck stacked not with cargo but with institutions: a courthouse façade, a broadcast tower, glass offices, and a proud marquee that misspells "EXCELLENCE," a glitch that betrays intent. Cable chains spill from the ship like tentacles, dragging unseen systems through the tide. Above, a faint halo of radio rings ripples across the sky.',
+      "On the shore, four birds stand as witnesses, three obsidian and one pale, recalling the layered visions and successive empires of the biblical Daniel. They face the approaching vessel, their quiet presence contrasting with the industrial spectacle. What arrives is not a navy, but a narrative: empire as architecture, morality as advertising, dominion as logistics.",
+      "Drawing upon ancient prophecy, Dream Agent imagines the arrival of institutions, beliefs, and machinery upon unfamiliar shores. The vessel carries more than the structures of civilization. It carries the possibility of transforming whatever lies beyond its destination.",
+      "<em>Daniel's Vision from Another Angle</em> tilts the prophecy toward a different horizon, asking:",
+      "<strong>When institutions become freight, is the ocean carrying them, or are we?</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916CD546DE705CBFA4A",
@@ -1821,21 +1944,30 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-10-18",
-    related: ["cursor_of_fate", "the_future_of_industry"],
-    motifs: ["comma", "oracle", "monitor_face", "procession", "mountain"],
-    themes: [
-      "ritual",
-      "divinity",
-      "language",
-      "order",
-      "collapse",
-      "interpretation",
+
+    related: ["cursor_of_fate", "the_artificial_deli_gate", "the_fear_room"],
+    motifs: [
+      "code-faced oracle",
+      "chainsaw",
+      "ruined towers",
+      "procession",
+      "illuminated hearts",
+      "turbanned figure",
     ],
+    themes: [
+      "technological authority",
+      "faith and devotion",
+      "destruction and renewal",
+      "collective obedience",
+      "human resilience",
+      "divinity and interpretation",
+    ],
+
     img: "../img/collection_works/industrial_myths/god_comma.webp",
     desc: [
       "A procession crosses the remains of a civilization beneath a dark red sky. Each figure carries a small illuminated vessel containing a glowing heart, while an immense fortune teller rises behind the ruins with a screen of multicolored code in place of a face.",
-      "The oracle grips a chainsaw with both hands, poised above a mountain of debris. The people do not worship it, confront it, or fully escape it; they curve away in the shape of a comma—preserving something human while history pauses before its next clause.",
-      "'God, Comma' depicts technological authority at the moment it becomes indistinguishable from divine judgment. The comma is not an ending. It is the fragile interval between destruction and whatever humanity permits to follow.",
+      "The oracle grips a chainsaw with both hands, poised above a mountain of debris. The people do not worship it, confront it, or fully escape it; they curve away in the shape of a comma, preserving something human while history pauses before its next clause.",
+      "<em>God, Comma</em> depicts technological authority at the moment it becomes indistinguishable from divine judgment. The comma is not an ending. It is the fragile interval between destruction and whatever humanity permits to follow.",
     ],
     links: {
       xrp: "#",
@@ -1853,13 +1985,28 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: ["cursor_of_fate", "internet_of_the_new_world"],
-    motifs: ["oracle", "machine", "ritual"],
+
+    related: ["cursor_of_fate", "the_artificial_deli_gate", "god_comma"],
+    motifs: [
+      "zoltar_oracle",
+      "glowing_brains",
+      "crystal_ball",
+      "round_table",
+      "laptops",
+    ],
+    themes: [
+      "artificial_intelligence",
+      "collective_intelligence",
+      "human_collaboration",
+      "future_of_work",
+      "human_agency",
+    ],
+
     img: "../img/collection_works/industrial_myths/the_future_of_industry.webp",
     desc: [
-      "'The Future of Industry' envisions a new epoch where human thought, machine learning, and ritual converge.",
-      "In a dimly lit hall, a faceless oracle—its features replaced by cascading code—presides over a circle of silent thinkers. Before them rest luminous brains and crystal spheres: emblems of creativity, computation, and prophecy.",
-      "The chamber holds two thresholds—one descending into shadow and uncertainty, the other opening toward a radiant expanse of possibility. This spatial duality mirrors the conflict between the foreseen and the unforeseen, the designed and the emergent, that defines our technological ascent.",
+      "<em>The Future of Industry</em> envisions a new epoch where human thought, machine learning, and ritual converge.",
+      "In a dimly lit hall, a faceless oracle with features replaced by cascading code presides over a circle of silent thinkers. Before them rest luminous brains and crystal spheres, emblems of creativity, computation, and prophecy.",
+      "The chamber holds two thresholds. One descends into shadow and uncertainty, while the other opens toward a radiant expanse of possibility. This spatial duality mirrors the conflict between the foreseen and the unforeseen, the designed and the emergent, that defines our technological ascent.",
       "This work poses a question: when machines divine and humans compute, who truly shapes the future of labor?",
     ],
     links: {
