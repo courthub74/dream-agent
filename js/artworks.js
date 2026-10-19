@@ -1669,7 +1669,7 @@ themes: [
       "A surreal meditation on visible and invisible confinement.",
       "<em>Humans</em> juxtaposes two lives that appear fundamentally different. A prisoner sits behind bars while a prosperous professional relaxes in comfort, yet both occupy nearly identical poses beneath the same moon and sky.",
       "The work suggests that material success and physical liberty do not necessarily resolve the deeper questions of fulfillment, purpose, or inner freedom.",
-      "Sometimes the strongest prisons cannot be seen.",
+      "<strong>Sometimes the strongest prisons cannot be seen.</strong>",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -2425,7 +2425,7 @@ themes: [
     desc: [
       "<em>Them Gods and the Older Gods</em> presents an imagined gathering where civilizations, philosophies, and generations overlap. Ancient architecture, timeless conversation, and symbolic figures dissolve distinctions between past and present, suggesting that humanity continually inherits, reshapes, and reimagines its systems of meaning.",
       "Perhaps every generation worships something.",
-      "Only history decides what becomes mythology.",
+      "<strong>Only history decides what becomes mythology.</strong>",
     ],
     img: "../img/collection_works/signals_and_ascensions/them_gods_and_the_older_gods.webp",
     links: { xrp: "#", os: "#", sr: "#" },
