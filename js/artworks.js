@@ -554,9 +554,10 @@ window.allWorks = [
     ],
     img: "../img/collection_works/digital_unconscious/internet_of_the_middle_world.webp",
     desc: [
-      "<em>Internet of the Middle World</em> captures a surreal 1980s-style mall scene where the digital age seeps into analog life. Neon signs divide the corridor into 'INTER' and 'NET', while glowing orbs—crystal-ball-like internet terminals—float atop fountains and pedestals. Shoppers gaze into them with reverence, as if accessing forgotten futures.",
-      "The color palette leans into nostalgic earth tones, contrasted with electric blues, subtly evoking early digital aesthetics. The arcade machines flicker like proto-portals, while every character appears paused between eras—caught between the physical and the virtual, the mundane and the mythic.",
-      "This piece reimagines the birth of the internet not as a tech boom, but as a spiritual-commercial ritual in the temple of capitalism.",
+      "<em>Internet of the Middle World</em> captures a surreal scene inside a 1980s shopping mall, where the digital age seeps into analog life. Neon signs divide the corridor into \"INTER\" and \"NET,\" while glowing orbs resembling crystal ball internet terminals rest atop fountains and pedestals. Shoppers gaze into them with reverence, as if accessing forgotten futures.",
+"The color palette leans into nostalgic earth tones, contrasted with electric blues, subtly evoking early digital aesthetics. The arcade machines flicker like portals to an emerging world, while the figures appear suspended between eras, caught between the physical and the virtual, the mundane and the mythic.",
+"The painting reimagines the birth of the internet not simply as a technological revolution, but as a spiritual and commercial ritual unfolding within a temple of capitalism.",
+
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9169748C1F205CBFA5E",
@@ -600,10 +601,10 @@ window.allWorks = [
     ],
     img: "../img/collection_works/digital_unconscious/rinse_of_trust.webp",
     desc: [
-      "In this chamber of blue and gold, faith is scrubbed clean. The faucet drips with the insignia of digital empires — XRP tears drip from one of two shower heads.  The second shower head, drips nothing hinting at a mysterious system shrouded in secrecy.",
-      "A hand extends from the glow, offering the bar of belief back to the system.",
-      "Below, soaked currency hangs like towels of devotion, dripping into the floor — the cost of staying pure in an economy of confession.",
-      "<em>The Rinse of Trust</em> examines the fragility of confidence — the way markets, religions, and algorithms depend on a constant cleansing of faith. Every rinse resets the narrative, but the residue of doubt remains.",
+      "In this chamber of blue and gold, faith is scrubbed clean. One showerhead releases violet droplets bearing the symbols of XRP and digital currency, while the other remains strangely dry, its silence suggesting an unseen presence or an unanswered question.",
+"A hand extends from the golden glow, holding a green bar of soap, an ordinary instrument of cleansing suspended between offering and exchange.",
+"Below, soaked currency hangs like towels of devotion, dripping onto the floor, the cost of staying pure in an economy of confession.",
+"<em>Rinse of Trust</em> examines the fragility of confidence, the way markets, religions, and algorithms depend on the continual renewal of faith. Every rinse resets the narrative, but the residue of doubt remains.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91609C5D6F505CBFA63",
@@ -621,15 +622,36 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-05-15",
-    related: ["the_artificial_deli-gate"],
-    motifs: ["robot", "ceremony", "ritual"],
-    themes: ["technology", "artificial intelligence", "data centers"],
+    
+related: [
+  "the_artificial_deli-gate",
+  "the_future_of_industry",
+  "cursor_of_fate"
+],
+motifs: [
+  "faceless_workers",
+  "advanced_internet",
+  "llm_temple",
+  "octopus",
+  "stream",
+  "anatomical_heart",
+  "harvesting"
+],
+themes: [
+  "artificial_intelligence",
+  "digital_labor",
+  "experimentation",
+  "discovery",
+  "information_flow",
+  "technological_evolution"
+],
+
     img: "../img/collection_works/digital_unconscious/the_artificial_monty.webp",
     desc: [
       "A surreal landscape exploring the hidden ecology of artificial intelligence.",
-      "<em>The Artificial Monty</em> portrays AI as an act of excavation rather than invention. Anonymous workers sift through the accumulated internet while a living river carries symbols of memory, mortality, and biological existence toward a monumental temple dedicated to language itself.",
-      "The painting suggests that artificial intelligence is not born from empty machines, but from humanity's collective archive of stories, knowledge, and experience.",
-      "Every answer has an ancestry.",
+"<em>The Artificial Monty</em> portrays AI as an act of excavation rather than invention. Anonymous workers harvest, test, and rummage through the accumulated internet, while a living river carries symbols of memory, mortality, and biological existence toward a monumental temple dedicated to language itself.",
+"The painting suggests that artificial intelligence is not born from empty machines, but emerges from humanity's collective archive of stories, knowledge, and experience.",
+"<strong>Every answer has an ancestry.</strong>",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -672,8 +694,8 @@ window.allWorks = [
     img: "../img/collection_works/digital_unconscious/internet of_the_old_world.webp",
     desc: [
       "Step into a mythic past where the digital future is foretold.",
-      "<em>Internet of the Old World</em> by Dream Agent reimagines our virtual age through the lens of medieval mysticism. Gathered before a crystal orb, cloaked figures kneel in reverence—priests, nobles, and peasants alike—before a mysterious apparition inside the orb. Looming behind them, a castle gate boldly inscribed “INTERNET” evokes a new kind of kingdom.",
-      "This painting explores how ancient rituals mirror the collective awe and submission we now show digital networks. It invites viewers to reflect on our shared data as modern prophecy and the internet as a sacred architecture of the new world order.",
+"<em>Internet of the Old World</em> by Dream Agent reimagines our virtual age through the lens of medieval mysticism. Gathered before a crystal orb, cloaked figures kneel in reverence, priests, nobles, and peasants alike, before a mysterious apparition within its glow. Looming behind them, a castle gate boldly inscribed \"INTERNET\" evokes the arrival of a new kind of kingdom.",
+"The painting explores how ancient rituals mirror the collective awe and submission we now show digital networks. It invites viewers to consider shared data as a form of modern prophecy, and the internet as a sacred architecture through which new systems of belief and authority emerge.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC916F2E005F605CBFA62",
@@ -760,12 +782,9 @@ window.allWorks = [
     ],
     img: "../img/collection_works/digital_unconscious/technology_and_desire.webp",
     desc: [
-      "'Technology & Desire' stages attraction as a struggle unfolding inside a living technological ecosystem.",
-
+      "<em>Technology & Desire</em> stages attraction as a struggle unfolding inside a living technological ecosystem.",
       "Two stag beetles contest a luminous device whose screen merges with the armored body of an insect. Copper interconnects spread through neon moss and deeply grooved bark, suggesting that circuitry has not invaded nature but evolved from within it. At the edge of the scene, a mannequin-like woman watches with immaculate detachment while a recluse spider descends into her field of vision.",
-
       "The device promises connection, beauty, and possession. Yet every figure surrounding it is caught inside an older system of appetite: competition, observation, seduction, and predation.",
-
       "Technology changes the object of desire. It does not necessarily change the instinct.",
     ],
     links: {
@@ -793,9 +812,10 @@ window.allWorks = [
     themes: ["digital culture", "seclusion", "contemplation"],
     img: "../img/collection_works/digital_unconscious/internet_of_the_modern_world.webp",
     desc: [
-      "In Internet of the Modern World, Dream Agent visualizes the internet not as cables and code, but as orbs of knowledge, communion, and mystery — floating quietly within domestic space. Rendered in a palette of calm teals and soft golds, four vignettes capture anonymous digital citizens, each engaging with luminous spheres that defy gravity. These orbs represent the fragments of the modern internet: ideas passed hand-to-hand, data preserved in cold storage, and interfaces that glow with silent intelligence.",
-      "The posters behind each figure subtly spell out 'internet,' while their shirts display concentric symbols — perhaps a new language of connection. Though the setting is minimal, the symbolism runs deep: the kitchen becomes a data hub, the bedroom a meditation zone, the living room a portal.",
-      "This painting reflects a modern condition: being always online, always alone — yet tethered to something larger, shared, and glowing just beyond reach.",
+      "In <em>Internet of the Modern World</em>, Dream Agent envisions the internet not as cables and code, but as luminous orbs of knowledge, communion, and mystery inhabiting the familiar spaces of everyday life.",
+"Rendered in calm teals and soft golds, four vignettes portray anonymous figures engaging with glowing spheres that seem suspended between the physical and the intangible. Ideas circulate, information accumulates, and the boundaries between human experience and digital existence become increasingly difficult to distinguish.",
+"Behind the figures, posters subtly spell out \"INTERNET,\" while concentric symbols on their clothing suggest an unfamiliar language of connection. The kitchen, bedroom, and living room become unlikely sites of technological ritual, where ordinary domestic life accommodates something vast and unseen.",
+"<em>Internet of the Modern World</em> reflects a peculiar condition of contemporary existence, where solitude and connectivity coexist, and the most familiar surroundings become gateways to an expanding digital world.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91620ABA7F405CBFA64",
@@ -837,7 +857,7 @@ window.allWorks = [
       "A person sits quietly inside an ordinary suburban home, dressed in plain medical scrubs and facing two adjacent laptops. From outside the narrow window beside the front door, there is almost nothing remarkable to observe: neutral walls, simple furniture, a package by the entrance, the unexceptional posture of someone working at a table.",
       "Only the screens complicate the scene.",
       "An administrative inbox dissolves into coded markings, unfamiliar portraits, and unexplained insignias. A second display connects geographic points, financial figures, coordinates, medical symbols, and radio signals without revealing what any of them mean. The information could belong to routine employment, consequential research, organized manipulation, or an evening spent casually browsing.",
-      "'The Age of Nondescriptdom' examines a contemporary visual paradox: radically different functions now occupy nearly identical silhouettes. The healthcare worker and the fraudster, the programmer and the hacker, the analyst and the propagandist, the administrator and the exploiter, the activist and the provocateur may all appear as the same quiet figure illuminated by two screens.",
+      "<em>The Age of Nondescriptdom</em> examines a contemporary visual paradox: radically different functions now occupy nearly identical silhouettes. The healthcare worker and the fraudster, the programmer and the hacker, the analyst and the propagandist, the administrator and the exploiter, the activist and the provocateur may all appear as the same quiet figure illuminated by two screens.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916D3F4A7F405CBFA65",
@@ -879,13 +899,10 @@ window.allWorks = [
     ],
     img: "../img/collection_works/digital_unconscious/internet_of_money.webp",
     desc: [
-      "'Internet of Money' explores a peculiar imbalance: the ways people assign value to joy, sorrow, wealth, and connection in a world increasingly mediated by networks. At the center of the composition, a luminous green orb hovers above a golden scale, representing the internet itself, a vast sphere of communication, commerce, and collective imagination. Beneath it, golden roots surge through the earth like electrical pathways, suggesting that digital systems have become as foundational to modern life as rivers, roads, and forests once were.",
-
-      "On one side rests 'Happiness', engraved with the mask of sadness. On the other rests 'Sadness', marked with the mask of joy. The contradiction suggests that emotions are rarely what they appear to be from a distance. Prosperity can conceal emptiness. Struggle can produce meaning. Around the scale lie scattered currencies, paper notes, and crypto tokens, symbols of humanity's ongoing attempt to convert belief into value.",
-
-      "The landscape itself is divided between abundance and scarcity, paradise and desert, reminding us that money is not merely an economic system but a story told across civilizations. The glowing orb neither judges nor intervenes. It simply connects.",
-
-      "This work is a meditation on value, perception, and the invisible networks that increasingly shape human destiny.",
+"<em>Internet of Money</em> explores a peculiar imbalance: the ways people assign value to joy, sorrow, wealth, and connection in a world increasingly mediated by networks. At the center of the composition, a luminous green orb rests within a golden scale, suggesting the internet itself, a vast sphere of communication, commerce, and collective imagination. Beneath it, golden roots surge through the earth like electrical pathways, suggesting that digital systems have become as foundational to modern life as rivers, roads, and forests once were.",
+"On one side rests \"Happiness,\" engraved with the mask of sadness. On the other rests \"Sadness,\" marked with the mask of joy. The contradiction suggests that emotions are rarely what they appear to be from a distance. Prosperity can conceal emptiness. Struggle can produce meaning. Around the scale lie scattered currencies, paper notes, and crypto tokens, symbols of humanity's ongoing attempt to convert belief into value.",
+"The landscape itself is divided between abundance and scarcity, paradise and desert, reminding us that money is not merely an economic system but a story told across civilizations. The glowing orb neither judges nor intervenes. It simply connects.",
+"This work is a meditation on value, perception, and the invisible networks that increasingly shape human destiny.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916A1D3F2F905CBFA66",
@@ -910,12 +927,11 @@ window.allWorks = [
     themes: ["isolation", "power", "contemplation"],
     img: "../img/collection_works/digital_unconscious/prince_carl_laying.webp",
     desc: [
-      "In a hotel room of neutral tones and soft lighting, a solitary figure in regal military dress — Prince Carl — lies across a bed, locked in contemplation before a blank television screen. His ornate baton rests beside him, unused. The TV, cold and dark, reflects nothing but the silence of his choice.",
-      "Before it, a curious console: a humanoid figure with a monitor for a head and a crystal ball in its hands. A green mountain labeled “Strategywood” rises like a false oracle, flanked by miniature flags — fragments of world powers reduced to decoration.",
-      "Behind a slightly ajar door, a shower curtain bears a cryptic insignia: intelligence behind the veil.",
-      "The cursor on the screen invites, yet Prince Carl resists — denying himself the seduction of spectacle, prophecy, or command. This is the portrait of power in a moment of withdrawal.",
-      "Surveillance, strategy, and prophecy lie at arm's reach… but he waits.",
-      "What happens when a sovereign refuses the screen? A meditation on control, voyeurism, and the quiet rebellion of inaction.",
+      "In a hotel room of neutral tones and soft lighting, a solitary figure in regal military dress, Prince Carl, lies across a bed, contemplating a curious arrangement beneath a blank television screen. His ornate baton rests beside him, unused. The television remains cold and dark, its silence contrasting with the strange objects assembled below.",
+"Upon the console sits a humanoid figure with a monitor for a head, its small screen illuminated by a solitary cursor. A crystal ball rests against its chest. Nearby, a miniature green mountain labeled \"Strategy Wood\" stands beside an arrangement of colorful flags, fragments of world powers reduced to decoration.",
+"Behind a slightly ajar door, a shower curtain bears a cryptic insignia, suggesting intelligence behind the veil.",
+"Surrounded by symbols of surveillance, strategy, and prophecy, Prince Carl remains motionless, his attention suspended between contemplation and withdrawal. The instruments of observation and command lie within sight, yet nothing compels him to act.",
+"What happens when a sovereign refuses the screen? <em>Prince Carl Laying in Front of the Telly...</em> becomes a meditation on control, voyeurism, and the quiet rebellion of inaction.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91628EBB1EA05CBFA4E",
@@ -941,9 +957,10 @@ window.allWorks = [
     motifs: ["artist", "coins", "crystal ball"],
     img: "../img/collection_works/digital_unconscious/internet_of_the_new_world.webp",
     desc: [
-      "'Internet of the New World' captures the moment where creativity, currency, and coded prophecy converge.",
-      "A lone figure, lit by the glow of his digital canvas, draws concentric worlds that ripple into reality. Outside, golden and silver coins drift through a scorched horizon, as if migrating from one age into another. On the wall, a portrait of an old-world general gazes forward, a crystal orb clasped like a new scepter of power. Beside the artist, encrypted text floats — part address, part invocation — signaling that in this world, identity and value are written in code.",
-      "This painting is an allegory of how the digital frontier replaces empires of stone with networks of trustless exchange, and how the new architects are not kings, but coders.",
+      "<em>Internet of the New World</em> captures a moment where creativity, currency, and coded prophecy converge.",
+"A lone figure, illuminated by the glow of his digital canvas, draws concentric worlds that seem to ripple into reality. Outside, golden and silver coins drift through a scorched horizon, as if migrating from one age into another. On the wall, a portrait of Prince Carl gazes forward, accompanied by a luminous orb suggesting a connection to the internet, where communication, observation, and authority may quietly converge. Beside the artist, a cryptographic address glows against the wall, part destination, part invocation, suggesting a world where the exchange of value has become as commonplace as communication itself.",
+"The painting imagines a digital frontier where empires of stone encounter decentralized networks, and the ordinary rituals of work and creativity become intertwined with emerging systems of exchange. Familiar notions of sovereignty linger, even as new forms of labor and participation quietly take shape. Beyond the window, an uncertain landscape stretches toward the horizon, while the instruments of a new civilization quietly take shape indoors.",
+"<em>Internet of the New World</em> invites reflection on a future where technology, authority, and human creativity evolve together, not necessarily in harmony, but within the same unfolding world.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC916E43A3EE405CBFA4B",
