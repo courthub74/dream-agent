@@ -2431,13 +2431,30 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2023-06-13",
+
     related: ["the_soap_wars", "coeur_of_the_grapes", "the_dirt_wars"],
-    motifs: ["cave", "bacteria", "wine"],
-    themes: ["conflict", "culture", "value"],
+    motifs: [
+      "cavern",
+      "microorganisms",
+      "wineglass",
+      "river",
+      "speaker",
+      "coin_bearing_plants",
+    ],
+    themes: [
+      "microbial_conflict",
+      "fermentation",
+      "transformation",
+      "culture",
+      "value",
+      "natural_processes",
+    ],
+
     img: "../img/collection_works/war_and_feast/the_wine_wars.webp",
     desc: [
-      "'The Wine Wars' is a surreal meditation on conflict, culture, and value. A winding river carves through a cavernous landscape, separating two opposing forces: primal microscopic organisms locked in an endless struggle, and a garden where golden coins bloom like living flora. A solitary glass sits empty, a silent witness to the chaos and creation unfolding. Above, a speaker looms—echoing voices of past and future battles.",
-      "This piece fuses mythology, economics, and microbiology into one scene, exploring how consumption, nature, and technology intertwine in humanity's pursuit of meaning and wealth.",
+      "<em>The Wine Wars</em> is a surreal meditation on conflict, culture, and value. A winding blue river carves through a cavernous landscape, where microscopic organisms appear suspended in an uncertain encounter. Along the riverbank, a garden of golden coins blooms like living flora, suggesting an unusual relationship between nature and wealth.",
+      "A solitary wineglass sits empty, a silent witness to the processes of chaos and creation unfolding around it. Above, a speaker hovers mysteriously, introducing the possibility of sound into a world of biological and economic transformation.",
+      "<em>The Wine Wars</em> brings mythology, economics, and microbiology into a single imagined environment, inviting reflection on how consumption, nature, and technology intersect in humanity's pursuit of meaning and value.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080FA0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9160DE5DBF205CBFA58",
@@ -2455,14 +2472,31 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-03-16",
-    related: ["the_generous_vagrant"],
-    motifs: ["hunger", "gold"],
-    themes: ["greed", "consumption", "spectatorship"],
+
+    related: ["the_generous_vagrant", "the_artificial_deli-gate"],
+    motifs: [
+      "faceless_figure",
+      "oversized_sandwich",
+      "luxury_car",
+      "gold_watch",
+      "monetize_screen",
+      "spectators",
+      "three_principles_book",
+    ],
+    themes: [
+      "wealth_and_deprivation",
+      "consumption",
+      "public_admiration",
+      "public_ridicule",
+      "spectatorship",
+      "commercialization",
+    ],
+
     img: "../img/collection_works/war_and_feast/the_starving_millionare.webp",
     desc: [
-      "'The Starving Millionaire' captures a paradox at the heart of modern ambition: abundance without nourishment.",
-      "A faceless figure devours a sandwich inside a luxury vehicle, parked beneath the sign of a 'Tartarian Sandwich Shoppe'. Outside the windshield, students look on, laughing and learning, while inside the vehicle a GPS glows with a single directive: 'Monetize'.",
-      "A book titled 'Intro to Principles' rests untouched on the console. Wealth, knowledge, hunger, and spectatorship collapse into a single frame.",
+      "<em>The Starving Millionaire</em> captures a paradox at the heart of modern ambition: abundance without nourishment.",
+      'A faceless figure devours an oversized sandwich inside a luxury vehicle, parked outside the "Tartarian Sandwich Shoppe." Beyond the windshield, a gathering of young spectators appears caught somewhere between admiration and ridicule, while inside the vehicle, a dashboard screen glows with a single directive: "MONETIZE".',
+      'A book titled "Intro to Principles" rests untouched on the console. Wealth, knowledge, hunger, and spectatorship collapse into a single frame.',
       "The painting examines how success can consume itself. The pursuit of value becomes an appetite that never resolves. The mask hides identity, but not the ritual. This is not a portrait of poverty or excess. It is a portrait of extraction.",
     ],
     links: {
