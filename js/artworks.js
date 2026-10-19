@@ -238,7 +238,7 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/dream_agent_making_birds.webp",
     desc: [
-      "<em>Dream Agent Making Birds</em> captures the faceless spy in a sacred moment of release. Standing before a red cage that holds a glowing machine, the spy extends his gloved hands—not to release a bird, but to reveal wings of light. Above, a chain of birds arcs through the morning sky, echoing the engraving 'Soli Deo Gloria' on the window sill. It is both prayer and ritual: an act of making, not owning—where flight itself becomes the art.",
+      '<em>Dream Agent Making Birds</em> captures the faceless spy in a sacred moment of release. Standing before a red cage that holds a glowing machine, the spy extends his gloved hands, not to release a bird, but to reveal wings of light. Above, a chain of birds arcs through the morning sky, echoing the engraving "Soli Deo Gloria" on the window sill. It is both prayer and ritual: an act of making, not owning, where flight itself becomes the art.',
       "This piece bridges mystery and devotion, weaving together technology, faith, and surreal transformation. A meditation on creation, release, and the unseen hands that move history.",
     ],
     links: {
