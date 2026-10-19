@@ -2515,14 +2515,31 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: [],
-    motifs: ["bugs", "gold"],
-    themes: ["greed", "consumption", "spectatorship"],
+
+    related: ["the_starving_millionaire", "the_great_divide"],
+    motifs: [
+      "golden_statue",
+      "amphitheater",
+      "armored_combatants",
+      "coins",
+      "banknotes",
+      "spectators",
+      "celestial_opening",
+    ],
+    themes: [
+      "greed",
+      "wealth",
+      "spectatorship",
+      "power",
+      "economic_conflict",
+      "material_worship",
+    ],
+
     img: "../img/collection_works/war_and_feast/mammon_stadium.webp",
     desc: [
-      "In 'Mammon Stadium', Dream Agent transforms the ancient coliseum into a financial amphitheater. The golden statue of Mammon towers above the fray, bathed in divine light, as gladiatorial bugs scuttle across a hockey-lined battlefield littered with pills. The crowd is not flesh but wealth itself—coins, bills, and symbols of capital—stacked into seats of power.",
+      "In this piece, Dream Agent transforms the ancient coliseum into a financial amphitheater. The golden statue of Mammon towers above the fray, bathed in celestial light, as gladiatorial bugs scuttle across a hockey-lined battlefield littered with pills. The crowd is not flesh but wealth itself, coins, bills, and symbols of capital stacked into seats of power.",
       "The arena becomes a surreal merger of sport, empire, addiction, and currency, where spectatorship is measured in monetary presence rather than human eyes.",
-      "This painting interrogates the rituals of modern finance and consumption, presenting the spectacle of wealth as both entertainment and domination.",
+      "<em>Mammon Stadium</em> brings the rituals of modern finance and consumption into an ancient arena, where the spectacle of wealth blurs the boundaries between entertainment, devotion, and domination.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9167822E70E05CBFA73",
@@ -2545,8 +2562,9 @@ window.allWorks = [
     themes: ["sanitation", "conflict"],
     img: "../img/collection_works/war_and_feast/the_soap_wars.webp",
     desc: [
-      "'The Soap Wars' documents a conflict staged as sanitation.",
+      "<em>The Soap Wars</em> documents a conflict staged as sanitation.",
       "A sterile tunnel becomes a theater where purity, avoidance, absorption, and respect are enforced through signage, machinery, and posture. Soap floods the floor. Surveillance smiles. Direction replaces dialogue.",
+      "Yet beneath the opposing station signs, two faceless figures exchange a private whisper. Whether an act of intimacy, conspiracy, or betrayal, their encounter suggests that the boundaries between opposing worlds may be less secure than they appear.",
       "The conflict does not ask who is clean. It decides who is allowed to remain.",
     ],
     links: {
@@ -2565,14 +2583,30 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: ["the_wine_wars"],
-    motifs: ["heart", "river"],
-    themes: ["romance", "indulgence", "desire"],
+
+    related: ["the_wine_wars", "technology_and_desire"],
+    motifs: [
+      "anatomical_heart",
+      "blue_rivers",
+      "wineglass",
+      "woman_in_red",
+      "miniature_settlement",
+      "unseen_companion",
+    ],
+    themes: [
+      "life_source",
+      "romance",
+      "indulgence",
+      "desire",
+      "intimacy",
+      "interconnectedness",
+    ],
+
     img: "../img/collection_works/war_and_feast/coeur_of_the_grapes.webp",
     desc: [
-      "'Coeur of the Grapes' is a surreal celebration of romance, indulgence, and the fragile infrastructure of desire. In this evocative composition, a monumental human heart towers over a vineyard town, pumping rich, cerulean rivers through a sun-scorched landscape. At the forefront, a woman dressed in red smiles with closed eyes, glass of sparkling wine in hand, as a disembodied hand rests on her shoulder — a gesture at once intimate and ambiguous.",
-      "This piece plays on the French word 'coeur' (heart) and the ancient symbolism of wine as both communion and seduction. The arteries feeding the land suggest a circulatory system of love and control, while the woman’s radiant joy hints at either blissful ignorance or deep satisfaction.",
-      "A hypnotic blend of anatomical realism and classic oil-style glamour, 'Coeur of the Grapes' is a study in beauty, power, and what we choose to celebrate — even as we’re consumed by it.",
+      "<em>Coeur of the Grapes</em> is a surreal celebration of romance, indulgence, and the fragile infrastructure of desire. In this evocative composition, a monumental human heart towers over a vineyard town, pumping rich, cerulean rivers through a sun-scorched landscape. In the foreground, a woman dressed in red smiles with closed eyes, a glass of sparkling wine in hand, as a disembodied hand rests on her shoulder, a gesture at once intimate and ambiguous.",
+      'The painting plays on the French word "coeur" (heart) and the ancient symbolism of wine as both communion and seduction. The arteries feeding the land suggest a circulatory system of life and nourishment, where the boundaries between biology, landscape, and emotion begin to dissolve. Meanwhile, the woman\'s radiant joy hints at either blissful ignorance or deep satisfaction.',
+      "A hypnotic blend of anatomical realism and classic oil-style glamour, <em>Coeur of the Grapes</em> invites reflection on beauty, desire, and the mysterious forces that sustain the things we choose to celebrate.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC91652974EF705CBFA5B",
@@ -2590,13 +2624,31 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2025-11-15",
-    related: [],
-    motifs: ["desert", "spaghetti"],
-    themes: ["consumption", "hierarchy"],
+
+    related: ["the_tech_era", "survey", "the_starving_millionaire"],
+    motifs: [
+      "desert",
+      "spaghetti",
+      "contrasting_scale",
+      "paper_eyes",
+      "digital_display_eyes",
+      "strategy_wood",
+      "mountain",
+    ],
+    themes: [
+      "artificial_intelligence",
+      "video_generation",
+      "technological_progress",
+      "visual_perception",
+      "asymmetry",
+      "consumption",
+    ],
+
     img: "../img/collection_works/war_and_feast/the_asymmetrical_jace.webp",
     desc: [
-      "'The Asymmetrical Jace' bends the domestic into the mythic. Two figures consume spaghetti not as a meal, but as an allegory—one upright, disciplined, with galactic eyes veiled in the night sky, the other crouched, primal, with geometric lenses of surveillance. Between them rises the green pyramid of 'Strategy Wood', a mountain of calculation standing in stark contrast to the desert plain. This piece plays on hierarchy, asymmetry, and the rituals of consumption—both of food and of systems.",
-      "It asks: who eats with a fork, and who eats from the ground? Who climbs Strategy Wood, and who becomes part of its base?",
+      "<em>The Asymmetrical Jace</em> transforms the evolution of artificial intelligence into a surreal desert encounter. Two figures consume spaghetti at dramatically different scales, their contrasting proportions suggesting different stages of technological development. The larger figure eats with a fork, his vision framed by a sophisticated digital display revealing cosmic eyes, while the smaller figure crouches near the ground, peering through fragmented, paper-like lenses.",
+      'Between them rises the green pyramid of "Strategy Wood," a mountain of calculation standing in stark contrast to the surrounding desert plain. Their shared act of consumption becomes an unlikely meeting point between primitive and advanced forms of visual generation, where familiar human behavior is filtered through evolving artificial perception.',
+      "The painting invites a curious question: As the technology learns to see and represent the world with increasing sophistication, what exactly is progressing, the image, the intelligence, or our expectations of both?",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC91624CBACF505CBFA59",
