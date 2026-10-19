@@ -61,7 +61,7 @@ window.allWorks = [
       "Two chessboards rest along a coastal shore, their opposing arrangements suggesting different versions of the same society. One stands in orderly formation, its pieces uniform and recognizable. The other presents an irregular assembly of black, brown, yellow, and white, occupying positions that resist conventional expectations.",
       "Across the water, Strategy Wood is carved into a mountainside, overlooking a classical temple from which water descends toward the sea. Above the horizon, a hypnotic sun radiates, casting its influence across both arrangements. The landscape suggests a world where perception is shaped as much by repetition as by experience.",
       "In <em>Temple of Openings</em> the chessboard becomes more than a contest of opposing sides, where familiar identities occupy unfamiliar positions. It is a landscape of inherited assumptions, prescribed roles, and possibilities beyond the arrangements already in play.",
-      "Before the first move, someone has already arranged the pieces.",
+      "<strong>Before the first move, someone has already arranged the pieces.</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00081388B57E780C6A5EF299540E01B0E8C6DB1B83CFC916BA8EA1DA05CBFA3E",
@@ -101,7 +101,7 @@ window.allWorks = [
       "<em>Binary Tree</em> unfolds inside an elegant, surreal social club where refinement and ambiguity coexist. A poised woman in a divided green-and-white dress stands between two faceless attendants, each presenting a different arrangement of objects. One offers a bonsai and martini, the other a bronze vessel and white wine. Their contrasting appearances suggest opposing possibilities, although the significance of either offering remains uncertain.",
       "Behind them, a great window branches into the silhouette of a tree, while portraits observe from the surrounding walls. Directional arrows point toward opposing destinations, introducing an orderly system of choices into a setting where little is explained. The woman's confident posture contrasts with the uncertainty of what is being offered.",
       "Here, decision-making becomes a performance of authority, where appearances suggest clarity without necessarily providing it. The distinction between two paths may be less meaningful than the expectation that one must be chosen.",
-      "Power becomes an attitude rather than an answer.",
+      "<strong>Power becomes an attitude rather than an answer.</strong>",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/00080BB8B57E780C6A5EF299540E01B0E8C6DB1B83CFC9164A57450F05CBFA71",
@@ -192,8 +192,8 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/polar_bear.webp",
     desc: [
-      "A checkerboard plain stages two masked figures labeled <em>let</em> and <em>const</em>, facing one another as a thermometer rises between them. Behind, an alabaster basilica and a wounded crystal sphere establish a frozen system where variables face limits, and permanence bears marks of force.",
-      "<em>Polar Bear</em> fixes logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage.",
+      "A checkerboard plain stages two masked figures labeled \"let\" and \"const\", facing one another as a thermometer rises between them. Behind them, an alabaster basilica and a monumental white sphere bearing deep claw marks establish a frozen landscape where the logic of change and permanence encounters the forces of nature.",
+"<em>Polar Bear</em> brings programming logic, architecture, and ritual into a single climatic moment. Change is measured, not felt, while stability carries visible damage. Somewhere between the variable and the constant, the landscape holds its uncertain balance.",
     ],
     links: {
       xrp: "https://xrp.cafe/nft/000807D0B57E780C6A5EF299540E01B0E8C6DB1B83CFC9163FD182E905CBFA4F",
@@ -329,7 +329,7 @@ window.allWorks = [
       "A symbolic relic from an imagined archive.",
       "<em>Turquoise Plate</em> presents a silent guardian beside an intricately carved ceremonial object whose imagery hints at forgotten systems of belief. Crystal spheres, flowing water, birds, and the human heart combine into a visual language that feels familiar yet remains untranslated.",
       "This work invites viewers to consider the significance of everyday objects in our lives and how they can become vessels for deeper meaning and spiritual connection.",
-      "The archive remembers even when history forgets.",
+      "<strong>The archive remembers even when history forgets.</strong>",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -415,15 +415,12 @@ window.allWorks = [
     ],
     img: "../img/collection_works/symbols_in_motion/the_generous_vagrant.webp",
     desc: [
-      "<em>The Generous Vagrant</em> presents an anonymous healer moving through an abandoned commercial district beneath an almost offensively pleasant sky. Society sees only his deteriorating clothes, concealed face, and battered shopping cart. What it fails to recognize is that the cart contains the burdens he has quietly removed from others.",
+      "<em>The Generous Vagrant</em> presents an anonymous healer moving through a weathered commercial district beneath an almost offensively pleasant sky. Society sees only his deteriorating clothes, concealed face, and battered shopping cart. What it fails to recognize is that the cart contains the burdens he has quietly removed from others.",
+"Knotted masses, collapsed masks, empty coats, and stonelike worries crowd the rusted frame, each leaking traces of warm ivory light. Nearby, a neatly dressed stranger stands with a peaceful hollow illuminated in their chest, the evidence of an exchange that occurred without payment, recognition, or ceremony.",
+"Above the healer, a polished billboard elevates manufactured sweetness into spectacle: an immaculate faceless authority presents an enormous chocolate bar while the genuine act of relief passes unnoticed below. Behind both figures, a brightly colored smiley face partially conceals the words \"ORIGIN STORY,\" replacing difficult history with performed happiness.",
+"The vagrant carries a battered book titled \"LESSONS TO TEACH,\" but offers no sermon. His knowledge exists independently of anyone's willingness to acknowledge its source.",
+"The central paradox remains unresolved: the person who appears to possess the least is quietly carrying what everyone else needs removed.",
 
-      "Knotted masses, collapsed masks, empty coats, and stone-like worries crowd the rusted frame, each leaking traces of warm ivory light. Nearby, a neatly dressed stranger stands with a peaceful hollow illuminated in their chest—the evidence of an exchange that occurred without payment, recognition, or ceremony.",
-
-      "Above the healer, a polished billboard elevates manufactured sweetness into spectacle: an immaculate faceless authority presents an enormous chocolate bar while the genuine act of relief passes unnoticed below. Behind both figures, a brightly colored smiley face partially conceals the words 'ORIGIN STORY', replacing difficult history with performed happiness.",
-
-      "The vagrant carries a battered book titled 'LESSONS TO TEACH', but offers no sermon. His knowledge exists independently of anyone’s willingness to acknowledge its source.",
-
-      "The central paradox remains unresolved: the person who appears to possess the least is quietly carrying what everyone else needs removed.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
   },
@@ -463,7 +460,7 @@ window.allWorks = [
     desc: [
       "Across an ancient desert beneath snowcapped mountains, a stone-skinned giant presides over a field of marbled objects. Each carries its own swirling mixture of color, yet a single row has been extracted from the irregular formation and placed beneath translucent green glass.",
       "Sparks ignite. Smoke rises.",
-      "Nearby, an enormous placard offers a heading: CONSTRUCTS. Beneath it sit four colored circles, clean and finite against the disorder of the marbles surrounding them. In the distance, STRATEGY WOOD occupies the mountainside while unselected pieces remain scattered across the ground.",
+      "Nearby, an enormous placard offers a heading: \"Constructs\". Beneath it sit four colored circles, clean and finite against the disorder of the marbles surrounding them. In the distance, \"Strategy Wood\" occupies the mountainside while unselected pieces remain scattered across the ground.",
       "<em>Survey</em> examines the strange boundary between observing a population and constructing the categories through which that population can be understood. The instrument appears neutral. The available responses appear simple. What happens beneath the glass suggests that classification is not always passive.",
     ],
     links: { xrp: "#", os: "#", sr: "#" },
@@ -505,8 +502,8 @@ window.allWorks = [
     img: "../img/collection_works/symbols_in_motion/them_guys_and_the_older_guys.webp",
     desc: [
       "<em>Them Guys and the Older Guys</em> examines the unseen architecture behind cultural narratives.",
-      "Set within a frontier saloon, the painting imagines storytellers, skeptics, and strategists gathered around a conversation that extends beyond the room itself. At the center stands a weathered monument marked 'Strategy Wood,'' a symbolic inversion of Hollywood. Rather than celebrating entertainment, it points toward the mechanisms through which stories are shaped, distributed, and remembered.",
-      "The crystal ball rests quietly on the table, suggesting that perception itself has become something to forecast, influence, and negotiate. Around it, conversations unfold between generations. The 'them guys' inherit ideas while the 'older guys' pass along methods, whether intentionally or unconsciously.",
+      "Set within a frontier saloon, the painting imagines storytellers, skeptics, and strategists gathered around a conversation that extends beyond the room itself. At the center stands a weathered monument marked \"Strategy Wood\", a symbolic inversion of Hollywood. Rather than celebrating entertainment, it points toward the mechanisms through which stories are shaped, distributed, and remembered.",
+      "The crystal ball rests quietly on the table, suggesting that perception itself has become something to forecast, influence, and negotiate. Around it, conversations unfold between generations. The \"them guys\" inherit ideas while the \"older guys\" pass along methods, whether intentionally or unconsciously.",
       "The work does not claim that culture is centrally controlled.",
       "It suggests something more subtle.",
       "Every society develops institutions that learn how stories influence behavior. Over time, those institutions become traditions, industries, and eventually invisible assumptions.",
@@ -2666,17 +2663,34 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-10-05",
-    related: [
-      "prince_carl_after_the_salt_conquering_speaking_an_ancient_language",
-      "coeur_of_the_grapes",
-    ],
-    motifs: ["construction", "foundation"],
-    themes: ["labor", "industry", "progress"],
+   
+related: [
+  "prince_carl_after_the_salt_conquering_speaking_an_ancient_language",
+  "the_biblicals",
+  "coeur_of_the_grapes"
+],
+motifs: [
+  "renaissance_regalia",
+  "gothic_architecture",
+  "pepperoni_pizza",
+  "anatomical_heart_fountain",
+  "glowing_orb",
+  "marble_table"
+],
+themes: [
+  "childhood_memory",
+  "reverence",
+  "spiritual_authority",
+  "community",
+  "respect",
+  "cultural_memory"
+],
+
     img: "../img/collection_works/war_and_feast/cornerstone_kearney.webp",
     desc: [
-      "‘Cornerstone Kearney’ places an ordinary meal within the architecture of permanence. Beneath the vaults of a French Gothic cathedral, a man in yellow Tudor dress sits mid-sentence at a copper harvest table, knife and fork poised above three stacked slices of pepperoni pizza.",
-      "A tiny orb glows beside his plate. Beyond the glass partition, a heart with blue ventricles pumps water into the sunlit room. Sacred architecture, ceremonial clothing, and everyday appetite occupy a shared present.",
-      "Dream Agent brings these elements together in a surreal composition rendered with oil-painted texture, where grandeur depends upon the small routines taking place beneath it.",
+      "<em>Cornerstone Kearney</em> places an ordinary meal within the architecture of permanence. Beneath the vaults of a French Gothic cathedral, a man in yellow Tudor dress sits mid-sentence at a copper harvest table, knife and fork poised above three stacked slices of pepperoni pizza.",
+"A tiny orb glows beside his plate. Beyond the glass partition, an anatomical heart sends streams of blue water into the sunlit room. Sacred architecture, ceremonial clothing, and everyday appetite occupy a shared present.",
+"Inspired by the memory of a respected figure within a childhood church community, <em>Cornerstone Kearney</em> brings reverence and familiarity into an unlikely encounter. Rendered with an oil-painted texture, the composition suggests how ordinary moments and imposing personalities can acquire a monumental presence in memory.",
     ],
     links: {
       xrp: "#",
@@ -2708,7 +2722,7 @@ window.allWorks = [
     desc: [
       "Two chessboards rest along a restless shoreline beneath a wine-red sky. One remains occupied by the established pieces of play. The other holds three aged leather wineskins, standing where strategy once expected its figures to be.",
       "Across the foreground, emptied wineskins lie scattered beyond the boards. In the distance, the final letter of “STRATEGY WOOD” begins to fracture, while a monumental heart rises from the sea and circulates its own water into the atmosphere.",
-      "Created as a spiritual sequel to Temple of Openings, Old Wineskins examines the strain placed upon inherited structures when they are asked to contain a living current. The board remains intact. The vessels remain recognizable. Yet neither guarantees that the system can hold what arrives next.",
+      "Created as a spiritual sequel to Temple of Openings, <em>Old Wineskins</em> examines the strain placed upon inherited structures when they are asked to contain a living current. The board remains intact. The vessels remain recognizable. Yet neither guarantees that the system can hold what arrives next.",
     ],
     links: {
       xrp: "#",
