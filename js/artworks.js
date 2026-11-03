@@ -2491,7 +2491,8 @@ window.allWorks = [
     featured: true,
     dateCreated: "2023-06-13",
 
-    related: ["the_soap_wars", "coeur_of_the_grapes", "the_dirt_wars"],
+    related: ["the_soap_wars", "coeur_of_the_grapes"],
+    plannedRelated: ["the_nourishment_wars", "the_dirt_wars"],
     motifs: [
       "cavern",
       "microorganisms",
@@ -2616,7 +2617,8 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-01-11",
-    related: ["the_wine_wars", "the_dirt_wars"],
+    related: ["the_wine_wars"],
+    plannedRelated: ["the_nourishment_wars", "the_dirt_wars"],
     motifs: ["bubbles", "zamboni"],
     themes: ["sanitation", "conflict"],
     img: "../img/collection_works/war_and_feast/the_soap_wars.webp",
