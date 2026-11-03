@@ -1306,7 +1306,7 @@ window.allWorks = [
 
     related: [
       "discovery_of_the_indigenous",
-      "etch_the_empire",
+      "saltwater_electronics",
       "the_generous_vagrant",
     ],
 
@@ -2322,7 +2322,7 @@ window.allWorks = [
     related: [
       "the_biblicals",
       "discovery_of_the_indigenous",
-      "etch_the_empire",
+      "saltwater_electronics",
     ],
     motifs: [
       "tango",
