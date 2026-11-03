@@ -345,7 +345,7 @@ window.allWorks = [
     dateCreated: "2026-06-15",
     related: [
       "dream_agent_making_birds",
-      "future_of_industry",
+      "the_future_of_industry",
       "the_great_divide",
     ],
 
@@ -393,7 +393,7 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-10-01",
-    related: ["the_starving_millionare"],
+    related: ["the_starving_millionaire"],
 
     motifs: [
       "masked_man",
@@ -622,7 +622,7 @@ window.allWorks = [
     dateCreated: "2026-05-15",
 
     related: [
-      "the_artificial_deli-gate",
+      "the_artificial_deli_gate",
       "the_future_of_industry",
       "cursor_of_fate",
     ],
@@ -875,7 +875,7 @@ window.allWorks = [
     dateCreated: "2026-12-11",
 
     related: [
-      "the_artificial_deli-gate",
+      "the_artificial_deli_gate",
       "technology_and_desire",
       "the_starving_millionare",
     ],
@@ -1769,7 +1769,7 @@ window.allWorks = [
 
   // THE ARTIFICIAL DELI-GATE
   {
-    id: "the_artificial_deli-gate",
+    id: "the_artificial_deli_gate",
     collection: "industrial",
     title: "The Artificial Deli-gate",
     year: "2026",
@@ -1824,7 +1824,7 @@ window.allWorks = [
     dateCreated: "2026-08-03",
     related: [
       "the_future_of_industry",
-      "the_artificial_deli-gate",
+      "the_artificial_deli_gate",
       "technology_and_desire",
     ],
 
@@ -2201,7 +2201,7 @@ window.allWorks = [
     featured: true,
     dateCreated: "2025-01-01",
 
-    related: ["loris_house", "the_magic_of_86", "hip_hop_1978"],
+    related: ["loris_house", "magic_of_86", "hip_hop_1978"],
     motifs: [
       "domestic_interior",
       "gold_star",
@@ -2532,7 +2532,7 @@ window.allWorks = [
     featured: true,
     dateCreated: "2026-03-16",
 
-    related: ["the_generous_vagrant", "the_artificial_deli-gate"],
+    related: ["the_generous_vagrant", "the_artificial_deli_gate"],
     motifs: [
       "faceless_figure",
       "oversized_sandwich",
@@ -2575,7 +2575,7 @@ window.allWorks = [
     featured: true,
     dateCreated: "2025-11-15",
 
-    related: ["the_starving_millionaire", "the_great_divide"],
+    related: ["the_starving_millionare", "the_great_divide"],
     motifs: [
       "golden_statue",
       "amphitheater",
