@@ -393,7 +393,7 @@ window.allWorks = [
     style: "Oil-style",
     featured: true,
     dateCreated: "2026-10-01",
-    related: ["the_starving_millionaire"],
+    related: ["the_starving_millionare"],
 
     motifs: [
       "masked_man",
@@ -2686,7 +2686,7 @@ window.allWorks = [
     featured: true,
     dateCreated: "2025-11-15",
 
-    related: ["the_tech_era", "survey", "the_starving_millionaire"],
+    related: ["the_tech_era", "survey", "the_starving_millionare"],
     motifs: [
       "desert",
       "spaghetti",
